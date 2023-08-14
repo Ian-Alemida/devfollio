@@ -1,4 +1,7 @@
-
+.App{
+  background-image: linear-gradient(to bottom, #0f0f0f, #00162f);
+  height: 100vh;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
