@@ -1,0 +1,30 @@
+.content{
+    width: 80vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.content-text h2{
+    font-size: 66px;
+}
+
+.content-text p{
+    font-size: 33px;
+}
+
+.content-img{
+    width: 50%;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+}
