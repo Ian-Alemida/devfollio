@@ -3,14 +3,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 75vw;
+    width: 100vw;
     height: 70px;
+    border-bottom: 1px solid #ffffff20;
 }
 
 .App-logo {
     height: 5vmin;
     pointer-events: none;
     width: 150px;
+    margin-left: 6vw;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -34,8 +36,12 @@
     display: flex;
     flex-direction: row;
     font-size: 24px;
+    margin-right: 6vw;
 }
 
 .Links-header li a{
     margin: 0 18px;
+}
+.Links-header li a:hover{
+    border-bottom: 1px solid #55c9f6;
 }
