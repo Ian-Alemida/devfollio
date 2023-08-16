@@ -85,6 +85,13 @@ overflow: hidden;
         blink-caret .7s step-end infinite alternate;
 } /* Fim da animação wrinting*/
 
+.content-button{
+    margin-top: 21px;
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+}
+
 .content-img{
     width: 55%;
     display: flex;

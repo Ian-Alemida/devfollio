@@ -1,5 +1,8 @@
 import image from './banner_image.svg'
 import './banner.css'
+import Botao from './Botao/Botao'
+import iconLinkedin from './Botao/linkedin.svg'
+import iconGithub from './Botao/github.svg'
 
 
 function Banner (){
@@ -16,6 +19,10 @@ function Banner (){
                 </div>
                 <h2>Prazer, Eu sou Ian Almeida.</h2>
                 <p className='animation'>Sou um desenvolvedor Front-End...</p>
+                <div className='content-button'>
+                    <Botao icon={iconLinkedin} text={'Linkedin'}></Botao>
+                    <Botao  icon={iconGithub} text={'GitHub'} class={"content-button-git"}></Botao>
+                </div>
             </div>
             <div className='content-img'>
                 <img src={image} className='img' alt="" />
