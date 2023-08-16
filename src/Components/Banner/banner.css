@@ -60,6 +60,9 @@
 .content-text h2{
     font-size: 5vw;
 }
+.content-text h2 span{
+    color: #55c9f6;
+}
 
 /* animation writing "sou um desenvolvedor"*/
 .content-text p{
@@ -76,7 +79,8 @@
     }
     }
 .animation {
-font: 200% Consolas, Monaco, monospace;
+font: 200% Consolas, releway, monospace;
+font-family: 'poppins', sans-serif;;
 border-right: .1em solid white;
 width: 33ch;
 white-space: nowrap;

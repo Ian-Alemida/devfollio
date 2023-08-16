@@ -17,7 +17,7 @@ function Banner (){
                         </ul>
                     </div>
                 </div>
-                <h2>Prazer, Eu sou Ian Almeida.</h2>
+                <h2>Prazer, Eu sou Ian Almeida<span>.</span></h2>
                 <p className='animation'>Sou um desenvolvedor Front-End...</p>
                 <div className='content-button'>
                     <Botao icon={iconLinkedin} text={'Linkedin'}></Botao>
