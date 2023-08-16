@@ -1,9 +1,10 @@
 import './botao.css'
 
-function Botao (){
+function Botao (props){
+
     return (
         <button class="animated-button">
-            <span>Hover me</span>
+            <span className='span-text'><img className='icon' src={props.icon} alt="" /> {props.text} </span>
             <span></span>
         </button>
     )
