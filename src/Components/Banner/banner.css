@@ -63,11 +63,11 @@
 
 /* animation writing "sou um desenvolvedor"*/
 .content-text p{
-    font-size: 2.7vw;
+    font-size: 2.65vw;
 }
 @keyframes typing {
     from {
-        width: 0;
+        width: 2px;
     }
     }
     @keyframes blink-caret {
@@ -76,12 +76,12 @@
     }
     }
 .animation {
-font:  200% Consolas, Monaco, monospace;
+font: 200% Consolas, Monaco, monospace;
 border-right: .1em solid white;
 width: 33ch;
 white-space: nowrap;
 overflow: hidden;
--webkit-animation: typing 7s steps(33, end),
+-webkit-animation: typing 8s steps(33, end),
         blink-caret .7s step-end infinite alternate;
 } /* Fim da animação wrinting*/
 
