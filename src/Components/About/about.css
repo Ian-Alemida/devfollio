@@ -1,0 +1,27 @@
+.content-about{
+    width: 95vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2f2f2f;
+}
+
+.content-about-img{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.content-about-img img{
+    border-radius: 50%;
+}
+
+.content-about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
