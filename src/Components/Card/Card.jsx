@@ -1,13 +1,13 @@
 import './card.css'
 
-function Card () {
+function Card (props) {
     return (
         <div class="card">
             <div class="first-content">
-                <span>First</span>
+                <span>{props.children1}</span>
             </div>
             <div class="second-content">
-                <span>Second</span>
+                <span>{props.children2}</span>
             </div>
         </div>
     )
