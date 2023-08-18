@@ -10,7 +10,7 @@
 }
 
 .content-about-img{
-    width: 35%;
+    width: 36%;
     height: 75%;
     display: flex;
     justify-content: center;
@@ -21,9 +21,8 @@
 
 .content-about-img img{
     border-radius: 50%;
-    width: 98%;
-    margin: 1% 1.5% 0 0;
-    box-shadow: 3px 9px 2000px rgba(0, 0, 0, 0.5);
+    
+    height: 100%;
 }
 
 .content-about-text{
@@ -32,7 +31,7 @@
     justify-content: center;
     text-align: justify;
     width: 50%;
-    margin-right: 12px;
+    margin-right: 42px;
 }
 
 .content-about-text h2{

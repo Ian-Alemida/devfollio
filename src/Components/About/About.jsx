@@ -1,5 +1,6 @@
 import './about.css'
 import perfil from './perfil.jpg'
+import perfil2 from './perfil2.png'
 import Botao from '../Banner/Botao/Botao'
 import iconDownload from './download-icon.svg'
 import Card from '../Card/Card'
@@ -8,7 +9,7 @@ function About () {
     return (
         <div className="content-about">
             <div className='content-about-img'>
-                <Card></Card>
+                <Card children1={<img src={perfil} alt="" />} children2={<img src={perfil2} alt="" />}></Card>
             </div>
             <div className='content-about-text'>
                 <h2>Sobre mim</h2>
