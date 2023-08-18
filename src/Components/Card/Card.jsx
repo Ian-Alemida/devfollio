@@ -4,10 +4,10 @@ function Card (props) {
     return (
         <div class="card">
             <div class="first-content">
-                <span>{props.children1}</span>
+                {props.children1}
             </div>
             <div class="second-content">
-                <span>{props.children2}</span>
+                {props.children2}
             </div>
         </div>
     )
