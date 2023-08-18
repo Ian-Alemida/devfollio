@@ -1,6 +1,6 @@
 .content-about{
     width: 95vw;
-    height: 75vh;
+    height: 85vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,6 +17,7 @@
     margin: auto ;
     background-color: #55c9f6;
     border-radius: 50%;
+    box-shadow: 0 0 500px #55c9f699
 }
 
 .content-about-img img{
