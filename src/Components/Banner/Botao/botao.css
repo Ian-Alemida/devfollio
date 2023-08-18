@@ -6,7 +6,7 @@
     font-size: 21px;
 }
 .icon{
-    height: 30px;
+    height: 24px;
     margin-right: 9px;
 }
 
@@ -18,7 +18,7 @@
     font-size: 16px;
     background-color: inherit;
     border-radius: 100px;
-    font-weight: 600;
+    font-weight: 500;
     color: #ffffff40;
     box-shadow: 0 0 0 2px #ffffff20;
     cursor: pointer;
