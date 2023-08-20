@@ -14,7 +14,7 @@
 }
 
 .technology-card-not-hover {
-    transform: scale(0.9);
+    transform: scale(0.85);
     opacity: 0.4;
 }
 
@@ -30,6 +30,7 @@
 }
 .technology-card img{
     width: 35%;
+    height: 40%;
     transition: transform 1.5s ease;
 }
 

@@ -2,7 +2,7 @@ import './CardTechnology.css';
 import React, { useState } from 'react';
 import gitIcon from '../images/git.svg'
 
-function CardTechnology () {
+function CardTechnology (props) {
     const [isHover, setIsHover] = useState(false)
 
     const handleHover = () => {
@@ -24,9 +24,9 @@ function CardTechnology () {
             className={`technology-card ${isHover ? 'technology-card-hover' : ''} `}
             onMouseEnter={handleHover}
             onMouseLeave={handleMouseLeave}>
-                <img className={`${isHover ? 'flipped' : ''}`} src={gitIcon} alt="" />
-                <h3>Git e GitHub</h3>
-                <p>Utilizo o Git como programa de controle de versão das minhas aplicações.</p>
+                <img className={`${isHover ? 'flipped' : ''}`} src={props.img} alt="" />
+                <h3>{props.h3}</h3>
+                <p>{props.text}</p>
         </div>
     )
 }
