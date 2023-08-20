@@ -1,5 +1,6 @@
 import './CardTechnology.css';
 import React, { useState } from 'react';
+import gitIcon from '../images/git.svg'
 
 function CardTechnology () {
     const [isHover, setIsHover] = useState(false)
@@ -10,6 +11,7 @@ function CardTechnology () {
             card.classList.add('technology-card-not-hover')
         })
     }
+
     const handleMouseLeave = () => {
         setIsHover(false);
         document.querySelectorAll('.technology-card').forEach( card => {
@@ -22,6 +24,9 @@ function CardTechnology () {
             className={`technology-card ${isHover ? 'technology-card-hover' : ''} `}
             onMouseEnter={handleHover}
             onMouseLeave={handleMouseLeave}>
+                <img src={gitIcon} alt="" />
+                <h3>Git e GitHub</h3>
+                <p>Utilizo o Git como programa de controle de versão das minhas aplicações.</p>
         </div>
     )
 }

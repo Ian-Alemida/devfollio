@@ -14,3 +14,13 @@
     transform: scale(0.9);
     opacity: 0.5;
 }
+
+.technology-card h3{
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.technology-card p{
+    font-size: 1vw;
+
+}
