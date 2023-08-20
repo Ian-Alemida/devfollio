@@ -1,7 +1,10 @@
 .technology-card{
-    width: 23%;
+    width: 20%;
     height: 100%;
-    border: 1px solid wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     transition: all 0.3s ease;
 }
 .technology-card-hover {
@@ -12,15 +15,25 @@
 
 .technology-card-not-hover {
     transform: scale(0.9);
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .technology-card h3{
     font-size: 2vw;
     font-weight: bold;
+    margin: 9px 0 18px 0;
 }
 
 .technology-card p{
-    font-size: 1vw;
+    font-size: 1.2vw;
+    
+}
+.technology-card img{
+    width: 35%;
+    transition: transform 1.5s ease;
+}
 
+.flipped {
+    transform-style: preserve-3d;
+    transform: rotateY(360deg); /* Gira o elemento em 360 graus */
 }

@@ -24,7 +24,7 @@ function CardTechnology () {
             className={`technology-card ${isHover ? 'technology-card-hover' : ''} `}
             onMouseEnter={handleHover}
             onMouseLeave={handleMouseLeave}>
-                <img src={gitIcon} alt="" />
+                <img className={`${isHover ? 'flipped' : ''}`} src={gitIcon} alt="" />
                 <h3>Git e GitHub</h3>
                 <p>Utilizo o Git como programa de controle de versão das minhas aplicações.</p>
         </div>
