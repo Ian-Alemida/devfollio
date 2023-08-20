@@ -1,6 +1,5 @@
 import './CardTechnology.css';
 import React, { useState } from 'react';
-import gitIcon from '../images/git.svg'
 
 function CardTechnology (props) {
     const [isHover, setIsHover] = useState(false)
