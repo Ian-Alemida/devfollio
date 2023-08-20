@@ -20,28 +20,28 @@ function Technology (){
     return(
         <div className="content-technology">
             <h2>Tecnologias</h2>
-            <ul className='content-technology-r1'>
-                <li 
+            <div className='content-technology-r1'>
+                <div 
                     className={`technology-card ${isHover ? 'technology-card-hover' : ''} ${isAnyHover ? 'technology-card-not-hover' : ''}`}
                     onMouseEnter={handleHover}
                     onMouseLeave={handleMouseLeave}
-                ></li>
-                <li 
+                ></div>
+                <div 
                     className={`technology-card ${isHover ? 'technology-card-hover' : ''} ${isAnyHover ? 'technology-card-not-hover' : ''}`}
                     onMouseEnter={handleHover}
                     onMouseLeave={handleMouseLeave}
-                ></li>  
-                <li 
+                ></div>  
+                <div 
                     className={`technology-card ${isHover ? 'technology-card-hover' : ''} ${isAnyHover ? 'technology-card-not-hover' : ''}`}
                     onMouseEnter={handleHover}
                     onMouseLeave={handleMouseLeave}
-                ></li>
-                <li 
+                ></div>
+                <div 
                     className={`technology-card ${isHover ? 'technology-card-hover' : ''} ${isAnyHover ? 'technology-card-not-hover' : ''}`}
                     onMouseEnter={handleHover}
                     onMouseLeave={handleMouseLeave}
-                ></li>              
-            </ul>
+                ></div>              
+            </div>
         </div>
     )
 }
