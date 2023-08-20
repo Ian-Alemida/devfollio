@@ -24,13 +24,13 @@
     border: 1px solid wheat;
     transition: all 0.3s ease;
 }
-.technology-card:hover {
+.technology-card-hover {
     transform: scale(1.05);
     opacity: 1;
     z-index: 1;
 }
 
-.technology-card:not(:hover) {
+.technology-card-not-hover {
     transform: scale(0.9);
     opacity: 0.5;
 }
