@@ -10,7 +10,6 @@ function CardTechnology () {
             card.classList.add('technology-card-not-hover')
         })
     }
-
     const handleMouseLeave = () => {
         setIsHover(false);
         document.querySelectorAll('.technology-card').forEach( card => {
