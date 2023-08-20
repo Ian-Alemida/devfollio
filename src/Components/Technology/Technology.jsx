@@ -7,6 +7,9 @@ function Technology (){
     
     const handleHover = () => {
         setIsHover(true);
+        document.querySelectorAll('.technology-card').forEach(card => {
+            card.className.add('technology-card-not-hover')
+        })
     };
     
     const handleMouseLeave = () => {
