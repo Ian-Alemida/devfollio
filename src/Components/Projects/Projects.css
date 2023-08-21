@@ -1,0 +1,24 @@
+.content-projects{
+    width: 95vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #99999933;
+    border-radius: 60px;
+    font-family: 'releway', sans-serif;
+    margin-bottom: 25vh;
+}
+
+.content-projects h2{
+    font-size: 3.2vw;
+    font-weight: bold;
+    margin: 1vh 15%;
+}
+
+.content-projects h2 hr{
+    width: 10%;
+    margin: 12px 0;
+    background-color: #55c9f6;
+    height: 3px;
+    border: 1px solid #55c9f6;
+}
