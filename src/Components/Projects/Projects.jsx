@@ -1,4 +1,7 @@
 import './Projects.css'
+import code from './images/code.svg'
+import view from './images/view.svg'
+import optimusTech from './images/optimusTech.png'
 
 function Projects  () {
     return (
@@ -12,10 +15,21 @@ function Projects  () {
                         <p>HTML5</p>
                         <p>CSS3</p>
                     </div>
-                    <div></div>
+                    <div>
+                        <button>
+                            <a href="">
+                                <img src={code} alt="" />
+                            </a>
+                        </button>
+                        <button>
+                            <a href="">
+                                <img src={view} alt="" />
+                            </a>
+                        </button>
+                    </div>
                 </div>
                 <div className='content-projects-left-img'>
-
+                    <img src={optimusTech} alt="" />
                 </div>
             </div>
             <div className='content-projects-left'>
