@@ -2,6 +2,7 @@ import './Projects.css'
 import code from './images/code.svg'
 import view from './images/view.svg'
 import optimusTech from './images/optimusTech.png'
+import ButtonProject from './ButtonProject/BuutonProject'
 
 function Projects  () {
     return (
@@ -21,11 +22,7 @@ function Projects  () {
                                 <img src={code} alt="" />
                             </a>
                         </button>
-                        <button>
-                            <a href="">
-                                <img src={view} alt="" />
-                            </a>
-                        </button>
+                        <ButtonProject></ButtonProject>
                     </div>
                 </div>
                 <div className='content-projects-left-img'>
