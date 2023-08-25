@@ -29,6 +29,7 @@
     justify-content: space-between;
     margin: 1vh 15%;
 }
+
 .content-projects-left-text{
     width: 50%;
     text-align: right;
@@ -41,11 +42,15 @@
     font-size: 1.2vw;
     margin: 21px 0;
 }
-
 .content-projects-left-text div{
     display: flex;
     flex-direction: row;
     justify-content: end;
+    
+}
+.content-projects-left-text div p{
+    margin-left: 15px;
+    font-weight: bold;
 }
 
 .content-projects-left-img{

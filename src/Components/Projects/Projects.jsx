@@ -1,8 +1,10 @@
 import './Projects.css'
-import code from './images/code.svg'
-import view from './images/view.svg'
+import codeIcon from './images/code.svg'
+import codeWitheIcon from './images/codeWithe.svg'
+import viewIcon from './images/view.svg'
+import viewWitheIcon from './images/viewWithe.svg'
 import optimusTech from './images/optimusTech.png'
-import ButtonProject from './ButtonProject/BuutonProject'
+import ButtonProject from './ButtonProject/ButonProject'
 
 function Projects  () {
     return (
@@ -17,12 +19,8 @@ function Projects  () {
                         <p>CSS3</p>
                     </div>
                     <div>
-                        <button>
-                            <a href="">
-                                <img src={code} alt="" />
-                            </a>
-                        </button>
-                        <ButtonProject></ButtonProject>
+                        <ButtonProject span='ver repositorio' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
+                        <ButtonProject span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
                     </div>
                 </div>
                 <div className='content-projects-left-img'>
