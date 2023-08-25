@@ -13,7 +13,7 @@ function ButtonProject (props) {
     }
     
     return (
-        <a href={props.link}>
+        <a href={props.link} target="_blank" rel='noreferrer noopener'>
             <button className="Btn"
             onMouseEnter={handleHover}
             onMouseLeave={handleHoverLeave}
