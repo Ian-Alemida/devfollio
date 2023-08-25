@@ -1,9 +1,7 @@
 import './Style.css'
 import  React, { useState } from 'react'
-import viewIcon from '../images/view.svg'
-import viewWitheIcon from '../images/viewWithe.svg'
 
-function ButtonProject () {
+function ButtonProject (props) {
 
     const [isHover, setIsHover] = useState(false);
 
@@ -19,9 +17,9 @@ function ButtonProject () {
             onMouseEnter={handleHover}
             onMouseLeave={handleHoverLeave}
         >
-            <img className='svgIcon' src={isHover ? viewWitheIcon : viewIcon} alt="" />
+            <img className='svgIcon' src={isHover ? props.icon1 : props.icon2} alt="icon button" />
             <span className="icon2"></span>
-            <span className="tooltip">Ver projeto</span>
+            <span className="tooltip">{props.span}</span>
         </button>
         
     )
