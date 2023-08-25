@@ -13,15 +13,16 @@ function ButtonProject (props) {
     }
     
     return (
-        <button className="Btn"
+        <a href={props.link}>
+            <button className="Btn"
             onMouseEnter={handleHover}
             onMouseLeave={handleHoverLeave}
-        >
-            <img className='svgIcon' src={isHover ? props.icon1 : props.icon2} alt="icon button" />
-            <span className="icon2"></span>
-            <span className="tooltip">{props.span}</span>
-        </button>
-        
+            >
+                <img className='svgIcon' src={isHover ? props.icon1 : props.icon2} alt="icon button" />
+                <span className="icon2"></span>
+                <span className="tooltip">{props.span}</span>
+            </button>
+        </a>        
     )
 }
 
