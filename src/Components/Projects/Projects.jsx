@@ -5,8 +5,8 @@ import viewIcon from './images/view.svg'
 import viewWitheIcon from './images/viewWithe.svg'
 import optimusTech from './images/optimusTech.png'
 import alurinha from './images/Alurinha.png'
-import alurinha from './images/AluraB.png'
-import alurinha from './images/Alurinha.png'
+import aluraBooks from './images/AluraBooks.png'
+import apeperia from './images/Apeperia.png'
 import ButtonProject from './ButtonProject/ButonProject'
 
 function Projects  () {
@@ -29,17 +29,17 @@ function Projects  () {
                     </div>
                 </div>
                 <div className='content-projects-left-img'>
-                    <img src={optimusTech} alt="imagem do projeto" />
+                    <img src={aluraBooks} alt="imagem do projeto" />
                 </div>
             </div>
             {/*Project2*/}
             <div className='content-projects-rigth'>
                 <div className='content-projects-rigth-img'>
-                    <img src={alurinha} alt="imagem do projeto" />
+                    <img src={apeperia} alt="imagem do projeto" />
                 </div>
                 <div className='content-projects-rigth-text'>
                     <h3>Apeperia</h3>
-                    <p>Projeto feito em um dos cursos da Alura com a finalidade de fixar o  conhecimento de flexbox e responsividade para mobile. O projeto consiste em uma das paginas da Alura onde há algumas opções  de curso para o usuario escolher.</p>
+                    <p>Um projeto responsivo com suporte a diferentes tamanhos de tela. Também tive a  oportunidade de aplicar alguns conceitos de JavaScript, como manipulação de DOM, interação de elementos HTML com forEach e Event Listeners.</p>
                     <div>
                         <p>HTML5</p>
                         <p>CSS3</p>
