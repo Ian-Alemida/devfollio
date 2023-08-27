@@ -1,4 +1,4 @@
-import './Style.css'
+import './projects.css'
 import codeIcon from './images/code.svg'
 import codeWitheIcon from './images/codeWithe.svg'
 import viewIcon from './images/view.svg'

@@ -1,9 +1,9 @@
 import './about.css'
-import perfil from './perfil.jpg'
-import perfil2 from './perfil2.png'
+import perfil from './images/perfil.jpg'
+import perfil2 from './images/perfil2.png'
 import Botao from '../Banner/Botao/Botao'
-import iconDownload from './download-icon.svg'
-import instagramIcon from './instagram-icon.svg'
+import iconDownload from './images/download-icon.svg'
+import instagramIcon from './images/instagram-icon.svg'
 import Card from './Card/Card'
 
 function About () {
