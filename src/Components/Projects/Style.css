@@ -39,7 +39,15 @@
 }
 .content-projects-left-text p{
     font-size: 1.2vw;
+    font-weight: 200;
     margin: 18px 0;
+}
+.content-projects-left-text small{
+    font-size: .6vw;
+    margin-top: 0;
+}
+strong{
+    font-weight: bold;
 }
 .content-projects-left-text div{
     display: flex;
