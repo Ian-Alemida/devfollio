@@ -41,7 +41,7 @@ function Projects  () {
                 </div>
                 <div className='content-projects-rigth-text'>
                     <h3>Alura Books</h3>
-                    <p>Um projeto responsivo com suporte a diferentes tamanhos de tela. Utilizei o método mobile-first, que consiste em começar o desenvolvimento pelo layout mobile. Também tive acesso a alguns conceitos de JavaScript, quando o utilizei para criar um carrossel na aplicação.</p>
+                    <p>Um projeto <strong>responsivo</strong> com suporte a diferentes tamanhos de tela, se trata de uma pagina completa onde você pode escolher alguns livros de estudo. Utilizei o método <strong>mobile-first</strong>, que consiste em começar o desenvolvimento pelo layout mobile. Também tive acesso a alguns conceitos de <strong>JavaScript</strong>, quando o utilizei para criar um <strong>Carrossel</strong> na aplicação.</p>
                     <div>
                         <p>HTML5</p>
                         <p>CSS3</p>
@@ -57,7 +57,7 @@ function Projects  () {
             <div className='content-projects-left'>
                 <div className='content-projects-left-text'>
                     <h3>Tela de Login</h3>
-                    <p>Aplicação autoral desenvolvida Usando Flutter e Dart, pude utilizar conceitos de componentização de <strong>widgets</strong> para criar partes da tela e me aprofundar na lógica do Dart, criando um <strong>método</strong> que valida o login e senha utilizando, <strong>controller, keys e RegEx</strong>.</p>
+                    <p>Aplicação autoral desenvolvida Usando  <strong>Flutter e Dart</strong>, se trata de uma tela de login com validação. Pude utilizar conceitos de componentização de <strong>widgets</strong> para criar partes da tela e me aprofundar na lógica do Dart, criando um <strong>método</strong> que valida o login e senha utilizando, <strong>controller, keys e RegEx</strong>.</p>
                     <small><strong>OBS: </strong>lembre-se de colocar o navegador no modo mobile em inspecionar</small>
                     <div>
                         <p>Dart</p>
@@ -79,7 +79,7 @@ function Projects  () {
                 </div>
                 <div className='content-projects-rigth-text'>
                     <h3>Apeperia</h3>
-                    <p>Um projeto responsivo com suporte a diferentes tamanhos de tela. Também tive a  oportunidade de aplicar alguns conceitos de JavaScript, como manipulação de DOM, interação de elementos HTML com forEach e Event Listeners.</p>
+                    <p>Um projeto <strong>responsivo</strong> com suporte a diferentes tamanhos de tela, se trata de uma pagina onde você pode encomendar aplicativos do jeito que precisar. Também tive a  oportunidade de aplicar alguns conceitos de <strong>JavaScript</strong>, como  <strong>manipulação de DOM</strong>, <strong>iteração</strong> de elementos HTML com <strong>forEach e Event Listeners</strong>.</p>
                     <div>
                         <p>HTML5</p>
                         <p>CSS3</p>
@@ -95,7 +95,7 @@ function Projects  () {
             <div className='content-projects-left'>
                 <div className='content-projects-left-text'>
                     <h3>Optimus Tech</h3>
-                    <p>Site produzido no workshop <strong>"7DaysOfCode"</strong> se trata de uma pagina de anuncio  de vagas de uma  empresa chamada "Optimus Tech". Pude Treinar conceitos de HTML e CSS, como FlexBox e display Grid.</p>
+                    <p>Site produzido no workshop <strong>"7DaysOfCode"</strong> se trata de uma pagina de anuncio de vagas de uma  empresa chamada <strong>"Optimus Tech"</strong>. Pude Treinar conceitos de <strong>HTML & CSS</strong>, como <strong>FlexBox e display Grid</strong>.</p>
                     <div>
                         <p>HTML5</p>
                         <p>CSS3</p>

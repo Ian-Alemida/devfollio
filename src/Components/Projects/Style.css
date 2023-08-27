@@ -53,7 +53,6 @@ strong{
     display: flex;
     flex-direction: row;
     justify-content: end;
-    
 }
 .content-projects-left-text div p{
     margin-left: 15px;
@@ -93,7 +92,6 @@ strong{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    
 }
 .content-projects-rigth-text div p{
     margin-right: 15px;
