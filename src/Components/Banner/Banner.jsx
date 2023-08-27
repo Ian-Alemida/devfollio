@@ -1,8 +1,8 @@
-import image from './banner_image.svg'
+import image from './images/banner_image.svg'
 import './banner.css'
 import Botao from './Botao/Botao'
-import iconLinkedin from './Botao/linkedin.svg'
-import iconGithub from './Botao/github.svg'
+import iconLinkedin from './images/linkedin.svg'
+import iconGithub from './images/github.svg'
 
 
 function Banner (){
