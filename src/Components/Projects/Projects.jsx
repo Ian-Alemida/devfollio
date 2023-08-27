@@ -27,6 +27,7 @@ function Projects  () {
                     </div>
                     <div>
                         <ButtonProject link="https://github.com/Ian-Alemida/planet_sky" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
+                        <hr />
                         <ButtonProject link="https://planet-sky-5plu.vercel.app/#/initial" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
                     </div>
                 </div>
@@ -47,7 +48,7 @@ function Projects  () {
                         <p>CSS3</p>
                         <p>JavaScript</p>
                     </div>
-                    <div>
+                    <div className='content-projects-rigth-text-button'>
                         <ButtonProject link="https://github.com/Ian-Alemida/AluraBooks.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
                         <ButtonProject link="https://alura-books-gold.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
                     </div>
@@ -63,7 +64,7 @@ function Projects  () {
                         <p>Dart</p>
                         <p>Flutter</p>
                     </div>
-                    <div>
+                    <div className='content-projects-left-text-button'>
                         <ButtonProject link="https://github.com/Ian-Alemida/Alurinha.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
                         <ButtonProject link="https://alurinha-one.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
                     </div>                  
@@ -85,7 +86,7 @@ function Projects  () {
                         <p>CSS3</p>
                         <p>JavaScript</p>
                     </div>
-                    <div>
+                    <div className='content-projects-rigth-text-button'>
                         <ButtonProject link="https://github.com/Ian-Alemida/Apeperia.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
                         <ButtonProject link="https://apeperia-azure.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
                     </div>
@@ -100,7 +101,7 @@ function Projects  () {
                         <p>HTML5</p>
                         <p>CSS3</p>
                     </div>
-                    <div>
+                    <div className='content-projects-left-text-button'>
                         <ButtonProject link="https://github.com/Ian-Alemida/OptimusTech.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
                         <ButtonProject link="https://optimus-tech-indol.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
                     </div>
@@ -121,7 +122,7 @@ function Projects  () {
                         <p>HTML5</p>
                         <p>CSS3</p>
                     </div>
-                    <div>
+                    <div className='content-projects-rigth-text-button'>
                         <ButtonProject link="https://github.com/Ian-Alemida/Alurinha.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
                         <ButtonProject link="https://alurinha-one.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
                     </div>
