@@ -50,7 +50,7 @@ function Projects  () {
                     </div>
                     <div className='content-projects-rigth-text-button'>
                         <ButtonProject link="https://github.com/Ian-Alemida/AluraBooks.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
-                        <ButtonProject link="https://alura-books-gold.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
+                        <ButtonProject link="https://tela-login-mg1z.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,8 @@ function Projects  () {
                         <p>Flutter</p>
                     </div>
                     <div className='content-projects-left-text-button'>
-                        <ButtonProject link="https://github.com/Ian-Alemida/Alurinha.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
+                        <ButtonProject link="https://github.com/Ian-Alemida/tela_login.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
+                        <hr />
                         <ButtonProject link="https://alurinha-one.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
                     </div>                  
                 </div>
@@ -103,6 +104,7 @@ function Projects  () {
                     </div>
                     <div className='content-projects-left-text-button'>
                         <ButtonProject link="https://github.com/Ian-Alemida/OptimusTech.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
+                        <hr />
                         <ButtonProject link="https://optimus-tech-indol.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
                     </div>
                 </div>
