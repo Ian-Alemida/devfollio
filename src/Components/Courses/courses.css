@@ -9,7 +9,7 @@
     margin-bottom: 25vh;
 }
 .content-courses h2{
-    font-size: 3.2vw;
+    font-size: 5.4vw;
     font-weight: bold;
     margin: 1vh 15%;
 }
@@ -19,4 +19,7 @@
 
 .content-courses-row{
     margin: 1vh 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }

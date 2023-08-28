@@ -9,6 +9,7 @@ function Courses () {
             <div className='content-courses-row'>
                 <CardTecnologo></CardTecnologo>
                 <CardCourses></CardCourses>
+                <CardCourses></CardCourses>
             </div> 
         </div>
     )
