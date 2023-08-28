@@ -14,11 +14,11 @@ a{
 
 .content-cardCourses h3{
     color: #dfdfdf;
-    font-size: 1.12vw;
+    font-size: 1.27vw;
 }
 .content-cardCourses-p{
-    margin: 1.2vh 0;
-    font-size: 1.12vw;
+    margin: 1.5vh 0;
+    font-size: 1.27vw;
     font-weight: bold;
     color: #fff;
 }
@@ -30,4 +30,5 @@ a{
 .content-cardCourses span {
     color: #919191;
     font-size: 1vw;
+    margin-top: 40px;
 }
