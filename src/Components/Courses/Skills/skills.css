@@ -24,3 +24,17 @@
     margin-bottom: .6vh;
     width: 33%;
 }
+
+.skills-column{
+    display: flex;
+    flex-direction: column;
+}
+.skills-column p{
+    font-size: 1vw;
+    font-weight: 200;
+    margin-bottom: .6vh;
+    width: 33%;
+}
+.skills-column p small{
+    color: #919191;
+}

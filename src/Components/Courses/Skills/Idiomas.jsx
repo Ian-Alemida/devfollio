@@ -5,9 +5,8 @@ function Idiomas () {
         <div className='skills'>
             <h3>Idiomas</h3>
             <div className="skills-column">
-                <p>React.JS</p>
-                <p>HTML5</p>
-                <p>Git & GitHub</p>
+                <p>Inglês <small>/ Intermediário</small></p>
+                <p>Espanhol <small>/ Intermediário</small></p>
             </div>
         </div>
     )
