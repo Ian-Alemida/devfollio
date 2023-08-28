@@ -1,4 +1,5 @@
 import CardTecnologo from './Cards/CardTecnologo';
+import CardCourses from './Cards/CardCourses';
 import './courses.css'
 
 function Courses () {
@@ -7,6 +8,7 @@ function Courses () {
             <h2>Formação<span>.</span></h2>
             <div className='content-courses-row'>
                 <CardTecnologo></CardTecnologo>
+                <CardCourses></CardCourses>
             </div> 
         </div>
     )
