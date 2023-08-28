@@ -5,8 +5,8 @@ function CardCourses (props){
             <div className='content-cardCourses'>
                 <a href={props.link}>
                     <h3>Curso</h3>
-                    <p className='content-cardCourses-p'>Análise e desenvolvimento de sistemas <small>- Alura</small></p>
-                    <span>2023 - 2025</span>
+                    <p className='content-cardCourses-p'>{props.curso} <small>- {props.plataform}</small></p>
+                    <span>{props.time}</span>
                     </a>
             </div>
     )
