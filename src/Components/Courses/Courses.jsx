@@ -1,6 +1,7 @@
 import CardTecnologo from './Cards/CardTecnologo';
 import CardCourses from './Cards/CardCourses';
 import './courses.css'
+import HardSkills from './Skills/HardSkills';
 
 function Courses () {
     return(
@@ -50,7 +51,7 @@ function Courses () {
                 </div>
             </article>
             <article className='content-courses-skills'>
-
+                <HardSkills></HardSkills>
             </article>
 
         </section>
