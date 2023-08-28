@@ -1,6 +1,6 @@
+import './courses.css'
 import CardTecnologo from './Cards/CardTecnologo';
 import CardCourses from './Cards/CardCourses';
-import './courses.css'
 import HardSkills from './Skills/HardSkills';
 import SoftSkills from './Skills/SoftSkills';
 import Idiomas from './Skills/Idiomas';
