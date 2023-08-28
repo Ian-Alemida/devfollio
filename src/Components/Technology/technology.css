@@ -1,6 +1,6 @@
 .content-technology{
     width: 95vw;
-    height: 80vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -11,9 +11,9 @@
 }
 
 .content-technology h2{
-    font-size: 3.2vw;
+    font-size: 5.4vw;
     font-weight: bold;
-    margin-top: 12px;
+    margin: 0 0 5vh;
 }
 
 .content-technology-r{
