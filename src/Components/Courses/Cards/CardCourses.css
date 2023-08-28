@@ -2,9 +2,13 @@
 .content-cardCourses {
     background-color: #050505;
     width: 22%;
-    padding: 1.2vh;
+    padding: 1.5vh;
     border-radius: 6px;
     border: 1.5px solid #4d4f53;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15vh;
 }
 .content-cardCourses:hover{
     border-color: #55c9f6;
@@ -15,18 +19,18 @@
     font-size: 1.33vw;
 }
 .content-cardCourses-p{
-    margin: 1.6vh 0;
     font-size: 1.33vw;
     font-weight: bold;
     color: #fff;
+    text-align: start;
 }
 .content-cardCourses-p small{
     font-weight: 200;
     color: #919191;
+    font-size: 1.1vw;
 }
 
 .content-cardCourses span {
     color: #919191;
     font-size: 1vw;
-    margin-top: 40px;
 }
