@@ -1,5 +1,6 @@
 .content-courses{
     width: 95vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #99999933;
@@ -14,4 +15,8 @@
 }
 .content-courses h2 span{
     color: #55c9f6;
+}
+
+.content-courses-row{
+    margin: 1vh 15%;
 }
