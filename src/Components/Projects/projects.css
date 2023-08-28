@@ -2,7 +2,7 @@
     width: 95vw;
     display: flex;
     flex-direction: column;
-    
+    background-color: #99999933;
     border-radius: 60px;
     font-family: 'releway', sans-serif;
     margin-bottom: 25vh;
