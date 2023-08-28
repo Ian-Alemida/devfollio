@@ -2,6 +2,7 @@ import CardTecnologo from './Cards/CardTecnologo';
 import CardCourses from './Cards/CardCourses';
 import './courses.css'
 import HardSkills from './Skills/HardSkills';
+import SoftSkills from './Skills/SoftSkills';
 
 function Courses () {
     return(
@@ -52,6 +53,7 @@ function Courses () {
             </article>
             <article className='content-courses-skills'>
                 <HardSkills></HardSkills>
+                <SoftSkills></SoftSkills>
             </article>
 
         </section>

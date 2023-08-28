@@ -5,24 +5,24 @@ function SoftSkills () {
         <div className='skills'>
             <h3>Soft Skills</h3>
             <div className="skills-row">
-                <p>React.JS</p>
-                <p>HTML5</p>
-                <p>Git & GitHub</p>
+                <p>Resolução de problemas</p>
+                <p>Comunicação eficaz</p>
+                <p>Flexibilidade</p>
             </div>
             <div className="skills-row">
-                <p>Node.JS</p>
-                <p>CSS3</p>
-                <p>UX & UI</p>
+                <p>Rápida aprendizagem</p>
+                <p>Escuta ativa</p>
+                <p>Criatividade</p>
             </div>
             <div className="skills-row">
-                <p>Flutter</p>
-                <p>JavaScript</p>
-                <p>SEO</p>
+                <p>Disciplina para seguir protocolos</p>
+                <p>Trabalho sob pressão</p>
+                <p>Curiosidade</p>
             </div>
             <div className="skills-row">
-                <p>Dart</p>
-                <p>TailWind</p>
-                <p>RegExp</p>
+                <p>Trabalho em equipe</p>
+                <p>Adaptação</p>              
+                <p></p>
             </div>
         </div>
     )
