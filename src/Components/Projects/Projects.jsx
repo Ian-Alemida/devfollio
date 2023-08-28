@@ -11,7 +11,7 @@ import optimusTech from './images/OptimusTech.png'
 import planetSky from './images/PlanetSky.png'
 import ButtonProject from './ButtonProject/ButonProject'
 
-function Projects  () {
+function Projects () {
     return (
         <div className="content-projects">
             <h2>Projetos <br /><hr /></h2>
