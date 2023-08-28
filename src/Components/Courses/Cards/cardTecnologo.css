@@ -1,6 +1,6 @@
 .content-cardTecnologo {
     background-color: #050505;
-    width: 32%;
+    width: 42%;
     padding: 1.5vh;
     border-radius: 6px;
     border: 1.5px solid #4d4f53;
@@ -11,11 +11,11 @@
 
 .content-cardTecnologo h3{
     color: #dfdfdf;
-    font-size: 1.12vw;
+    font-size: 1.4vw;
 }
 .content-cardTecnologo-p{
     margin: 1.2vh 0;
-    font-size: 1.12vw;
+    font-size: 1.4vw;
     font-weight: bold;
     color: #fff;
 }
