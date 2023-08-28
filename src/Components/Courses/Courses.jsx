@@ -8,7 +8,7 @@ function Courses () {
             <h2>Formação<span>.</span></h2>
             <div className='content-courses-row'>
                 <CardTecnologo></CardTecnologo>
-                <CardCourses></CardCourses>
+                <CardCourses curso='Formação HTML e CSS' plataform='Alura' time='65h - 2022'></CardCourses>
                 <CardCourses></CardCourses>
             </div> 
         </div>
