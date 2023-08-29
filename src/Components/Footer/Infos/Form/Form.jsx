@@ -3,12 +3,12 @@ import './form.css'
 function Form () {
     return (
         <div className='Content-Infos-form'>
-            <form class="rodapePrincipal-contatoForm" action="#">
+            <form action='#email-contato'>
 				<fieldset>
-					<legend class="rodapePrincipal-contatoForm-legend" for="email-contato">Entre em contato conosco</legend>
-					<div class="rodapePrincipal-contatoForm-fieldset"> 
-						<input class="rodapePrincipal-contatoForm-emailInput" type="email" name="email-contato" id="email-contato"></input>
-						<button class="rodapePrincipal-contatoForm-submit" type="submit">Enviar</button>
+					<legend for="email-contato">Entre em contato:</legend>
+					<div className='Content-Infos-form-div'> 
+						<input type="email" name="email-contato" id="email-contato"></input>
+						<button type="submit">Enviar</button>
 					</div>
 				</fieldset>
 			</form>
