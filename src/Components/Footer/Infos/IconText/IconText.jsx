@@ -1,14 +1,12 @@
-import './infos.css'
-import phoneSvg from './Images/phone.svg';
+import './iconText.css'
 
-function Infos () {
+function IconText (props) {
     return (
-        <div className='Content-Infos'>
-            <div className='Content-Infos-text'>
-                <img src={phoneSvg} alt="Phone Icon"/><p>+55 (33) 9 9962 4996</p>
+            <div className='Content-Infos-text-info'>
+                <img src={props.icon} alt="Phone Icon"/>
+                <p>{props.text}</p>
             </div>
-        </div>
     )
 }
 
-export default Infos;
+export default IconText;
