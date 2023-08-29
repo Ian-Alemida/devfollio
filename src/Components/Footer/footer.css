@@ -1,0 +1,14 @@
+.Content-footer{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #c1c1c1;
+    font-family: 'releway', sans-serif;
+    text-align: center;
+}
+.Content-footer hr{
+    width: 100%;
+    border: 1.2px solid #212121;
+}

@@ -6,6 +6,7 @@ import About from './Components/About/About';
 import Technology from './Components/Technology/Technology';
 import Projects from './Components/Projects/Projects';
 import Courses from './Components/Courses/Courses';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Technology></Technology>
       <Projects></Projects>
       <Courses></Courses>
+      <Footer></Footer>
     </div>
   );
 }
