@@ -1,13 +1,11 @@
 .Content-Infos-text-info{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin: 0 auto .5vh;
 }
 .Content-Infos-text-info img{
     margin-right: 1vh;
-    width: 1.5vh;
+    width: 1.2vh;
 }
 .Content-Infos-text-info p{
     font-size: 1vw;
