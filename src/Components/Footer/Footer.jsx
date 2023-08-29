@@ -6,7 +6,7 @@ function Footer () {
         <div className='Content-footer'>
             <Infos></Infos>
             <hr />
-            <p>© 2023 - Design and code by Ian Almeida.</p>
+            <p className='Content-footer-copy'>© 2023 - Design and code by Ian Almeida.</p>
         </div>
     )
 }

@@ -1,6 +1,5 @@
 .Content-footer{
     width: 100%;
-    height: 30vh;
     display: flex;
     flex-direction: column;
     background-color: #000;
@@ -10,5 +9,9 @@
 }
 .Content-footer hr{
     width: 100%;
-    border: 1.2px solid #212121;
+    border: 1px solid #21212155;
+}
+.Content-footer-copy{
+    font-size: .6vw;
+    margin-bottom: 1vh;
 }
