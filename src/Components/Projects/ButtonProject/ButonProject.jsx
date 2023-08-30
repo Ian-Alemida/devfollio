@@ -19,7 +19,6 @@ function ButtonProject (props) {
             onMouseLeave={handleHoverLeave}
             >
                 <img className='svgIcon' src={isHover ? props.icon1 : props.icon2} alt="icon button" />
-                <span className="icon2"></span>
                 <span className="tooltip">{props.span}</span>
             </button>
         </a>        
