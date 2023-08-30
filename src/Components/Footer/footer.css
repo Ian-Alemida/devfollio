@@ -7,6 +7,11 @@
     font-family: 'releway', sans-serif;
     text-align: center;
 }
+.Content-footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .Content-footer hr{
     width: 100%;
     border: 1px solid #21212155;
