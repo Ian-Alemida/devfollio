@@ -7,7 +7,7 @@ import Idiomas from './Skills/Idiomas';
 
 function Courses () {
     return(
-        <section className='content-courses'>
+        <section className='content-courses' id='Courses'>
             <h2>Formação<span>.</span></h2>
             <article>
                 <div className='content-courses-row'>

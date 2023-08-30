@@ -7,7 +7,7 @@ import iconGithub from './images/github.svg'
 
 function Banner (){
     return (
-        <div className='content'>
+        <div className='content' id='Banner'>
             <div className='content-text'>
                 <div class="content-animation">
                     <div class="content-animation__container">    

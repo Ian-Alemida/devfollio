@@ -11,7 +11,7 @@ import flutterIcon from './images/flutter.png'
 
 function Technology (){
     return(
-        <div className="content-technology">
+        <div className="content-technology" id='Technology'>
             <h2>Tecnologias</h2>
             <div className='content-technology-r'>
                 <CardTechnology img={htmlIcon} h3={'HTML5'} text={'HTML é uma linguagem de marcação utilizada na construção de paginas web.'}></CardTechnology>

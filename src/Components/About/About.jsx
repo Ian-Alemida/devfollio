@@ -8,7 +8,7 @@ import Card from './Card/Card'
 
 function About () {
     return (
-        <div className="content-about">
+        <div className="content-about" id='About'>
             <div className='content-about-img'>
                 <Card children1={<img src={perfil} alt="Uma foto minha" />} children2={<img src={perfil2} alt="PixelArt de um homem em seu computador" />}></Card>
             </div>
