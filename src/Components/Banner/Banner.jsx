@@ -21,7 +21,7 @@ function Banner (){
                 <p className='animation'>Sou um desenvolvedor Front-End...</p>
                 <div className='content-button'>
                     <Botao icon={iconLinkedin} text={'Linkedin'}></Botao>
-                    <Botao  icon={iconGithub} text={'GitHub'} class={"content-button-git"}></Botao>
+                    <Botao  icon={iconGithub} link="https://github.com/Ian-Alemida" text={'GitHub'} class={"content-button-git"}></Botao>
                 </div>
             </div>
             <div className='content-img'>

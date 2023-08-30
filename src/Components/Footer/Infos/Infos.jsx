@@ -2,7 +2,7 @@ import './infos.css'
 import phoneSvg from './Images/phone.svg';
 import mapSvg from './Images/map.svg';
 import emailSvg from './Images/email.svg';
-import githubSvg from './Images/githubWithe.svg'
+import instagram from './Images/instagram.svg'
 import IconText from './IconText/IconText';
 import Form from './Form/Form';
 import InfoLinks from './InfosLinks/InfosLinks';
@@ -17,7 +17,8 @@ function Infos () {
                 <Form></Form>
             </div>
             <div className='content-infos-button'>
-                <InfoLinks link='https://github.com/Ian-Alemida' icon={githubSvg} span='LinKedin'></InfoLinks>
+                <InfoLinks link='https://github.com/Ian-Alemida' icon={instagram} span='LinKedin'></InfoLinks>
+                <InfoLinks link='https://www.instagram.com/binary_jouney/?igshid=OGQ5ZDc2ODk2ZA==' icon={instagram} span='Instagram'></InfoLinks>
             </div>
         </div>
     )
