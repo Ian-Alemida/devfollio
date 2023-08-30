@@ -1,4 +1,4 @@
-.Btn {
+.Btn-infos {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -11,10 +11,10 @@
     position: relative;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
 }
-.svgIcon {
+.svgIcon-infos {
     height: 2vw;
 }
-.tooltip {
+.tooltip-infos {
     position: absolute;
     right: -90px;
     opacity: 0;
@@ -29,7 +29,7 @@
     pointer-events: none;
     letter-spacing: 0.5px;
 }
-.tooltip::before {
+.tooltip-infos::before {
     position: absolute;
     content: "";
     width: 10px;
@@ -42,15 +42,15 @@
     transition-duration: .3s;
 }
 
-.Btn:hover .tooltip {
+.Btn-infos:hover .tooltip-infos {
     opacity: 1;
     transition-duration: .3s;
     z-index: 1;
 }
 
-.Btn:hover {
+.Btn-infos:hover {
     background-color: #2191ff;
 }
-.Btn:hover .svgIcon {
+.Btn-infos:hover .svgIcon-infos {
     animation: slide-in-top 0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
