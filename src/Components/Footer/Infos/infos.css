@@ -5,4 +5,7 @@
 }
 .content-infos-button{
     margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }

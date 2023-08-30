@@ -16,7 +16,7 @@
 }
 .tooltip-infos {
     position: absolute;
-    right: -90px;
+    right: -95px;
     opacity: 0;
     background-color: rgb(21, 21, 21);
     color: white;
