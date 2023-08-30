@@ -2,6 +2,7 @@
     text-align: start;
     display: flex;
     margin-top: 2vh;
+    font-size: 1.1vw;
 }
 .Content-Infos-form legend{
     margin-bottom: .5vh;
