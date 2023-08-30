@@ -20,7 +20,7 @@ function About () {
                 <p>Desde de 2022, venho atuando no desenvolvimento de software e posso afirmar que estou apaixonado por essa  área. Sempre fui fascinado  por tecnologia e tive meus primeiros contatos coom a computação ainda muito cedo.</p>
                 <div className='content-button'>
                     <Botao icon={iconDownload} text={'Baixar CV'}></Botao>
-                    <Botao icon={instagramIcon} text={'Instagram'}></Botao>
+                    <Botao icon={instagramIcon} link="https://www.instagram.com/binary_jouney/?igshid=OGQ5ZDc2ODk2ZA=='" text={'Instagram'}></Botao>
                 </div>
             </div>
         </div>
