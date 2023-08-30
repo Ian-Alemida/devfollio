@@ -14,6 +14,9 @@ function Infos () {
                 <IconText icon={emailSvg} text={"ian.almeida357@gmail.com"}></IconText>
                 <Form></Form>
             </div>
+            <div className='content-infos-button'>
+
+            </div>
         </div>
     )
 }
