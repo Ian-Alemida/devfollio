@@ -20,7 +20,7 @@ function Banner (){
                 <h2>Prazer, Eu sou Ian Almeida<span>.</span></h2>
                 <p className='animation'>Sou um desenvolvedor Front-End...</p>
                 <div className='content-button'>
-                    <Botao icon={iconLinkedin} link="www.linkedin.com/in/ian-almeida-3a707a240" text={'Linkedin'}></Botao>
+                    <Botao icon={iconLinkedin} link="https://www.linkedin.com/in/ian-almeida-3a707a240/" text={'Linkedin'}></Botao>
                     <Botao  icon={iconGithub} link="https://github.com/Ian-Alemida" text={'GitHub'} class={"content-button-git"}></Botao>
                 </div>
             </div>

@@ -19,9 +19,9 @@ function Infos () {
                 <Form></Form>
             </div>
             <div className='content-infos-button'>
-                <InfoLinks link='www.linkedin.com/in/ian-almeida-3a707a240' icon={linkedin} span='LinKedin'></InfoLinks>
+                <InfoLinks link='https://www.linkedin.com/in/ian-almeida-3a707a240/' icon={linkedin} span='LinKedin'></InfoLinks>
                 <InfoLinks link='https://www.instagram.com/binary_jouney/?igshid=OGQ5ZDc2ODk2ZA==' icon={instagram} span='Instagram'></InfoLinks>
-                <InfoLinks link='https://github.com/Ian-Alemida' icon={githubWithe} span='This code'></InfoLinks>
+                <InfoLinks link='https://github.com/Ian-Alemida/devfollio.git' icon={githubWithe} span='This code'></InfoLinks>
             </div>
         </div>
     )
