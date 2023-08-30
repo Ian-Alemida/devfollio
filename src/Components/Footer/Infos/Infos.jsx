@@ -2,8 +2,10 @@ import './infos.css'
 import phoneSvg from './Images/phone.svg';
 import mapSvg from './Images/map.svg';
 import emailSvg from './Images/email.svg';
+import githubSvg from './Images/githubWithe.svg'
 import IconText from './IconText/IconText';
 import Form from './Form/Form';
+import InfoLinks from './InfosLinks/InfosLinks';
 
 function Infos () {
     return (
@@ -15,7 +17,7 @@ function Infos () {
                 <Form></Form>
             </div>
             <div className='content-infos-button'>
-
+                <InfoLinks link='https://github.com/Ian-Alemida' icon={githubSvg} span='GitHub'></InfoLinks>
             </div>
         </div>
     )
