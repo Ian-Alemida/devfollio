@@ -4,8 +4,11 @@
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 70px;
+    height: 7vh;
     border-bottom: 1px solid #ffffff20;
+}
+.Links-header-text{
+    font-size: 1.5vw;
 }
 
 .App-logo {
@@ -40,7 +43,7 @@
 }
 
 .Links-header li a{
-    margin: 0 18px;
+    margin: 0 1vw;
 }
 .Links-header li a:hover{
     border-bottom: 1px solid #55c9f6;

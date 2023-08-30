@@ -5,13 +5,16 @@ function Header() {
     return(
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <ul className='Links-header'>
-                <li><a href=""><span>Home</span></a></li>
-                <li><a href=""><span>Sobre</span></a></li>
-                <li><a href=""><span>Habilidades</span></a></li>
-                <li><a href=""><span>Portfolio</span></a></li>
-                <li><a href=""><span>Contatos</span></a></li>
-            </ul>
+            <nav>
+                <ul className='Links-header'>
+                    <li><a href=""><span className='Links-header-text'>Home</span></a></li>
+                    <li><a href=""><span className='Links-header-text'>Sobre</span></a></li>
+                    <li><a href=""><span className='Links-header-text'>Habilidades</span></a></li>
+                    <li><a href=""><span className='Links-header-text'>Projetos</span></a></li>
+                    <li><a href=""><span className='Links-header-text'>Formação</span></a></li>
+                    <li><a href=""><span className='Links-header-text'>Contato</span></a></li>
+                </ul>
+            </nav>
         </header>
     )
 }
