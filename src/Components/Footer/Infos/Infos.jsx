@@ -17,7 +17,7 @@ function Infos () {
                 <Form></Form>
             </div>
             <div className='content-infos-button'>
-                <InfoLinks link='https://github.com/Ian-Alemida' icon={githubSvg} span='GitHub'></InfoLinks>
+                <InfoLinks link='https://github.com/Ian-Alemida' icon={githubSvg} span='LinKedin'></InfoLinks>
             </div>
         </div>
     )
