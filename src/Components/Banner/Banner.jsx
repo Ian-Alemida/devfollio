@@ -2,7 +2,9 @@ import image from './images/banner_image.svg'
 import './banner.css'
 import Botao from './Botao/Botao'
 import iconLinkedin from './images/linkedin.svg'
+import iconLinkedinBlack from './images/linkedinBlack.svg'
 import iconGithub from './images/github.svg'
+import iconGithubBlack from './images/githubBlack.svg'
 
 
 function Banner (){
@@ -20,8 +22,8 @@ function Banner (){
                 <h2>Prazer, Eu sou Ian Almeida<span>.</span></h2>
                 <p className='animation'>Sou um desenvolvedor Front-End...</p>
                 <div className='content-button'>
-                    <Botao icon={iconLinkedin} link="https://www.linkedin.com/in/ian-almeida-3a707a240/" text={'Linkedin'}></Botao>
-                    <Botao  icon={iconGithub} link="https://github.com/Ian-Alemida" text={'GitHub'} class={"content-button-git"}></Botao>
+                    <Botao icon1={iconLinkedin} icon2={iconLinkedinBlack} link="https://www.linkedin.com/in/ian-almeida-3a707a240/" text={'Linkedin'}></Botao>
+                    <Botao  icon1={iconGithub} icon2={iconGithubBlack} link="https://github.com/Ian-Alemida" text={'GitHub'} class={"content-button-git"}></Botao>
                 </div>
             </div>
             <div className='content-img'>

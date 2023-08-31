@@ -6,14 +6,14 @@
     font-size: 1.4vw;
 }
 .icon{
-    height: 3.5vh;
+    height: 3vh;
     margin-right: .7vw
 }
 
 .animated-button {
     position: relative;
     display: inline-block;
-    padding: .3vh .6vw;
+    padding: .6vh .6vw;
     border: none;
     background-color: inherit;
     border-radius: 100px;
@@ -48,7 +48,7 @@
     scale: 0.95;
 }
 .animated-button:hover span:last-child {
-    width: 250px;
+    width: 275px;
     height: 150px;
     opacity: 1;
 }
