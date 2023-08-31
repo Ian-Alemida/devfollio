@@ -23,24 +23,24 @@ fill: #fdfdfd;
 }
 
 .scollUp-text {
-font-size: 0.7em;
+font-size: .6vw;
 width: 100px;
 position: absolute;
 color: white;
 display: flex;
 align-items: center;
 justify-content: center;
-bottom: -18px;
+bottom: -21px;
 opacity: 0;
 transition-duration: .7s;
 }
 
-.scollUp-Btn:hover .text {
+.scollUp-Btn:hover .scollUp-text {
 opacity: 1;
 transition-duration: .7s;
 }
 
-.scollUp-Btn:hover .arrow {
+.scollUp-Btn:hover .scollUp-arrow {
 animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
