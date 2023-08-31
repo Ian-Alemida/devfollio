@@ -11,7 +11,8 @@ import ScrollUp from './Components/ScrollUp/ScrollUp';
 
 function App() {
   return (
-    <div className="App">
+    <section>
+      <div className="App">
       <Header></Header>
       <Banner></Banner>
       <About></About>
@@ -19,8 +20,9 @@ function App() {
       <Projects></Projects>
       <Courses></Courses>
       <Footer></Footer>
-      <ScrollUp></ScrollUp>
     </div>
+    <ScrollUp></ScrollUp>
+    </section>
   );
 }
 

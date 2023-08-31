@@ -1,20 +1,22 @@
 .scollUp-Btn {
-width: 45px;
-height: 45px;
-background: linear-gradient(#44ea76, #39fad7);
-display: flex;
-align-items: center;
-justify-content: center;
+width: 90px;
+height: 90px;
+background: #000;
+opacity: .8;
 border-radius: 50%;
 cursor: pointer;
-position: absolute;
+display: flex;
+justify-content: center;
+align-items: center ;
+position: fixed;
+left: 87vw;
+bottom: 15vh;
 border: none;
-margin-bottom: 10vh;
-margin-right: 10vw;
+z-index: 2;
 }
 
 .scollUp-arrow path {
-fill: white;
+fill: #fdfdfd;
 }
 
 .scollUp-text {
