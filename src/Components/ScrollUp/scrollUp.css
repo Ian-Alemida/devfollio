@@ -7,8 +7,10 @@ align-items: center;
 justify-content: center;
 border-radius: 50%;
 cursor: pointer;
-position: relative;
+position: absolute;
 border: none;
+margin-bottom: 10vh;
+margin-right: 10vw;
 }
 
 .scollUp-arrow path {

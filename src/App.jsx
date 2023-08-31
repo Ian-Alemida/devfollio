@@ -7,6 +7,7 @@ import Technology from './Components/Technology/Technology';
 import Projects from './Components/Projects/Projects';
 import Courses from './Components/Courses/Courses';
 import Footer from './Components/Footer/Footer';
+import ScrollUp from './Components/ScrollUp/ScrollUp';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Projects></Projects>
       <Courses></Courses>
       <Footer></Footer>
+      <ScrollUp></ScrollUp>
     </div>
   );
 }
