@@ -14,6 +14,9 @@ bottom: 15vh;
 border: none;
 z-index: 2;
 }
+.scollUp-Btn.visible{
+    display: none;
+}
 
 .scollUp-arrow path {
 fill: #fdfdfd;
