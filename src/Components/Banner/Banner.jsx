@@ -1,10 +1,10 @@
-import image from './images/banner_image.svg'
 import './banner.css'
 import Botao from './Botao/Botao'
 import iconLinkedin from './images/linkedin.svg'
 import iconLinkedinBlack from './images/linkedinBlack.svg'
 import iconGithub from './images/github.svg'
 import iconGithubBlack from './images/githubBlack.svg'
+import ImgBanner from './ImgBanner/ImgBanner'
 
 
 function Banner (){
@@ -26,9 +26,7 @@ function Banner (){
                     <Botao  icon1={iconGithub} icon2={iconGithubBlack} link="https://github.com/Ian-Alemida" text={'GitHub'} class={"content-button-git"}></Botao>
                 </div>
             </div>
-            <div className='content-img'>
-                <img src={image} className='img' alt="" />
-            </div>
+            <ImgBanner></ImgBanner>
         </div>
     )
 }

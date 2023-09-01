@@ -1,0 +1,9 @@
+.content-img{
+    width: 80%;
+    display: flex;
+    justify-content: right;
+}
+
+.img{
+    width: 90%;
+}

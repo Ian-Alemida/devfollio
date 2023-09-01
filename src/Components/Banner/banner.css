@@ -94,13 +94,3 @@ overflow: hidden;
     justify-content: space-between;
     width: 21vw;
 }
-
-.content-img{
-    width: 55%;
-    display: flex;
-    justify-content: right;
-}
-
-.img{
-    width: 90%;
-}
