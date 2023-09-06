@@ -10,7 +10,7 @@
   align-items: center;
 }
 ::-webkit-scrollbar{
-  background-color: #c1c1c1ee;
+  background-image: linear-gradient(to bottom, #000000, #00001f);
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
