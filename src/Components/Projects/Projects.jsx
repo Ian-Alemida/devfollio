@@ -7,7 +7,7 @@ import loginScreen from './images/telaLogin.png'
 import aluraBooks from './images/AluraBooks.png'
 import alurinha from './images/Alurinha.png'
 import apeperia from './images/Apeperia.png'
-import optimusTech from './images/OptimusTech.png'
+import optimusTech from './images/optimustech.png'
 import planetSky from './images/PlanetSky.png'
 import ButtonProject from './ButtonProject/ButonProject'
 
