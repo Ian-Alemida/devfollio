@@ -1,47 +1,48 @@
-.scollUp-Btn {
-width: 75px;
-height: 75px;
-background: #000;
-opacity: .8;
-border-radius: 50%;
-cursor: pointer;
-display: flex;
-justify-content: center;
-align-items: center ;
-position: fixed;
-left: 87vw;
-bottom: 15vh;
-border: none;
-z-index: 2;
+.scrollUp-Btn {
+    width: 75px;
+    height: 75px;
+    background: #000;
+    opacity: .8;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 87vw;
+    bottom: 15vh;
+    border: none;
+    z-index: 2;
 }
-.scollUp-Btn.visible{
+
+.scrollUp-Btn.visible {
     display: none;
 }
 
-.scollUp-arrow path {
-fill: #fdfdfd;
+.scrollUp-arrow path {
+    fill: #fdfdfd;
 }
 
-.scollUp-text {
-font-size: .6vw;
-width: 100px;
-position: absolute;
-color: white;
-display: flex;
-align-items: center;
-justify-content: center;
-bottom: -21px;
-opacity: 0;
-transition-duration: .7s;
+.scrollUp-text {
+    font-size: .6vw;
+    width: 100px;
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -21px;
+    opacity: 0;
+    transition-duration: .7s;
 }
 
-.scollUp-Btn:hover .scollUp-text {
-opacity: 1;
-transition-duration: .7s;
+.scrollUp-Btn:hover .scrollUp-text {
+    opacity: 1;
+    transition-duration: .7s;
 }
 
-.scollUp-Btn:hover .scollUp-arrow {
-animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.scrollUp-Btn:hover .scrollUp-arrow {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @keyframes slide-in-bottom {
@@ -49,6 +50,7 @@ animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         transform: translateY(10px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
