@@ -9,3 +9,14 @@
   flex-direction: column;
   align-items: center;
 }
+::-webkit-scrollbar{
+  background-color: #c1c1c1ee;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2191ffaa;
+  border-radius: 6px;
+}
+::-webkit-scrollbar:hover {
+  width: 10px;
+}
