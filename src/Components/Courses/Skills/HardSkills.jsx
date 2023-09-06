@@ -15,14 +15,17 @@ function HardSkills () {
                 <p>UX & UI</p>
             </div>
             <div className="skills-row">
-                <p>Flutter</p>
                 <p>JavaScript</p>
+                <p>BootsTrap</p>
                 <p>SEO</p>
             </div>
             <div className="skills-row">
-                <p>Dart</p>
+                <p>Flutter</p>
                 <p>TailWind</p>
                 <p>RegExp</p>
+            </div>
+            <div className="skills-row">
+                <p>Dart</p>
             </div>
         </div>
     )
