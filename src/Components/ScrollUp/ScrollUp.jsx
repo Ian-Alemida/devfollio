@@ -5,10 +5,10 @@ function ScrollUp  () {
     const [isVisible, setIsVisible] = useState(false);//Controla se o botão esta visível
     const [prevScrollY, setPrevScrollY] = useState(0);//Verifica a posição do scroll
 
-    //Função que verifica se o ouse está sendo scrolado para baixo ou para  cima, usei callBack para evitar que um novo objeto de função seja criado a cada renderização.
+    //Função que verifica se o mouse está sendo scrolado para baixo ou para  cima, usei callBack para evitar que um novo objeto de função seja criado a cada renderização.
     const handleScroll = useCallback(() => {
         const currentScrollY = window.scrollY;//verifica a posição do  scrollY
-        if (currentScrollY < prevScrollY) {
+        if (currentScrollY < prevScrollY ) {
             setIsVisible(true);
         } else {
             setIsVisible(false);

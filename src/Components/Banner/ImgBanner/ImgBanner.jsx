@@ -12,7 +12,7 @@ function ImgBanner () {
         const mouseY = e.clientY - top;
         
         // Calcula o deslocamento
-        const rotateX = (mouseY / width - .6) * 30; // Ajuste o valor conforme necessário
+        const rotateX = (mouseY / width - .6) * 30; 
         const rotateY = (mouseX / height - .6) * 20; 
     
         // Aplique o deslocamento à imagem
