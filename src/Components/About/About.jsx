@@ -16,9 +16,9 @@ function About () {
             <div className='content-about-text'>
                 <h2>Sobre mim</h2>
                 <h3>Belo Horizonte, Minas Gerais</h3>
-                <p>Ola! Eu sou um Desenvolvedor Front-end especializado  em React.js <br /> Possuo habilidades solidas em HTML5 CSS3 e JavaScript.</p>
+                <p>Ola! Eu sou um Desenvolvedor Front-end especializado  em React.js <br /> Possuo habilidades solidas em HTML5, CSS3 e JavaScript.</p>
                 <p>Atualmente estou  cursando Análise e Desenvolvimento de Sistemas, no primeiro semestre do curso. Entrei com o objetivo de aperfeiçoar minhas habilidades, pois estou em constante desenvolvimento.</p>
-                <p>Desde de 2022, venho atuando no desenvolvimento de software e posso afirmar que estou apaixonado por essa  área. Sempre fui fascinado  por tecnologia e tive meus primeiros contatos com a computação ainda muito cedo. Estou preparado para servir a organização com minhas stacks.</p>
+                <p>Desde 2022, venho atuando no desenvolvimento de software e posso afirmar que estou apaixonado por essa  área. Sempre fui fascinado  por tecnologia e tive meus primeiros contatos com a computação ainda muito cedo. Estou preparado para servir a organização com minhas stacks.</p>
                 <div className='content-button'>
                     <a href={Curriculo} download><Botao icon1={iconDownload} icon2={iconDownload} text={'Baixar CV'}></Botao></a>
                     <Botao icon1={instagramIcon} icon2={instagramIcon} link="https://www.instagram.com/binary_jouney/?igshid=OGQ5ZDc2ODk2ZA=='" text={'Instagram'}></Botao>
