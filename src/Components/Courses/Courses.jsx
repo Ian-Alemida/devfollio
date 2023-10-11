@@ -11,7 +11,7 @@ function Courses({ cursos }) {
         <section className='content-courses' id='Courses'>
             <h2>Formação<span>.</span></h2>
             <article>
-                <ul className='teste'>
+                <ul className='cards'>
                     <CardTecnologo/>
                     {cursos.map(curso => {
                         return <CardCourses

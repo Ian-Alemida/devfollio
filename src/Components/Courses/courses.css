@@ -16,9 +16,9 @@
     color: #55c9f6;
 }
 
-.content-courses-row{
+.content-courses .cards{
     margin: 1vh 10%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }

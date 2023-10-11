@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 15vh;
+    margin-bottom: 12px;
 }
 .content-cardCourses:hover{
     border-color: #55c9f6;
