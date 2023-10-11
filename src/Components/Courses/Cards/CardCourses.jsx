@@ -1,11 +1,11 @@
 import './cardCourses.css'
 
-function CardCourses(props) {
+function CardCourses({ link, nome, plataform, time }) {
         return (
-                <a className='content-cardCourses' href={props.link} target="_blank" rel='noreferrer noopener'>
+                <a className='content-cardCourses' href={link} target="_blank" rel='noreferrer noopener'>
                         <h3>Curso</h3>
-                        <p className='content-cardCourses-p'>{props.curso} <small>- {props.plataform}</small></p>
-                        <span>{props.time}</span>
+                        <p className='content-cardCourses-p'>{nome} <small>- {plataform}</small></p>
+                        <span>{time}</span>
                 </a>
         )
 }
