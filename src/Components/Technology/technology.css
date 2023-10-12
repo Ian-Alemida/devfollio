@@ -3,7 +3,6 @@
     height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     border-radius: 60px;
     font-family: 'releway', sans-serif;
@@ -16,10 +15,11 @@
     margin: 0 0 5vh;
 }
 
-.content-technology-r{
-    width: 100%;
-    height: 42%;
+.card-tech{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 100%;
+    height: 45%;
+    gap: 12px;
 }

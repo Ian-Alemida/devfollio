@@ -1,7 +1,7 @@
 
 .content-cardCourses {
     background-color: #050505;
-    width: 22%;
+    width: 22.2%;
     padding: 1.5vh;
     border-radius: 6px;
     border: 1.5px solid #4d4f53;
@@ -9,7 +9,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 15vh;
-    margin-bottom: 12px;
 }
 .content-cardCourses:hover{
     border-color: #55c9f6;
