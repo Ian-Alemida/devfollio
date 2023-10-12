@@ -1,7 +1,7 @@
 import './CardTechnology.css';
 import React, { useState } from 'react';
 
-function CardTechnology (props) {
+function CardTechnology ({img, h3, text}) {
     const [isHover, setIsHover] = useState(false)
 
     const handleHover = () => {
@@ -23,9 +23,9 @@ function CardTechnology (props) {
             className={`technology-card ${isHover ? 'technology-card-hover' : ''} `}
             onMouseEnter={handleHover}
             onMouseLeave={handleMouseLeave}>
-                <img className={`${isHover ? 'flipped' : ''}`} src={props.img} alt="" />
-                <h3>{props.h3}</h3>
-                <p>{props.text}</p>
+                <img className={`${isHover ? 'flipped' : ''}`} src={img} alt="" />
+                <h3>{h3}</h3>
+                <p>{text}</p>
         </div>
     )
 }

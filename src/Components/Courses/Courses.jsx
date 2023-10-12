@@ -6,15 +6,15 @@ import SoftSkills from './Skills/SoftSkills';
 import Idiomas from './Skills/Idiomas';
 
 function Courses({ cursos }) {
-    console.log(cursos)
     return (
         <section className='content-courses' id='Courses'>
             <h2>Formação<span>.</span></h2>
             <article>
                 <ul className='cards'>
                     <CardTecnologo/>
-                    {cursos.map(curso => {
+                    {cursos.map((curso, indice) => {
                         return <CardCourses
+                            key={indice}
                             link={curso.link}
                             nome={curso.nome}
                             plataform={curso.plataform}
