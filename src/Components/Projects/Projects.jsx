@@ -10,12 +10,14 @@ import apeperia from './images/Apeperia.png'
 import optimusTech from './images/optimustech.png'
 import planetSky from './images/PlanetSky.png'
 import ButtonProject from './ButtonProject/ButonProject'
+import Carousel from './Carousel/Carousel'
 
 
 function Projects () {
     return (
         <div className="content-projects" id='Projects'>
             <h2>Projetos <br /><hr /></h2>
+            <Carousel></Carousel>
             {/*Project1*/}
             <div className='content-projects-left'>
                 <div className='content-projects-left-text'>

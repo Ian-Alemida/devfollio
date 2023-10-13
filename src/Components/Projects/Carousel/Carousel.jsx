@@ -1,33 +1,16 @@
-import { CCarousel, CCarouselCaption, CCarouselItem, CImage } from '@coreui/react'
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import img from "../images/PlanetSky.png"
 
 import React from 'react';
 
 const Carousel = () => {
     return (
-        <CCarousel controls indicators>
-            <CCarouselItem>
-                <CImage className="d-block w-100" src={img} alt="slide 1" />
-                <CCarouselCaption className="d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </CCarouselCaption>
-            </CCarouselItem>
-            <CCarouselItem>
-                <CImage className="d-block w-100" src={img} alt="slide 2" />
-                <CCarouselCaption className="d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </CCarouselCaption>
-            </CCarouselItem>
-            <CCarouselItem>
-                <CImage className="d-block w-100" src={img} alt="slide 3" />
-                <CCarouselCaption className="d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </CCarouselCaption>
-            </CCarouselItem>
-        </CCarousel>
+        <AwesomeSlider animation="cubeAnimation">
+            <div data-src="/path/to/image-0.png" />
+            <div data-src="/path/to/image-1.png" />
+            <div data-src="/path/to/image-2.jpg" />
+        </AwesomeSlider>
     );
 }
 
