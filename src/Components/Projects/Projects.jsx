@@ -10,33 +10,17 @@ import apeperia from './images/Apeperia.png'
 import optimusTech from './images/optimustech.png'
 import planetSky from './images/PlanetSky.png'
 import ButtonProject from './ButtonProject/ButonProject'
-import Carousel from './Carousel/Carousel'
+import Slider from './Carousel/Carousel'
 
 
-function Projects () {
+function Projects() {
     return (
         <div className="content-projects" id='Projects'>
             <h2>Projetos <br /><hr /></h2>
-            <Carousel></Carousel>
+
             {/*Project1*/}
-            <div className='content-projects-left'>
-                <div className='content-projects-left-text'>
-                    <h3>Planet Sky</h3>
-                    <p>Uma aplicação autoral que te permite explorar o cosmos de forma envolvente e descobrir curiosidades fascinantes sobre o sistema solar! Usando Flutter e Dart pude fixar conceitos de Desenvolvimento <strong>Cross-Platform</strong>, sistema de navegação de rotas com <strong>Navigator</strong> e <strong>arvore de widgets</strong>.</p>
-                    <small><strong>OBS: </strong>lembre-se de colocar o navegador no modo mobile em inspecionar</small>
-                    <div>
-                        <p>Dart</p>
-                        <p>Flutter</p>
-                    </div>
-                    <div>
-                        <ButtonProject link="https://github.com/Ian-Alemida/planet_sky" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
-                        <hr />
-                        <ButtonProject link="https://planet-sky-5plu.vercel.app/#/initial" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
-                    </div>
-                </div>
-                <div className='content-projects-left-img'>
-                    <img src={planetSky} alt="imagem do projeto" />
-                </div>
+            <div className="slider">
+                <Slider></Slider>
             </div>
             {/*Project2*/}
             <div className='content-projects-rigth'>
@@ -71,16 +55,16 @@ function Projects () {
                         <ButtonProject link="https://github.com/Ian-Alemida/tela_login.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
                         <hr />
                         <ButtonProject link="https://tela-login-mg1z.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
-                    </div>                  
+                    </div>
                 </div>
                 <div className='content-projects-left-img'>
-                    <img src={loginScreen} alt="imagem do projeto"/>
+                    <img src={loginScreen} alt="imagem do projeto" />
                 </div>
             </div>
             {/*Project4*/}
             <div className='content-projects-rigth'>
                 <div className='content-projects-rigth-img'>
-                    <img src={apeperia} alt="imagem do projeto"/>
+                    <img src={apeperia} alt="imagem do projeto" />
                 </div>
                 <div className='content-projects-rigth-text'>
                     <h3>Apeperia</h3>

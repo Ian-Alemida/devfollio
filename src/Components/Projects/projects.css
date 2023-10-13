@@ -114,3 +114,11 @@ strong{
     border: 2px solid #55c9f6cc;
     border-radius: 6px;
 }
+
+.slider{
+    width: 1400px;
+    height: 1000px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
