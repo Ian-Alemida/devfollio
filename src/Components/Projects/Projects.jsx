@@ -1,8 +1,4 @@
 import './projects.css'
-import codeIcon from './images/code.svg'
-import codeWitheIcon from './images/codeWithe.svg'
-import viewIcon from './images/view.svg'
-import viewWitheIcon from './images/viewWithe.svg'
 import loginScreen from './images/telaLogin.png'
 import aluraBooks from './images/AluraBooks.png'
 import alurinha from './images/Alurinha.png'
@@ -36,8 +32,8 @@ function Projects() {
                         <p>JavaScript</p>
                     </div>
                     <div className='content-projects-rigth-text-button'>
-                        <ButtonProject link="https://github.com/Ian-Alemida/AluraBooks.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
-                        <ButtonProject link="https://alura-books-gold.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
+                        <ButtonProject link="https://github.com/Ian-Alemida/AluraBooks.git" span='ver código'></ButtonProject>
+                        <ButtonProject link="https://alura-books-gold.vercel.app/" span='ver projeto'></ButtonProject>
                     </div>
                 </div>
             </div>
@@ -52,9 +48,9 @@ function Projects() {
                         <p>Flutter</p>
                     </div>
                     <div className='content-projects-left-text-button'>
-                        <ButtonProject link="https://github.com/Ian-Alemida/tela_login.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
+                        <ButtonProject link="https://github.com/Ian-Alemida/tela_login.git" span='ver código'></ButtonProject>
                         <hr />
-                        <ButtonProject link="https://tela-login-mg1z.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
+                        <ButtonProject link="https://tela-login-mg1z.vercel.app/" span='ver projeto'></ButtonProject>
                     </div>
                 </div>
                 <div className='content-projects-left-img'>
@@ -75,8 +71,8 @@ function Projects() {
                         <p>JavaScript</p>
                     </div>
                     <div className='content-projects-rigth-text-button'>
-                        <ButtonProject link="https://github.com/Ian-Alemida/Apeperia.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
-                        <ButtonProject link="https://apeperia-azure.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
+                        <ButtonProject link="https://github.com/Ian-Alemida/Apeperia.git" span='ver código'></ButtonProject>
+                        <ButtonProject link="https://apeperia-azure.vercel.app/" span='ver projeto'></ButtonProject>
                     </div>
                 </div>
             </div>
@@ -90,9 +86,9 @@ function Projects() {
                         <p>CSS3</p>
                     </div>
                     <div className='content-projects-left-text-button'>
-                        <ButtonProject link="https://github.com/Ian-Alemida/OptimusTech.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
+                        <ButtonProject link="https://github.com/Ian-Alemida/OptimusTech.git" span='ver código'></ButtonProject>
                         <hr />
-                        <ButtonProject link="https://optimus-tech-indol.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
+                        <ButtonProject link="https://optimus-tech-indol.vercel.app/" span='ver projeto'></ButtonProject>
                     </div>
                 </div>
                 <div className='content-projects-left-img'>
@@ -112,8 +108,8 @@ function Projects() {
                         <p>CSS3</p>
                     </div>
                     <div className='content-projects-rigth-text-button'>
-                        <ButtonProject link="https://github.com/Ian-Alemida/Alurinha.git" span='ver código' icon1={codeWitheIcon} icon2={codeIcon}></ButtonProject>
-                        <ButtonProject link="https://alurinha-one.vercel.app/" span='ver projeto' icon1={viewWitheIcon} icon2={viewIcon}></ButtonProject>
+                        <ButtonProject link="https://github.com/Ian-Alemida/Alurinha.git" span='ver código'></ButtonProject>
+                        <ButtonProject link="https://alurinha-one.vercel.app/" span='ver projeto'></ButtonProject>
                     </div>
                 </div>
             </div>
