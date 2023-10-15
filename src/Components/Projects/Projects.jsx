@@ -6,10 +6,10 @@ import apeperia from './images/Apeperia.png'
 import optimusTech from './images/optimustech.png'
 import planetSky from './images/PlanetSky.png'
 import ButtonProject from './ButtonProject/ButonProject'
-import Slider from './Carousel/Carousel'
+import Slider from './Slider/Slider'
 
 
-function Projects() {
+function Projects({projetos}) {
     return (
         <div className="content-projects" id='Projects'>
             <h2>Projetos <br /><hr /></h2>
