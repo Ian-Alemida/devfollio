@@ -15,7 +15,7 @@ function Projects({projetos}) {
             <h2>Projetos <br /><hr /></h2>
             {/*Project1*/}
             <div className="slider">
-                <Slider></Slider>
+                <Slider projetos={projetos}></Slider>
             </div>
             {/*Project2*/}
             <div className='content-projects-rigth'>

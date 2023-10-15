@@ -2,10 +2,10 @@ import React from 'react';
 import './slider.css'
 import img from "../images/PlanetSky.png"
 
-const ImgSlider = () => {
+const ImgSlider = ({ nameProject }) => {
     return (
         <div className='imgSlider' style={{ backgroundImage: `url(${img})`, }}>
-            <h3>Planet Sky</h3>
+            <h3>{nameProject}</h3>
         </div>
     );
 }

@@ -5,21 +5,25 @@ import ImgSlider from './ImgSlider';
 import ButtonProject from '../ButtonProject/ButonProject';
 
 
-function Slider({ isMobile = true, }) {
+function Slider({ isMobile = true, projetos }) {
 
 
     return (
         <Carousel>
-            <Carousel.Item>
-                <ImgSlider></ImgSlider>
-                <Carousel.Caption className='carousel-caption'>
-                    <h4>Uma aplicação autoral que te permite explorar o cosmos de forma envolvente e descobrir curiosidades fascinantes sobre o sistema solar! Usando Flutter e Dart pude fixar conceitos de Desenvolvimento Cross-Platform, sistema de navegação de rotas com Navigator e arvore de widgets. <small className={isMobile ? '' : 'isMobile'}>OBS: lembre-se de colocar o navegador no modo mobile em inspecionar</small></h4>
-                    <div style={{display: 'flex', gap: 50}}>
-                        <span>Dart - Flutter</span>
-                        <ButtonProject></ButtonProject>
-                    </div>
-                </Carousel.Caption>
-            </Carousel.Item>
+            {projetos.map((projeto, indice) => {
+                return (
+                    <Carousel.Item key={indice}>
+                        <ImgSlider nameProject={projeto.nameProject}></ImgSlider>
+                        <Carousel.Caption className='carousel-caption'>
+                            <h4>{projeto.text} <small className={projeto.isMobile ? '' : 'isMobile'}>OBS: lembre-se de colocar o navegador no modo mobile em inspecionar</small></h4>
+                            <div style={{ display: 'flex', gap: 50 }}>
+                                <span>{projeto.tecnologias}</span>
+                                <ButtonProject linkCode={projeto.linkCode} linkView={projeto.linkView}></ButtonProject>
+                            </div>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                )
+            })}
         </Carousel>
     );
 }
