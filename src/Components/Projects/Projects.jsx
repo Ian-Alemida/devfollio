@@ -9,7 +9,17 @@ import ButtonProject from './ButtonProject/ButonProject'
 import Slider from './Slider/Slider'
 
 
-function Projects({projetos}) {
+function Projects() {
+
+    const projetos = [{
+        nameProject: 'Planet Sky',
+        imgProject: planetSky,
+        text: 'Uma aplicação autoral que te permite explorar o cosmos de forma envolvente e descobrir curiosidades fascinantes sobre o sistema solar! Usando Flutter e Dart pude fixar conceitos de Desenvolvimento Cross-Platform, sistema de navegação de rotas com Navigator e arvore de widgets.',
+        isMobile: true,
+        tecnologias: 'Dart - Flutter',
+        linkCode: 'https://github.com/Ian-Alemida/planet_sky',
+        linkView: 'https://planet-sky-5plu.vercel.app/#/initial'
+    }]
     return (
         <div className="content-projects" id='Projects'>
             <h2>Projetos <br /><hr /></h2>

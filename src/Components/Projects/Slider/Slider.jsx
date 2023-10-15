@@ -13,7 +13,7 @@ function Slider({ isMobile = true, projetos }) {
             {projetos.map((projeto, indice) => {
                 return (
                     <Carousel.Item key={indice}>
-                        <ImgSlider nameProject={projeto.nameProject}></ImgSlider>
+                        <ImgSlider nameProject={projeto.nameProject} img={projeto.imgProject}></ImgSlider>
                         <Carousel.Caption className='carousel-caption'>
                             <h4>{projeto.text} <small className={projeto.isMobile ? '' : 'isMobile'}>OBS: lembre-se de colocar o navegador no modo mobile em inspecionar</small></h4>
                             <div style={{ display: 'flex', gap: 50 }}>

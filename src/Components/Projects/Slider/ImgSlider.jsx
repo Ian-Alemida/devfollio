@@ -1,8 +1,7 @@
 import React from 'react';
 import './slider.css'
-import img from "../images/PlanetSky.png"
 
-const ImgSlider = ({ nameProject }) => {
+const ImgSlider = ({ nameProject, img }) => {
     return (
         <div className='imgSlider' style={{ backgroundImage: `url(${img})`, }}>
             <h3>{nameProject}</h3>

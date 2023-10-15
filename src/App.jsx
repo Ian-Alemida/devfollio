@@ -1,5 +1,5 @@
+import './reset.css';
 import './App.css';
-import './reset.css'
 import Header from './Components/Header/Header';
 import Banner from './Components/Banner/Banner';
 import About from './Components/About/About';
@@ -8,6 +8,7 @@ import Projects from './Components/Projects/Projects';
 import Courses from './Components/Courses/Courses';
 import Footer from './Components/Footer/Footer';
 import ScrollUp from './Components/ScrollUp/ScrollUp';
+import imag from './Components/Projects/images/AluraBooks.png'
 
 function App() {
 
@@ -209,14 +210,6 @@ function App() {
     "link": "https://cursos.alura.com.br/certificate/a2d4daf2-7b26-4d48-9bfe-b6ab0e6d63c7?lang=pt_BR"
   }]
   
-  const projetos  = [{
-    nameProject : 'Planet Sky',
-    text: 'Uma aplicação autoral que te permite explorar o cosmos de forma envolvente e descobrir curiosidades fascinantes sobre o sistema solar! Usando Flutter e Dart pude fixar conceitos de Desenvolvimento Cross-Platform, sistema de navegação de rotas com Navigator e arvore de widgets.',
-    isMobile: true,
-    tecnologias: 'Dart - Flutter',
-    linkCode: 'https://github.com/Ian-Alemida/planet_sky',
-    linkView: 'https://planet-sky-5plu.vercel.app/#/initial'
-  }]
   return (
     <section>
       <div className="App">
@@ -224,7 +217,7 @@ function App() {
         <Banner></Banner>
         <About></About>
         <Technology tecnologias={Tecnologias}></Technology>
-        <Projects projetos={projetos}></Projects>
+        <Projects></Projects>
         <Courses cursos={cursos}></Courses>
         <Footer></Footer>
       </div>
