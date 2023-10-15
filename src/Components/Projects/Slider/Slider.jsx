@@ -5,7 +5,7 @@ import ImgSlider from './ImgSlider';
 import ButtonProject from '../ButtonProject/ButonProject';
 
 
-function Slider({ isMobile = true, projetos }) {
+function Slider({ projetos }) {
 
 
     return (
