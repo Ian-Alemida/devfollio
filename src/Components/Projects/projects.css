@@ -116,9 +116,7 @@ strong{
 }
 
 .slider{
-    width: 1400px;
-    height: 1000px;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
+    width: 80vw;
+    background-color: red;
+    margin: 3vh auto;
 }

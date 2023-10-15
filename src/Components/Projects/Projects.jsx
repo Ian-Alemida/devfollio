@@ -13,7 +13,6 @@ function Projects() {
     return (
         <div className="content-projects" id='Projects'>
             <h2>Projetos <br /><hr /></h2>
-
             {/*Project1*/}
             <div className="slider">
                 <Slider></Slider>

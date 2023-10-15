@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './carousel.css'
 import img from "../images/PlanetSky.png"
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -7,25 +8,9 @@ function Slider() {
         <Carousel>
             <Carousel.Item>
                 <img src={img} alt="" srcset="" />
-                <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-            <img src={img} alt="" srcset="" />
-                <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-            <img src={img} alt="" srcset="" />
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
+                <Carousel.Caption className='carousel-caption'>
+                    <h4>Uma aplicação autoral que te permite explorar o cosmos de forma envolvente e descobrir curiosidades fascinantes sobre o sistema solar! Usando Flutter e Dart pude fixar conceitos de Desenvolvimento Cross-Platform, sistema de navegação de rotas com Navigator e arvore de widgets. <small>OBS: lembre-se de colocar o navegador no modo mobile em inspecionar</small></h4>
+                    <span>Dart - Flutter</span>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
