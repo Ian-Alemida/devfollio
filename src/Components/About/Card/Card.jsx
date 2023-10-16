@@ -2,11 +2,11 @@ import './card.css'
 
 function Card (props) {
     return (
-        <div class="card">
-            <div class="first-content">
+        <div className="card-about">
+            <div className="first-content">
                 {props.children1}
             </div>
-            <div class="second-content">
+            <div className="second-content">
                 {props.children2}
             </div>
         </div>

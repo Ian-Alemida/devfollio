@@ -1,4 +1,4 @@
-.card {
+.card-about {
     transition: all 0.4s;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
@@ -6,7 +6,7 @@
     width: 98%;
     margin: 1% 1.5% 0 0;
 }
-.card:hover {
+.card-about:hover {
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
@@ -22,7 +22,7 @@
     opacity: 1;
     border-radius: 50%;
 }
-.card:hover .first-content {
+.card-about:hover .first-content {
     height: 0px;
     opacity: 0;
 }
@@ -38,7 +38,7 @@
     font-size: 0px;
     transform: rotate(90deg);
 }
-.card:hover .second-content {
+.card-about:hover .second-content {
     opacity: 1;
     height: 100%;
     font-size: 1.8rem;

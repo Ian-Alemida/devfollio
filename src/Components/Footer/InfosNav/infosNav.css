@@ -11,6 +11,9 @@
     margin-bottom: .9vh;
     display: flex;
 }
+.footer-Links-header ul li a{
+    text-decoration: none;
+}
 .footer-Links-header ul li a:hover{
     border-bottom: 1px solid #2191ff;
     color: #2191ff;
