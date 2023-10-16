@@ -8,38 +8,49 @@ import Projects from './Components/Projects/Projects';
 import Courses from './Components/Courses/Courses';
 import Footer from './Components/Footer/Footer';
 import ScrollUp from './Components/ScrollUp/ScrollUp';
-import imag from './Components/Projects/images/AluraBooks.png'
 
 function App() {
 
   const cursos = [{
-    "nome": 'Formação HTML e CSS', 
-    "plataform": 'Alura', 
-    "time": '65h - 2022', 
+    "nome": 'React: desenvolvendo com JavaScript',
+    "plataform": 'Alura',
+    "time": '14h - 2023',
+    "link": 'https://cursos.alura.com.br/user/iangtaonline1/course/react-desenvolvendo-javascript/certificate'
+  },
+  {
+    "nome": 'React: como os componentes funcionam',
+    "plataform": 'Alura',
+    "time": '8h - 2023',
+    "link": 'https://cursos.alura.com.br/user/iangtaonline1/course/react-componentes-funcionam/certificate'
+  },
+  {
+    "nome": 'Formação HTML e CSS',
+    "plataform": 'Alura',
+    "time": '65h - 2022',
     "link": 'https://cursos.alura.com.br/degree/certificate/41d45351-1690-4a75-b7dc-6a3b2aff321c?lang=pt_BR'
   },
   {
     "nome": 'JavaScript : Logica de programação',
-    "plataform": 'Alura', 
+    "plataform": 'Alura',
     "time": '16h - 2022',
     "link": 'https://cursos.alura.com.br/certificate/15294591-d288-4137-b240-23b906d2db17?lang=pt_BR'
   },
   {
-    "nome": 'HTML & CSS parte1 - 4', 
-    "plataform": 'Alura', 
-    "time": '36h - 2022', 
+    "nome": 'HTML & CSS parte1 - 4',
+    "plataform": 'Alura',
+    "time": '36h - 2022',
     "link": 'https://cursos.alura.com.br/certificate/55b528c5-dfa7-40e1-aea8-249c7048d6a3?lang=pt_BR'
   },
   {
     "nome": 'JS: programando na linguagem da web',
-    "plataform": 'Alura', 
-    "time": '20h - 2022', 
+    "plataform": 'Alura',
+    "time": '20h - 2022',
     "link": 'https://cursos.alura.com.br/certificate/0e37e5cb-8eda-4a5c-a0f0-7fcbcc8caecc?lang=pt_BR'
   },
   {
-    "nome": 'JavaScript para Web: páginas dinâmicas', 
-    "plataform": 'Alura', 
-    "time": '10h - 2022', 
+    "nome": 'JavaScript para Web: páginas dinâmicas',
+    "plataform": 'Alura',
+    "time": '10h - 2022',
     "link": 'https://cursos.alura.com.br/certificate/75558db9-fb85-4cb7-afb7-b2250f3f73e0?lang=pt_BR'
   },
   {
@@ -143,7 +154,7 @@ function App() {
     "plataform": "Alura",
     "time": "9h - 2022",
     "link": "https://cursos.alura.com.br/certificate/8a408a55-9bd5-41d5-b9c9-b330db9e41fa?lang=pt_BR"
-  },{
+  }, {
     "nome": "SEO: otimização de sites",
     "plataform": "Alura",
     "time": "8h - 2022",
@@ -167,7 +178,7 @@ function App() {
     "time": "8h - 2022",
     "link": "https://cursos.alura.com.br/certificate/a2d4daf2-7b26-4d48-9bfe-b6ab0e6d63c7?lang=pt_BR"
   }]
-  
+
   return (
     <section>
       <div className="App">

@@ -1,12 +1,13 @@
 .content-cardTecnologo {
     background-color: #050505;
-    width: 48.3%;
+    width: 49.33%;
     padding: 1.5vh;
     border-radius: 6px;
     border: 1.5px solid #4d4f53;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-decoration: none;
 }
 .content-cardTecnologo:hover{
     border-color: #55c9f6;
