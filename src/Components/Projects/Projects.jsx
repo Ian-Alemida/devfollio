@@ -1,11 +1,9 @@
 import './projects.css'
 import loginScreen from './images/telaLogin.png'
 import aluraBooks from './images/AluraBooks.png'
-import alurinha from './images/Alurinha.png'
 import apeperia from './images/Apeperia.png'
 import optimusTech from './images/optimustech.png'
 import planetSky from './images/PlanetSky.png'
-import ButtonProject from './ButtonProject/ButonProject'
 import Slider from './Slider/Slider'
 
 
@@ -40,7 +38,7 @@ function Projects() {
     },
     {
         nameProject: 'Apeperia',
-        imgProject: aluraBooks,
+        imgProject: apeperia,
         text: 'Um projeto responsivo com suporte a diferentes tamanhos de tela, se trata de uma pagina onde você pode encomendar aplicativos do jeito que precisar. Também tive a  oportunidade de aplicar alguns conceitos de JavaScript, como  manipulação de DOM, iteração de elementos HTML com forEach e Event Listeners.',
         isMobile: false,
         tecnologias: 'JavaScript - HTML5 - CSS3',
@@ -55,8 +53,8 @@ function Projects() {
         tecnologias: 'HTML5 - CSS3',
         linkCode: 'https://github.com/Ian-Alemida/OptimusTech.git',
         linkView: 'https://optimus-tech-indol.vercel.app/'
-    },
-    ]
+    },]
+
     return (
         <div className="content-projects" id='Projects'>
             <h2>Projetos <br /><hr /></h2>

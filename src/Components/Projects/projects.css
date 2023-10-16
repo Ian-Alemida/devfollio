@@ -20,102 +20,10 @@
     background-color: #55c9f6;
     height: 3px;
     border: 1px solid #55c9f6;
-}
-/**Lado esquerdo**/
-.content-projects-left{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 1vh 10%;
-}
-
-.content-projects-left-text{
-    width: 50%;
-    text-align: right;
-}
-.content-projects-left-text h3{
-    font-size: 2.1vw;
-    font-weight: bold;
-}
-.content-projects-left-text p{
-    font-size: 1.2vw;
-    font-weight: 200;
-    margin: 18px 0;
-}
-.content-projects-left-text small{
-    font-size: .6vw;
-    margin-top: 0;
-}
-strong{
-    font-weight: bold;
-}
-.content-projects-left-text div{
-    display: flex;
-    flex-direction: row; 
-    justify-content: end;
-}
-
-.content-projects-left-text div p{
-    margin-left: 15px;
-    font-weight: bold;
-}
-.content-projects-left-text div hr{
-    visibility: hidden;
-    margin: 0 10px;
-}
-.content-projects-left-img{
-    width: 45%;
-    padding: 0 0 0 30px;
-}
-.content-projects-left-img img{
-    width: 100%;
-    border: 2px solid #55c9f6cc;
-    border-radius: 6px;
-}
-/** lado direito **/
-.content-projects-rigth{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 9vh 10%;
-}
-
-.content-projects-rigth-text{
-    width: 50%;
-    text-align: left;
-}
-.content-projects-rigth-text h3{
-    font-size: 2.1vw;
-    font-weight: bold;
-}
-.content-projects-rigth-text p{
-    font-size: 1.2vw;
-    margin: 18px 0;
-}
-.content-projects-rigth-text div{
-    display: flex;
-    flex-direction: row;
-}
-.content-projects-rigth-text div p{
-    margin-right: 15px;
-    font-weight: bold;
-}
-.content-projects-rigth-text-button{
-    width: 102px;
-    justify-content: space-between;
-}
-
-.content-projects-rigth-img{
-    width: 45%;
-    padding: 0 30px 0 0;
-}
-.content-projects-rigth-img img{
-    width: 100%;
-    border: 2px solid #55c9f6cc;
-    border-radius: 6px;
+    opacity: 1;
 }
 
 .slider{
-    width: 78vw;
-    margin: 3vh auto;
+    width: 70vw;
+    margin: 2vh 10%;
 }
