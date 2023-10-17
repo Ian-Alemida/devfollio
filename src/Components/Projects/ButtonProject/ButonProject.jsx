@@ -17,14 +17,14 @@ function ButtonProject({ linkCode, linkView }) {
     }
 
     return (
-        <>
+        <div className='btns'>
             <a href={linkCode} target="_blank" rel='noreferrer noopener'>
                 <button className="Btn"
                     onMouseEnter={handleHover}
                     onMouseLeave={handleHoverLeave}
                 >
                     <img className='svgIcon' src={isHover ? codeWitheIcon : codeIcon} alt="icon button" />
-                    <span className="tooltip">ver código</span>
+                    <small className="tooltipp">ver código</small>
                 </button>
             </a>
             <a href={linkView} target="_blank" rel='noreferrer noopener'>
@@ -33,10 +33,10 @@ function ButtonProject({ linkCode, linkView }) {
                     onMouseLeave={handleHoverLeave}
                 >
                     <img className='svgIcon' src={isHover ? viewWitheIcon : viewIcon} alt="icon button" />
-                    <span className="tooltip">Ver projeto</span>
+                    <small className="tooltipp">Ver projeto</small>
                 </button>
             </a>
-        </>
+        </div>
     )
 }
 

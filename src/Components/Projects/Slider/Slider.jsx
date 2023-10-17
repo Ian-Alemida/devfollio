@@ -9,7 +9,11 @@ function Slider({ projetos }) {
 
 
     return (
-        <Carousel style={{ height: '80vh' }}>
+        <Carousel  
+            pause={'hover'} 
+            fade 
+            style={{ height: '80vh' }}
+        >
             {projetos.map((projeto, indice) => {
                 return (
                     <Carousel.Item key={indice} >
