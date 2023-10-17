@@ -24,7 +24,7 @@
 }
 .carousel-caption h4{
     text-align: left;
-    font-size: 1.71vw;
+    font-size: 1.5vw;
 }
 .carousel-caption h4 small{
     font-size: .9vw;
@@ -35,6 +35,6 @@
 }
 
 .carousel-caption span{
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     font-weight: bold;
 }

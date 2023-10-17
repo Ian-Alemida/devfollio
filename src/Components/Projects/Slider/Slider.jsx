@@ -20,7 +20,7 @@ function Slider({ projetos }) {
                         <ImgSlider nameProject={projeto.nameProject} img={projeto.imgProject} />
                         <Carousel.Caption className='carousel-caption'>
                             <h4>{projeto.text} <small className={projeto.isMobile ? '' : 'isMobile'}>OBS: lembre-se de colocar o navegador no modo mobile em inspecionar</small></h4>
-                            <div style={{ display: 'flex', gap: 50 }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '51px' }}>
                                 <span>{projeto.tecnologias}</span>
                                 <ButtonProject linkCode={projeto.linkCode} linkView={projeto.linkView}></ButtonProject>
                             </div>
