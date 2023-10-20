@@ -4,12 +4,22 @@ import aluraBooks from './images/AluraBooks.png'
 import apeperia from './images/Apeperia.png'
 import optimusTech from './images/optimustech.png'
 import planetSky from './images/PlanetSky.png'
+import OrganoValorant from './images/OrganoValoran.png'
 import Slider from './Slider/Slider'
 
 
 function Projects() {
 
     const projetos = [{
+        nameProject: 'Organo Valorant',
+        imgProject: OrganoValorant,
+        text: "Um projeto em react que cria organogramas de personagens e classes do jogo FPS online Valorant. Esse projeto foi desenvolvido visando adquirir experiencia e melhorar meu entendimento de, formulários, Objetos de dados e como eles interagem entre si, através do gerenciamento de estados, passando informações de um componente para o outro e construindo novos cards. Utilizei algumas bibliotecas externas como o 'hex-to-rgba', 'react icons' e 'uuid'.",
+        isMobile: false,
+        tecnologias: 'React',
+        linkCode: 'https://github.com/Ian-Alemida/organoValorant',
+        linkView: 'https://organo-valorant-rose.vercel.app/'
+    },
+    {
         nameProject: 'Planet Sky',
         imgProject: planetSky,
         text: 'Uma aplicação autoral que te permite explorar o cosmos de forma envolvente e descobrir curiosidades fascinantes sobre o sistema solar! Usando Flutter e Dart pude fixar conceitos de Desenvolvimento Cross-Platform, sistema de navegação de rotas com Navigator e arvore de widgets.',
