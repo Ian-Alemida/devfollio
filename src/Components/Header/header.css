@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     width: 99.9%;
     height: 7vh;
     border-bottom: 1px solid #ffffff20;
@@ -29,16 +30,23 @@
         transform: rotate(360deg);
     }
 }
+.App-header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 .Links-header{
     color: #efefef;
     display: flex;
-    flex-direction: row;
+    margin: auto 0;
     margin-right: 6vw;
 }
 
 .Links-header li a{
-    margin: 0 1vw;
+    margin: auto 1vw;
     color: inherit;
     text-decoration: none;
 }
