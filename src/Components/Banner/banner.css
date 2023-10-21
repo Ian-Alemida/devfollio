@@ -91,6 +91,5 @@ overflow: hidden;
 .content-button{
     margin-top: 21px;
     display: flex;
-    justify-content: space-between;
-    width: 21vw;
+    gap: 42px;
 }
