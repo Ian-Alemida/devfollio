@@ -1,12 +1,12 @@
 import  './cardTecnologo.css'
 
-function CardTecnologo (){
+function CardTecnologo ({ type, nome, instituição, time, link }){
     return(
-        <div className='content-cardTecnologo'>
-            <h3>Tecnólogo</h3>
-            <p className='content-cardTecnologo-p'>Análise e desenvolvimento de sistemas <small>- Descomplica faculdade digital</small></p>
-            <span>2023 - 2025</span>
-        </div>
+        <a href={link} className='content-cardTecnologo' target="_blank" rel='noreferrer noopener'>
+            <h3>{type}</h3>
+            <p className='content-cardTecnologo-p'>{nome} <small>- {instituição}</small></p>
+            <span>{time}</span>
+        </a>
     )
 }
 

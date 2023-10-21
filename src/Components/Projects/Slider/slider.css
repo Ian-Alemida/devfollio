@@ -1,0 +1,40 @@
+.imgSlider{
+    height: 77vh;
+    border-radius: 33px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.imgSlider h3 {
+    font-size: 3vw;
+    background-color: #111111ee;
+    border-radius: 18px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.carousel-caption{
+    background-color: #111111ee;
+    border-radius: 18px;
+    padding: 27px;
+    width: 80%;
+    right: 10%;
+    left: 10%;
+}
+.carousel-caption h4{
+    text-align: left;
+    font-size: 1.5vw;
+}
+.carousel-caption h4 small{
+    font-size: .9vw;
+    font-weight: 200;
+}
+.isMobile{
+    display: none;
+}
+
+.carousel-caption span{
+    font-size: 1.2vw;
+    font-weight: bold;
+}

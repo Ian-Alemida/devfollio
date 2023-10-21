@@ -11,7 +11,20 @@ function Courses({ cursos }) {
             <h2>Formação<span>.</span></h2>
             <article>
                 <ul className='cards'>
-                    <CardTecnologo/>
+                    <CardTecnologo 
+                        type={'Tecnólogo'} 
+                        nome={'Análise e desenvolvimento de sistemas'}
+                        instituição={'Descomplica faculdade digital'}
+                        time={'2023 - 2025'}
+                        link={'###'}
+                    />
+                    <CardTecnologo 
+                        type={'Certificado'}
+                        nome={'Desenvolvedor front-end'}
+                        instituição={'Descomplica faculdade digital'}
+                        time={'240h - 2023'}
+                        link={'https://certificados.descomplica.com.br/graduacao/1d59a0dcadafb2fe77329ced4eff1b5de58b72bbc4b4bcde8cf3ed3ff4bcc40e'}
+                    />
                     {cursos.map((curso, indice) => {
                         return <CardCourses
                             key={indice}
