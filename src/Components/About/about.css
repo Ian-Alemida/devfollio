@@ -1,6 +1,6 @@
 .content-about{
     width: 95vw;
-    height: 85vh;
+    height: 88vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -37,7 +37,7 @@
 }
 
 .content-about-text h2{
-    font-size: 4vw;
+    font-size: 3.9vw;
 }
 
 .content-about-text h3{
