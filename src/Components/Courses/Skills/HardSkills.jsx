@@ -26,6 +26,8 @@ function HardSkills () {
             </div>
             <div className="skills-row">
                 <p>Dart</p>
+                <p>Java</p>
+                <p></p>
             </div>
         </div>
     )
