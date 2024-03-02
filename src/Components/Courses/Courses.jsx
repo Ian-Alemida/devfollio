@@ -9,6 +9,13 @@ function Courses({ cursos }) {
     return (
         <section className='content-courses' id='Courses'>
             <h2>Formação<span>.</span></h2>
+            <div className='content-courses-menu'>
+                <button>Front-End</button>
+                <button>Back-End</button>
+                <button>Cyber Security</button>
+                <button>Faculdade</button>
+                <button>Mobile</button>
+            </div>
             <article>
                 <ul className='cards'>
                     <CardTecnologo 
