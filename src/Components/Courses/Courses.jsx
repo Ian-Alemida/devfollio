@@ -9,7 +9,7 @@ import { useState } from 'react';
 function Courses({ cursos }) {
     const [skillActive, setSkillActive] = useState('Front-end')
 
-    const Skills = ['Front-end', 'Back-end', 'Mobile', 'Faculdade','Cyber Security', 'Livros']
+    const Skills = ['Front-end', 'Back-end', 'Mobile', 'Faculdade', 'Cyber Security', 'Livros']
 
     const skillVisible = skillActive ?
         cursos.filter(curso => curso.skill === skillActive) :
@@ -20,10 +20,11 @@ function Courses({ cursos }) {
             <h2>Formação<span>.</span></h2>
             <div className='content-courses-menu'>
                 {Skills.map((skill) => {
-                    return <button value={skill} onClick={() => { setSkillActive(skill) }}>
+                    return <button className={skill === skillActive ? 'content-courses-menu-active' : ''} value={skill} onClick={() => { setSkillActive(skill) }}>
                         {skill}
                     </button>
                 })}
+                <hr />
             </div>
             <article>
                 <ul className='cards'>
@@ -33,7 +34,7 @@ function Courses({ cursos }) {
                                 key={indice}
                                 link={curso.link}
                                 nome={curso.nome}
-                                instituição={curso.plataform}
+                                plataform={curso.plataform}
                                 time={curso.time}
                                 type={curso.type}
                             />
