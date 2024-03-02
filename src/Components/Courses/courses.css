@@ -17,9 +17,8 @@
 }
 
 .content-courses .cards{
-    margin: 1vh 10%;
+    margin: 1vh 9%;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 12px;
     padding: 0;

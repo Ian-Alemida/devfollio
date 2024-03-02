@@ -14,7 +14,7 @@ function App() {
   const cursos = [{
     "type": 'Tecnólogo',
     "nome": 'Análise e desenvolvimento de sistemas',
-    "instituição": 'Descomplica faculdade digital',
+    "plataform": 'Descomplica faculdade digital',
     "time": '2023 - 2025',
     "link": '###',
     "skill": 'Faculdade'
@@ -22,7 +22,7 @@ function App() {
   {
     "type": 'Certificado',
     "nome": 'Desenvolvedor front-end',
-    "instituição": 'Descomplica faculdade digital',
+    "plataform": 'Descomplica faculdade digital',
     "time": '240h - 2023',
     "link": 'https://certificados.descomplica.com.br/graduacao/1d59a0dcadafb2fe77329ced4eff1b5de58b72bbc4b4bcde8cf3ed3ff4bcc40e',
     "skill": 'Faculdade'
@@ -30,7 +30,7 @@ function App() {
   {
     "type": 'Certificado',
     "nome": 'Programmer',
-    "instituição": 'Descomplica faculdade digital',
+    "plataform": 'Descomplica faculdade digital',
     "time": '160h - 2023',
     "link": 'https://certificados.descomplica.com.br/graduacao/13a65a3e574b4da5b7163364671b81e3c215ee0ab04a800319684dd3e844992b',
     "skill": 'Faculdade'

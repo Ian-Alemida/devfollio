@@ -7,35 +7,46 @@ import Idiomas from './Skills/Idiomas';
 import { useState } from 'react';
 
 function Courses({ cursos }) {
-    const [skillActive, setSkillActive] = useState('front-end')
+    const [skillActive, setSkillActive] = useState('Front-end')
 
-    const Skills =['Front-end','Back-end','Cyber Security','Faculdade','Mobile', 'Livros']
+    const Skills = ['Front-end', 'Back-end', 'Mobile', 'Faculdade','Cyber Security', 'Livros']
 
-    const skillVisible = skillActive ? 
-    cursos.filter(curso => curso.skill === skillActive) : 
-    cursos;
+    const skillVisible = skillActive ?
+        cursos.filter(curso => curso.skill === skillActive) :
+        cursos;
 
     return (
         <section className='content-courses' id='Courses'>
             <h2>Formação<span>.</span></h2>
             <div className='content-courses-menu'>
                 {Skills.map((skill) => {
-                    return <button value={skill} onClick={() => {setSkillActive(skill)}}>
-                                {skill}
-                            </button>
+                    return <button value={skill} onClick={() => { setSkillActive(skill) }}>
+                        {skill}
+                    </button>
                 })}
             </div>
             <article>
                 <ul className='cards'>
-                    {skillVisible.map((curso, indice) => {                                       
-                        return  <CardCourses
-                                    key={indice}
-                                    link={curso.link}
-                                    nome={curso.nome}
-                                    plataform={curso.plataform}
-                                    time={curso.time}
-                                />  
-                    })}
+                    {skillActive === 'Faculdade' ?
+                        skillVisible.map((curso, indice) => {
+                            return <CardTecnologo
+                                key={indice}
+                                link={curso.link}
+                                nome={curso.nome}
+                                instituição={curso.plataform}
+                                time={curso.time}
+                                type={curso.type}
+                            />
+                        }) :
+                        skillVisible.map((curso, indice) => {
+                            return <CardCourses
+                                key={indice}
+                                link={curso.link}
+                                nome={curso.nome}
+                                plataform={curso.plataform}
+                                time={curso.time}
+                            />
+                        })}
                 </ul>
             </article>
             <article className='content-courses-skills'>
