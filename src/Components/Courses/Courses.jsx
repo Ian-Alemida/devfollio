@@ -4,36 +4,49 @@ import CardCourses from './Cards/CardCourses';
 import HardSkills from './Skills/HardSkills';
 import SoftSkills from './Skills/SoftSkills';
 import Idiomas from './Skills/Idiomas';
+import { useState } from 'react';
 
 function Courses({ cursos }) {
+    const [skillActive, setSkillActive] = useState('Front-end')
+
+    const Skills = ['Front-end', 'Back-end', 'Mobile', 'Faculdade', 'Cyber Security', 'Livros']
+
+    const skillVisible = skillActive ?
+        cursos.filter(curso => curso.skill === skillActive) : null;
+
     return (
         <section className='content-courses' id='Courses'>
             <h2>Formação<span>.</span></h2>
+            <div className='content-courses-menu'>
+                {Skills.map(skill => {
+                    return <button key={skill} className={skill === skillActive ? 'content-courses-menu-active' : ''} value={skill} onClick={() => { setSkillActive(skill) }}>
+                        {skill}
+                    </button>
+                })}
+                <hr />
+            </div>
             <article>
                 <ul className='cards'>
-                    <CardTecnologo 
-                        type={'Tecnólogo'} 
-                        nome={'Análise e desenvolvimento de sistemas'}
-                        instituição={'Descomplica faculdade digital'}
-                        time={'2023 - 2025'}
-                        link={'###'}
-                    />
-                    <CardTecnologo 
-                        type={'Certificado'}
-                        nome={'Desenvolvedor front-end'}
-                        instituição={'Descomplica faculdade digital'}
-                        time={'240h - 2023'}
-                        link={'https://certificados.descomplica.com.br/graduacao/1d59a0dcadafb2fe77329ced4eff1b5de58b72bbc4b4bcde8cf3ed3ff4bcc40e'}
-                    />
-                    {cursos.map((curso, indice) => {
-                        return <CardCourses
-                            key={indice}
-                            link={curso.link}
-                            nome={curso.nome}
-                            plataform={curso.plataform}
-                            time={curso.time}
-                        />
-                    })}
+                    {skillActive === 'Faculdade' ?
+                        skillVisible.map((curso, indice) => {
+                            return <CardTecnologo
+                                key={indice}
+                                link={curso.link}
+                                nome={curso.nome}
+                                plataform={curso.plataform}
+                                time={curso.time}
+                                type={curso.type}
+                            />
+                        }) :
+                        skillVisible.map((curso, indice) => {
+                            return <CardCourses
+                                key={indice}
+                                link={curso.link}
+                                nome={curso.nome}
+                                plataform={curso.plataform}
+                                time={curso.time}
+                            />
+                        })}
                 </ul>
             </article>
             <article className='content-courses-skills'>
