@@ -12,15 +12,14 @@ function Courses({ cursos }) {
     const Skills = ['Front-end', 'Back-end', 'Mobile', 'Faculdade', 'Cyber Security', 'Livros']
 
     const skillVisible = skillActive ?
-        cursos.filter(curso => curso.skill === skillActive) :
-        cursos;
+        cursos.filter(curso => curso.skill === skillActive) : null;
 
     return (
         <section className='content-courses' id='Courses'>
             <h2>Formação<span>.</span></h2>
             <div className='content-courses-menu'>
-                {Skills.map((skill) => {
-                    return <button className={skill === skillActive ? 'content-courses-menu-active' : ''} value={skill} onClick={() => { setSkillActive(skill) }}>
+                {Skills.map(skill => {
+                    return <button key={skill} className={skill === skillActive ? 'content-courses-menu-active' : ''} value={skill} onClick={() => { setSkillActive(skill) }}>
                         {skill}
                     </button>
                 })}

@@ -5,7 +5,7 @@
     background-color: #11111199;
     border-radius: 60px;
     font-family: 'releway', sans-serif;
-    margin-bottom: 25vh;
+    margin-bottom: 21vh;
 }
 
 .content-courses h2 {
@@ -41,6 +41,7 @@
 
 .content-courses-menu button {
     font-size: 1.5vw;
+    padding: 0 18px;
     margin-right: 63px;
 }
 
@@ -51,5 +52,5 @@
 
 .content-courses-menu-active {
     color: #55c9f6;
-    border-bottom: 3px solid #55c9f6;
+    border-bottom: 3.9px solid #55c9f6;
 }
