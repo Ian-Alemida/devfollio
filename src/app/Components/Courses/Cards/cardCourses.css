@@ -1,0 +1,35 @@
+.content-cardCourses {
+    background-color: #050505;
+    width: 23%;
+    padding: 1.5vh;
+    border-radius: 6px;
+    border: 1.5px solid #4d4f53;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.content-cardCourses:hover{
+    border-color: #55c9f6;
+}
+
+.content-cardCourses h3{
+    color: #bfbfbf;
+    font-size: 1.2vw;
+}
+.content-cardCourses-p{
+    font-size: 1.33vw;
+    font-weight: bold;
+    color: #fff;
+    text-align: start;
+}
+.content-cardCourses-p small{
+    font-weight: 200;
+    color: #919191;
+    font-size: 1.1vw;
+}
+
+.content-cardCourses span {
+    color: #919191;
+    font-size: 0.9vw;
+}

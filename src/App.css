@@ -1,9 +1,3 @@
-#root{
-  background-image: linear-gradient(97.54deg, #000000 35.49%, #00001f 165.37%);
-  font-family: 'releway', sans-serif;
-  height: 100%;
-  color: white;
-}
 .App{
   display: flex;
   flex-direction: column;
