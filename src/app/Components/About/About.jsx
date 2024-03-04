@@ -6,6 +6,7 @@ import iconDownload from './images/download-icon.svg'
 import instagramIcon from './images/instagram-icon.svg'
 import Card from './Card/Card'
 import Image from 'next/image'
+import Curriculo from './Curriculo.pdf'
 
 function About () {
     return (
@@ -20,7 +21,7 @@ function About () {
                 <p>Desde 2022, tenho me dedicado ao desenvolvimento de software, e essa jornada tem sido verdadeiramente apaixonante. Cresci fascinado pela tecnologia e, desde cedo, tive interesse na computação. Em 2023, decidi dar um passo adiante e me matriculei no curso de Análise e Desenvolvimento de Sistemas, buscando aprimorar minhas habilidades e me manter em constante desenvolvimento. </p>
                 <p>Estou comprometido em aprimorar minhas habilidades e contribuir com meu conhecimento para ajudar a comunidade alcançar seus objetivos.</p>
                 <div className='content-button'>
-                    <Botao icon1={iconDownload} icon2={iconDownload} link={'###'} isDownload text={'Baixar CV'}></Botao>
+                    <Botao icon1={iconDownload} icon2={iconDownload} link={Curriculo} isDownload text={'Baixar CV'}></Botao>
                     <Botao icon1={instagramIcon} icon2={instagramIcon} link="https://www.instagram.com/binary_jouney/?igshid=OGQ5ZDc2ODk2ZA=='" text={'Instagram'}></Botao>
                 </div>
             </div>

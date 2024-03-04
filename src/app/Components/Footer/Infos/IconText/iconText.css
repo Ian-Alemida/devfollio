@@ -6,9 +6,10 @@
 }
 .Content-Infos-text-info img{
     margin-right: 1vh;
+    height: 2.7vh;
     width: 2.1vh;
 }
 .Content-Infos-text-info p{
-    font-size: 1.2vw;
+    font-size: 1.11vw;
     margin: auto 0;
 }

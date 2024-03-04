@@ -8,7 +8,7 @@
     margin-right: 6vw;
 }
 .footer-Links-header ul li{
-    margin-bottom: .3vh;
+    margin-bottom: .6vh;
     display: flex;
 }
 .footer-Links-header ul li a{
@@ -19,5 +19,5 @@
     color: #2191ff;
 }
 .footer-Links-header-text{
-    font-size: 1.1vw;
+    font-size: 1.2vw;
 }
