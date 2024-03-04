@@ -5,15 +5,6 @@ import Slider from './Slider/Slider'
 function Projects() {
 
     const projetos = [{
-        nameProject: 'Organo Valorant',
-        imgProject: './assets/images/OrganoValoran.png',
-        text: "Um projeto em react que cria organogramas de personagens e classes do jogo FPS online Valorant. Esse projeto foi desenvolvido visando adquirir experiencia e melhorar meu entendimento de, formulários, Objetos de dados e como eles interagem entre si, através do gerenciamento de estados, passando informações de um componente para o outro e construindo novos cards. Utilizei algumas bibliotecas externas como o 'hex-to-rgba', 'react icons' e 'uuid'.",
-        isMobile: false,
-        tecnologias: 'React',
-        linkCode: 'https://github.com/Ian-Alemida/organoValorant',
-        linkView: 'https://organo-valorant-rose.vercel.app/'
-    },
-    {
         nameProject: 'Planet Sky',
         imgProject: './assets/images/PlanetSky.png',
         text: 'Uma aplicação autoral que te permite explorar o cosmos de forma envolvente e descobrir curiosidades fascinantes sobre o sistema solar! Usando Flutter e Dart pude fixar conceitos de Desenvolvimento Cross-Platform, sistema de navegação de rotas com Navigator e arvore de widgets.',
@@ -21,6 +12,15 @@ function Projects() {
         tecnologias: 'Dart - Flutter',
         linkCode: 'https://github.com/Ian-Alemida/planet_sky',
         linkView: 'https://planet-sky-5plu.vercel.app/#/initial'
+    },
+    {
+        nameProject: 'Organo Valorant',
+        imgProject: './assets/images/OrganoValoran.png',
+        text: "Um projeto em react que cria organogramas de personagens e classes do jogo FPS online Valorant. Esse projeto foi desenvolvido visando adquirir experiencia e melhorar meu entendimento de, formulários, Objetos de dados e como eles interagem entre si, através do gerenciamento de estados, passando informações de um componente para o outro e construindo novos cards. Utilizei algumas bibliotecas externas como o 'hex-to-rgba', 'react icons' e 'uuid'.",
+        isMobile: false,
+        tecnologias: 'React',
+        linkCode: 'https://github.com/Ian-Alemida/organoValorant',
+        linkView: 'https://organo-valorant-rose.vercel.app/'
     },
     {
         nameProject: 'Alura Books',
