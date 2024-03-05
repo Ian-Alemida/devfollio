@@ -8,6 +8,7 @@ import reactIcon from './images/react.svg'
 import nodeIcon from './images/node.svg'
 import tailwindIcon from './images/tailwind.png'
 import flutterIcon from './images/flutter.png'
+import nextIcon from './images/Next.js.svg'
 
 function Technology() {
 
@@ -29,12 +30,12 @@ function Technology() {
     {
         "img": reactIcon,
         "nome": "ReactJS",
-        "text": "FrameWork usado para proporcionar interatividade ao usuario e componetizar a pagina."
+        "text": "Biblioteca usada para proporcionar interatividade ao usuário e componetizar a pagina."
     },
     {
         "img": tailwindIcon,
         "nome": "Tailwind",
-        "text": "O tailwind é um FrameWork do CSS utilizado para estilizar os elementos atraves de classes."
+        "text": "O tailwind é um FrameWork do CSS utilizado para estilizar os elementos através de classes."
     },
     {
         "img": flutterIcon,
@@ -44,7 +45,12 @@ function Technology() {
     {
         "img": gitIcon,
         "nome": "Git e GitHub",
-        "text": "Utilizo  o git como programa de versionamento das minhas aplicações."
+        "text": "Utilizo o git como programa de versionamento das minhas aplicações."
+    },
+    {
+        "img": nextIcon,
+        "nome": "Next.JS",
+        "text": "Utilizo next para proporcionar ao usuário uma experiencia mais rápida e melhorar o SEO."
     },
     {
         "img": nodeIcon,

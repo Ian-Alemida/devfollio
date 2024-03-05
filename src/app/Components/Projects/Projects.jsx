@@ -1,7 +1,6 @@
 import './projects.css'
 import Slider from './Slider/Slider'
 
-
 function Projects() {
 
     const projetos = [{
