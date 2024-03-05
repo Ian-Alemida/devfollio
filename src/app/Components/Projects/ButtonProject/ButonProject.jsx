@@ -1,3 +1,4 @@
+'use client';
 import './buttonProject.css'
 import React, { useState } from 'react'
 import codeIcon from '../images/code.svg'

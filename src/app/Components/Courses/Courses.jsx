@@ -1,3 +1,4 @@
+'use client';
 import './courses.css'
 import CardTecnologo from './Cards/CardTecnologo';
 import CardCourses from './Cards/CardCourses';

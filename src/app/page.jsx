@@ -14,7 +14,7 @@ import ScrollUp from './Components/ScrollUp/ScrollUp';
 function App() {
 
   const cursos = [
-    //Faculdade
+    //Faculdade -----------------------------------------
     {
     "type": 'Tecnólogo',
     "nome": 'Análise e desenvolvimento de sistemas',

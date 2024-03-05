@@ -1,3 +1,4 @@
+'use client';
 import './botao.css'
 import React, { useState } from 'react'
 import Image from 'next/image'

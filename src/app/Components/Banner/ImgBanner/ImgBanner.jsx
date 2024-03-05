@@ -1,3 +1,4 @@
+'use client';
 import './imgBanner.css'
 import image from '../images/banner_image.svg'
 import React, { useRef } from "react"

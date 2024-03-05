@@ -1,3 +1,4 @@
+'use client';
 import './scrollUp.css'
 import React, {useState, useEffect, useCallback} from 'react'
 
