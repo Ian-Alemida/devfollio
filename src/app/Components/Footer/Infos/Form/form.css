@@ -9,7 +9,7 @@
 }
 
 .Content-Infos-form-div{
-    border: 2px solid #2191ff;
+    border: 2px solid var(--cor-secundaria);
     border-radius: 8px;
     display: flex;
     box-sizing: border-box;
@@ -18,7 +18,7 @@
     border-radius: 6px 0 0 6px;
 }
 .Content-Infos-form-div button{
-    background-color: #2191ff;
+    background-color: var(--cor-secundaria);
     padding: 3px;
     box-sizing: border-box;
     border-radius: 0 6px 6px 0;

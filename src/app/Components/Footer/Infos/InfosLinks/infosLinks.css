@@ -49,7 +49,7 @@
 }
 
 .Btn-infos:hover {
-    background-color: #2191ff;
+    background-color: var(--cor-secundaria);
 }
 .Btn-infos:hover .svgIcon-infos {
     animation: slide-in-top 0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

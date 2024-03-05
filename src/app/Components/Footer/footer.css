@@ -2,9 +2,8 @@
     width: 99.8%;
     display: flex;
     flex-direction: column;
-    background-color: #000;
-    color: #c1c1c1;
-    font-family: 'releway', sans-serif;
+    background-color: var(--preto);
+    color: var(--cinza);
     text-align: center;
 }
 .Content-footer-top{

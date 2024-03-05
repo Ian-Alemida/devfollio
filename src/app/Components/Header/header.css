@@ -39,7 +39,7 @@
 }
 
 .Links-header{
-    color: #efefef;
+    color: var(--branco);
     display: flex;
     margin: auto 0;
     margin-right: 6vw;
@@ -51,7 +51,7 @@
     text-decoration: none;
 }
 .Links-header li a:hover{
-    border-bottom: 1px solid #55c9f6;
+    border-bottom: 1px solid var(--cor-principal);
 }
 .Links-header-text{
     font-size: 1.4vw;

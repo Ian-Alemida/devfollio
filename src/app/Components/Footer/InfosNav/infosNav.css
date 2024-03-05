@@ -15,8 +15,8 @@
     text-decoration: none;
 }
 .footer-Links-header ul li a:hover{
-    border-bottom: 1px solid #2191ff;
-    color: #2191ff;
+    border-bottom: 1px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
 }
 .footer-Links-header-text{
     font-size: 1.2vw;
