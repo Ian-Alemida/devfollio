@@ -12,17 +12,19 @@
     margin: 1.2vh 0;
 }
 
-.skills-row{
+.skills-list{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: start;
     width: 100%;
 }
-.skills-row p{
+.skills-list p{
     font-size: 1vw;
     font-weight: 200;
     margin-bottom: .6vh;
-    width: 33%;
+    width: 26%;
+    
 }
 
 .skills-column{
