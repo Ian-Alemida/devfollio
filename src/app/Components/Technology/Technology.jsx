@@ -9,6 +9,7 @@ import nodeIcon from './images/node.svg'
 import tailwindIcon from './images/tailwind.png'
 import flutterIcon from './images/flutter.png'
 import nextIcon from './images/Next.js.svg'
+import javaIcon from './images/java.svg'
 
 function Technology() {
 
@@ -53,7 +54,11 @@ function Technology() {
         "nome": "Git e GitHub",
         "text": "Utilizo o git como programa de versionamento das minhas aplicações."
     },
-    
+    {
+        "img": javaIcon,
+        "nome": "Java",
+        "text": "Utilizo Java no Back-end e para a criação de algumas API's."
+    },
     {
         "img": nodeIcon,
         "nome": "NodeJS",
