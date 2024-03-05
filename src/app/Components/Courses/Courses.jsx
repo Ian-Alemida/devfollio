@@ -19,7 +19,12 @@ function Courses({ cursos }) {
             <h2>Formação<span>.</span></h2>
             <div className='content-courses-menu'>
                 {Skills.map(skill => {
-                    return <button key={skill} className={skill === skillActive ? 'content-courses-menu-active' : ''} value={skill} onClick={() => { setSkillActive(skill) }}>
+                    return <button
+                        key={skill}
+                        className={skill === skillActive ? 'content-courses-menu-active' : ''}
+                        value={skill}
+                        onClick={() => { setSkillActive(skill) }}
+                    >
                         {skill}
                     </button>
                 })}

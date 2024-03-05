@@ -1,33 +1,15 @@
 import './skills.css'
 
-function HardSkills () {
-    return(
+function HardSkills() {
+
+    const skills = ['React.JS', 'HTML5', 'Git & GitHub', 'Node.JS', 'CSS3', 'UX & UI', 'JavaScript', 'BootsTrap', 'SEO', 'Flutter', 'TailWind', 'RegExp', 'Dart', 'Java']
+    return (
         <div className='skills'>
             <h3>Hard Skills</h3>
-            <div className="skills-row">
-                <p>React.JS</p>
-                <p>HTML5</p>
-                <p>Git & GitHub</p>
-            </div>
-            <div className="skills-row">
-                <p>Node.JS</p>
-                <p>CSS3</p>
-                <p>UX & UI</p>
-            </div>
-            <div className="skills-row">
-                <p>JavaScript</p>
-                <p>BootsTrap</p>
-                <p>SEO</p>
-            </div>
-            <div className="skills-row">
-                <p>Flutter</p>
-                <p>TailWind</p>
-                <p>RegExp</p>
-            </div>
-            <div className="skills-row">
-                <p>Dart</p>
-                <p>Java</p>
-                <p></p>
+            <div className="skills-list">
+                {skills.map((skill, indice) => {
+                    return <p key={indice}>{skill}</p>
+                })}
             </div>
         </div>
     )
