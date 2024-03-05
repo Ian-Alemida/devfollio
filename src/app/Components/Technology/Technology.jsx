@@ -12,7 +12,8 @@ import nextIcon from './images/Next.js.svg'
 
 function Technology() {
 
-    const Tecnologias = [{
+    const Tecnologias = [
+        {
         "img": htmlIcon,
         "nome": "HTML5",
         "text": "HTML é uma linguagem de marcação utilizada na construção de paginas web."
@@ -33,6 +34,11 @@ function Technology() {
         "text": "Biblioteca usada para proporcionar interatividade ao usuário e componetizar a pagina."
     },
     {
+        "img": nextIcon,
+        "nome": "Next.JS",
+        "text": "Utilizo next para proporcionar ao usuário uma experiencia mais rápida e melhorar o SEO."
+    },
+    {
         "img": tailwindIcon,
         "nome": "Tailwind",
         "text": "O tailwind é um FrameWork do CSS utilizado para estilizar os elementos através de classes."
@@ -47,11 +53,7 @@ function Technology() {
         "nome": "Git e GitHub",
         "text": "Utilizo o git como programa de versionamento das minhas aplicações."
     },
-    {
-        "img": nextIcon,
-        "nome": "Next.JS",
-        "text": "Utilizo next para proporcionar ao usuário uma experiencia mais rápida e melhorar o SEO."
-    },
+    
     {
         "img": nodeIcon,
         "nome": "NodeJS",
