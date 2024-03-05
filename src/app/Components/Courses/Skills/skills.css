@@ -6,7 +6,7 @@
 .skills h3{
     font-size: 1.8vw;
     font-weight: bold;
-    border-left: 5px solid #55c9f6;
+    border-left: 5px solid var(--cor-principal);
     border-radius: 3px;
     padding-left: .6vh;
     margin: 1.2vh 0;
@@ -38,5 +38,5 @@
     width: 33%;
 }
 .skills-column p small{
-    color: #919191;
+    color: var(--cinza);
 }

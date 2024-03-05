@@ -8,16 +8,16 @@
 }
 .imgSlider h3 {
     font-size: 3vw;
-    background-color: #111111ee;
+    background-color: #111111dd;
     border-radius: 18px;
-    padding: 15px;
+    padding: 0 18px 9px;
     font-weight: bold;
 }
 
 .carousel-caption{
-    background-color: #111111ee;
+    background-color: #111111dd;
     border-radius: 18px;
-    padding: 12px;
+    padding: 18px;
     width: 80%;
     right: 10%;
     left: 10%;

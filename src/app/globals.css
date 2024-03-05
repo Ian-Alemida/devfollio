@@ -1,11 +1,13 @@
 :root {
   /* Definindo variáveis de cores */
   --cor-principal: red;
+  --cor-principal-translucida: #FF000066;
   --cor-secundaria: #2191ff;
   --preto: #000000;
   --preto-translucido: #11111166;
-  --branco: #dfdfdf;
+  --branco: #efefef;
   --cinza: #a1a1a1;
+  --cinza-medio: #414141;
   --cinza-escuro: #1c1c1c;
 }
 .root{

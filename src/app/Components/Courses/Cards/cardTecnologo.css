@@ -1,35 +1,37 @@
 .content-cardTecnologo {
-    background-color: #050505;
+    background-color: #020202;
     width: 48.66%;
-    padding: 1.5vh;
+    padding: 1.5vh 2.1vh;
     border-radius: 6px;
-    border: 1.5px solid #4d4f53;
+    border: 1.5px solid var(--cinza-medio);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-decoration: none;
 }
 .content-cardTecnologo:hover{
-    border-color: #55c9f6;
+    border-color: var(--cor-principal);
 }
 
 .content-cardTecnologo h3{
-    color: #dfdfdf;
-    font-size: 1.53vw;
+    color: var(--cinza);
+    font-size: 1.8vw;
+    margin: 0;
 }
 .content-cardTecnologo-p{
-    margin: 1.2vh 0;
-    font-size: 1.53vw;
-    font-weight: bold;
-    color: #fff;
+    margin: 0 0 1vh 0;
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: var(--branco);
 }
 .content-cardTecnologo-p small{
     font-weight: 200;
-    color: #919191;
-    font-size: 1.3vw;
+    color: var(--cinza);
+    font-size: 1.2vw;
 }
 
 .content-cardTecnologo span {
-    color: #919191;
+    color: var(--cinza);
     font-size: 1vw;
+    margin-top: 1.2vh;
 }

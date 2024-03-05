@@ -6,6 +6,7 @@
     align-items: center;
     text-align: center;
     transition: all 0.3s ease;
+    margin-bottom: 1.2vh;
 }
 .technology-card-hover {
     transform: scale(1.08);
@@ -19,14 +20,13 @@
 }
 
 .technology-card h3{
-    font-size: 2vw;
+    font-size: 2.1vw;
     font-weight: bold;
-    margin: 9px 0 9px 0;
+    margin: 6px 0 3px 0;
 }
 
 .technology-card p{
-    font-size: 1.09vw;
-    
+    font-size: 1.08vw;
 }
 .technology-card-img {
     width: 51%;
@@ -42,7 +42,7 @@
 .technology-card-img-div {
     width: 95%;
     height: 75%;
-    background-color: aliceblue;
+    background-color: var(--branco);
     border-radius: 50%;
     position: absolute;
     top: 12%;

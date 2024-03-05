@@ -6,12 +6,12 @@
     text-align: center;
     width: 99.9%;
     height: 7vh;
-    border-bottom: 1px solid #ffffff20;
+    border-bottom: 1px solid var(--cinza-medio);
 }
 .App-logo {
-    height: 6vh;
+    height: 7vh;
     pointer-events: none;
-    width: 7.6vh;
+    width: 9vh;
     margin-left: 6vw;
 }
 
@@ -47,7 +47,7 @@
 
 .Links-header li a{
     margin: auto 1vw;
-    color: inherit;
+    color: var(--branco);
     text-decoration: none;
 }
 .Links-header li a:hover{

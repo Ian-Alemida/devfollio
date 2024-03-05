@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: var(--branco);
 }
 
 /* Change text animation*/
@@ -17,10 +17,9 @@
     display: block;
     position: sticky;
     overflow: hidden;
-    font-family: 'Lato', sans-serif;
     font-size: 35px;
     line-height: 40px;
-    color: #ecf0f1;
+    color: var(--branco);
 }
 .content-animation__container {
     font-weight: 600;
@@ -41,7 +40,7 @@
 }
 .content-animation__container__list__item {
     font-size: 1.5vw;
-    filter: drop-shadow(1px 1px 5px #fff)
+    filter: drop-shadow(6px 6px 3px var(--cinza))
 }
 @keyframes change {
     0%, 12.66%, 100% {
@@ -61,7 +60,7 @@
     font-size: 5vw;
 }
 .content-text h2 span{
-    color: #55c9f6;
+    color: var(--cor-principal);
 }
 
 /* animation writing "sou um desenvolvedor"*/
@@ -80,7 +79,7 @@
     }
 .animation {
 font: 200% Consolas, releway, monospace;
-border-right: .1em solid white;
+border-right: .1em solid var(--branco);
 width: 33ch;
 white-space: nowrap;
 overflow: hidden;
