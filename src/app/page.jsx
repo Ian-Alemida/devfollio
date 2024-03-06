@@ -1,7 +1,7 @@
 'use client';
-import './reset.css'
+import '@/app/reset.css'
 import './page.css'
-import './globals.css'
+import '@/app/globals.css'
 import Header from './Components/Header/Header';
 import Banner from './Components/Banner/Banner';
 import About from './Components/About/About';

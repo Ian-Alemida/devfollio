@@ -1,3 +1,4 @@
+'use client';
 import './banner.css'
 import Botao from './Botao/Botao'
 import iconLinkedin from './images/linkedin.svg'
