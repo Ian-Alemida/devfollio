@@ -41,6 +41,13 @@ function App() {
   },
   //Front-end ---------------------------------------------------------- 
   {
+    "nome": 'Formação - Front-End',
+    "plataform": 'Alura',
+    "time": '115h - 2023',
+    "link": 'https://cursos.alura.com.br/user/iangtaonline1/degree-front-end-113709/certificate',
+    "skill": 'Front-end'
+  },
+  {
     "nome": 'React: desenvolvendo com React Router',
     "plataform": 'Alura',
     "time": '8h - 2024',
@@ -69,10 +76,17 @@ function App() {
     "skill": 'Front-end'
   },
   {
-    "nome": 'Formação HTML e CSS',
+    "nome": 'Formação - HTML e CSS',
     "plataform": 'Alura',
     "time": '65h - 2022',
     "link": 'https://cursos.alura.com.br/degree/certificate/41d45351-1690-4a75-b7dc-6a3b2aff321c?lang=pt_BR',
+    "skill": 'Front-end'
+  },
+  {
+    "nome": 'JavaScript na Web: validação de Formulários',
+    "plataform": 'Alura',
+    "time": '8h - 2022',
+    "link": 'https://cursos.alura.com.br/user/iangtaonline1/course/javascript-web-validacao-formularios-html5/certificate',
     "skill": 'Front-end'
   },
   {
@@ -123,7 +137,8 @@ function App() {
     "time": "9h - 2022",
     "link": "https://cursos.alura.com.br/certificate/8a408a55-9bd5-41d5-b9c9-b330db9e41fa?lang=pt_BR",
     "skill": 'Front-end'
-  }, {
+  }, 
+  {
     "nome": "SEO: otimização de sites",
     "plataform": "Alura",
     "time": "8h - 2022",
@@ -251,13 +266,29 @@ function App() {
     "link": "https://cursos.alura.com.br/certificate/1a1f7a1a-84d1-4018-8f53-2b290a6f0dbf?lang=pt_BR",
     "skill": 'Mobile'
   },
-  // ------------------------------------------------------------------------------ 
+  // Cyber Security-------------------------------------------
   {
     "nome": "Pentest: explorando vulnerabilidades em aplicações web",
     "plataform": "Alura",
     "time": "10h - 2022",
     "link": "https://cursos.alura.com.br/user/iangtaonline1/course/pentest-explorando-vulnerabilidades-aplicacoes-web/certificate",
     "skill": 'Cyber Security'
+  },
+  // Livros -------------------------------------------------
+  {
+    "nome": "Pentest: explorando vulnerabilidades em aplicações web",
+    "skill": 'Livros',
+    'img': ''
+  },
+  {
+    "nome": "Pentest: explorando vulnerabilidades em aplicações web",
+    "skill": 'Livros',
+    'img': ''
+  },
+  {
+    "nome": "Pentest: explorando vulnerabilidades em aplicações web",
+    "skill": 'Livros',
+    'img': ''
   }
 ]
 
