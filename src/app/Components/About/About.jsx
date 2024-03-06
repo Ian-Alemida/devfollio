@@ -7,6 +7,7 @@ import instagramIcon from './images/instagram-icon.svg'
 import Card from './Card/Card'
 import Image from 'next/image'
 import Curriculo from './Curriculo.pdf'
+import { roboto} from "@/app/fonts"
 
 function About () {
     return (
@@ -15,7 +16,7 @@ function About () {
                 <Card children1={<Image src={perfil} alt="Uma foto minha" />} children2={<Image src={perfil2} alt="PixelArt de um homem em seu computador" />}></Card>
             </div>
             <div className='content-about-text'>
-                <h2>Sobre mim</h2>
+                <h2 className={roboto.className}>Sobre mim</h2>
                 <h3>Belo Horizonte, Minas Gerais</h3>
                 <p>Olá! Sou um Desenvolvedor Front-end especializado em Next.js, apaixonado por tecnologia e com uma sólida experiência em HTML5, CSS3 e JavaScript. Também estou imerso nos estudos de cibersegurança e sou um entusiasta da inteligência artificial.</p>
                 <p>Desde 2022, tenho me dedicado ao desenvolvimento de software, e essa jornada tem sido verdadeiramente apaixonante. Cresci fascinado pela tecnologia e, desde cedo, tive interesse na computação. Em 2023, decidi dar um passo adiante e me matriculei no curso de Análise e Desenvolvimento de Sistemas, buscando aprimorar minhas habilidades e me manter em constante desenvolvimento. </p>

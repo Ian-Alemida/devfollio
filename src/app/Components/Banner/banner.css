@@ -19,7 +19,7 @@
     overflow: hidden;
     font-size: 35px;
     line-height: 40px;
-    color: var(--branco);
+    color: var(--cor-principal);
 }
 .content-animation__container {
     font-weight: 600;
@@ -40,7 +40,7 @@
 }
 .content-animation__container__list__item {
     font-size: 1.5vw;
-    filter: drop-shadow(6px 6px 3px var(--cinza))
+    filter: drop-shadow(6px 6px 3px var(--cor-principal-translucida))
 }
 @keyframes change {
     0%, 12.66%, 100% {
@@ -90,5 +90,5 @@ overflow: hidden;
 .content-button{
     margin-top: 9px;
     display: flex;
-    gap: 24px;
+    gap: 39px;
 }

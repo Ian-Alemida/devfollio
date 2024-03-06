@@ -1,7 +1,7 @@
 :root {
   /* Definindo variáveis de cores */
-  --cor-principal: red;
-  --cor-principal-translucida: #FF000066;
+  --cor-principal: #55c9f6;
+  --cor-principal-translucida: #55c9f644;
   --cor-secundaria: #2191ff;
   --preto: #000000;
   --preto-translucido: #11111166;
