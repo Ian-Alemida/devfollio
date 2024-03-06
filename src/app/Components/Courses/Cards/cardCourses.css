@@ -15,10 +15,10 @@
 
 .content-cardCourses h3{
     color: var(--cinza);
-    font-size: 1.2vw;
+    font-size: 1.23vw;
 }
 .content-cardCourses-p{
-    font-size: 1.33vw;
+    font-size: 1.32vw;
     font-weight: bold;
     color: var(--branco);
     text-align: start;
@@ -26,7 +26,7 @@
 .content-cardCourses-p small{
     font-weight: 200;
     color: var(--cinza);
-    font-size: 1.1vw;
+    font-size: 1.11vw;
 }
 
 .content-cardCourses span {

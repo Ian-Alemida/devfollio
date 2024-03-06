@@ -39,7 +39,21 @@ function App() {
     "link": 'https://certificados.descomplica.com.br/graduacao/13a65a3e574b4da5b7163364671b81e3c215ee0ab04a800319684dd3e844992b',
     "skill": 'Faculdade'
   },
-  //Front-end ----------------------------------------------------------
+  //Front-end ---------------------------------------------------------- 
+  {
+    "nome": 'React: desenvolvendo com React Router',
+    "plataform": 'Alura',
+    "time": '8h - 2024',
+    "link": 'https://cursos.alura.com.br/user/iangtaonline1/course/React-desenvolvendo-react-router-javaScript/certificate',
+    "skill": 'Front-end'
+  },
+  {
+    "nome": 'React: configurando projetos com Vite',
+    "plataform": 'Alura',
+    "time": '8h - 2024',
+    "link": 'https://cursos.alura.com.br/user/iangtaonline1/course/react-configurando-estruturando-projetos-vite/certificate',
+    "skill": 'Front-end'
+  },
   {
     "nome": 'React: desenvolvendo com JavaScript',
     "plataform": 'Alura',
@@ -236,7 +250,16 @@ function App() {
     "time": "10h - 2022",
     "link": "https://cursos.alura.com.br/certificate/1a1f7a1a-84d1-4018-8f53-2b290a6f0dbf?lang=pt_BR",
     "skill": 'Mobile'
-  }]
+  },
+  // ------------------------------------------------------------------------------ 
+  {
+    "nome": "Pentest: explorando vulnerabilidades em aplicações web",
+    "plataform": "Alura",
+    "time": "10h - 2022",
+    "link": "https://cursos.alura.com.br/user/iangtaonline1/course/pentest-explorando-vulnerabilidades-aplicacoes-web/certificate",
+    "skill": 'Cyber Security'
+  }
+]
 
   return (
     <section className='root'>
