@@ -5,7 +5,7 @@ export const ubuntu = Ubuntu_Mono({
     subsets: ['latin'],
 });
 export const roboto = Roboto({
-    weight: ['100','400','700'],
+    weight: ['100','400','700', '500'],
     subsets: ['latin'],
 });
 export const merriweather = Merriweather({
