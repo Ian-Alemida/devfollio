@@ -1,10 +1,11 @@
 import logo from './logo.svg'
 import './header.css'
 import Image from 'next/image'
+import { roboto, ubuntu} from "@/app/fonts"
 
 function Header() {
     return(
-        <header className="App-header" id='Header'>
+        <header className={`${ubuntu.className} App-header`} id='Header'>
             <Image src={logo} className="App-logo" alt="logo" />
             <nav>
                 <ul className='Links-header'>

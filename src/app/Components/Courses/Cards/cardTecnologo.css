@@ -15,12 +15,12 @@
 
 .content-cardTecnologo h3{
     color: var(--cinza);
-    font-size: 1.8vw;
+    font-size: 1.2vw;
     margin: 0;
 }
 .content-cardTecnologo-p{
     margin: 0 0 1vh 0;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     font-weight: 700;
     color: var(--branco);
 }

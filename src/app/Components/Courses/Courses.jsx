@@ -6,6 +6,7 @@ import HardSkills from './Skills/HardSkills';
 import SoftSkills from './Skills/SoftSkills';
 import Idiomas from './Skills/Idiomas';
 import { useState } from 'react';
+import { roboto} from "@/app/fonts"
 
 function Courses({ cursos }) {
     const [skillActive, setSkillActive] = useState('Front-end')
@@ -17,7 +18,7 @@ function Courses({ cursos }) {
 
     return (
         <section className='content-courses' id='Courses'>
-            <h2>Formação<span>.</span></h2>
+            <h2 className={roboto.className}>Formação<span>.</span></h2>
             <div className='content-courses-menu'>
                 {Skills.map(skill => {
                     return <button

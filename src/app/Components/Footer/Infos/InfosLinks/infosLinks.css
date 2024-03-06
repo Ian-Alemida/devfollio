@@ -19,7 +19,7 @@
     right: -95px;
     opacity: 0;
     background-color: rgb(21, 21, 21);
-    color: white;
+    color: var(--branco);
     padding: 5px 10px;
     border-radius: 5px;
     display: flex;

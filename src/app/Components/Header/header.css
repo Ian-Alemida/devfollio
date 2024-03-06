@@ -51,7 +51,7 @@
     text-decoration: none;
 }
 .Links-header li a:hover{
-    border-bottom: 1px solid var(--cor-principal);
+    border-bottom: 2.1px solid var(--cor-principal);
 }
 .Links-header-text{
     font-size: 1.4vw;

@@ -10,6 +10,7 @@ import tailwindIcon from './images/tailwind.png'
 import flutterIcon from './images/flutter.png'
 import nextIcon from './images/Next.js.svg'
 import javaIcon from './images/java.svg'
+import { roboto} from "@/app/fonts"
 
 function Technology() {
 
@@ -31,7 +32,7 @@ function Technology() {
     },
     {
         "img": reactIcon,
-        "nome": "ReactJS",
+        "nome": "React.JS",
         "text": "Biblioteca usada para proporcionar interatividade ao usuário e componetizar a pagina."
     },
     {
@@ -61,13 +62,13 @@ function Technology() {
     },
     {
         "img": nodeIcon,
-        "nome": "NodeJS",
+        "nome": "Node.JS",
         "text": "Utilizo Node.JS para criação de API's no padrão REST."
     }
     ]
     return (
         <div className="content-technology" id='Technology'>
-            <h2>Tecnologias</h2>
+            <h2 className={roboto.className}>Tecnologias</h2>
             <div className='card-tech'>
                 {Tecnologias.map((tecnologia, indice) =>
                     <CardTechnology

@@ -1,5 +1,6 @@
 import './projects.css'
 import Slider from './Slider/Slider'
+import { roboto, ubuntu} from "@/app/fonts"
 
 function Projects() {
 
@@ -60,7 +61,7 @@ function Projects() {
 
     return (
         <div className="content-projects" id='Projects'>
-            <h2>Projetos <br /><hr /></h2>
+            <h2 className={roboto.className}>Projetos <br /><hr /></h2>
             <div className="slider">
                 <Slider projetos={projetos} ></Slider>
             </div>

@@ -1,7 +1,7 @@
 .scrollUp-Btn {
     width: 75px;
     height: 75px;
-    background: #000;
+    background: var(--preto);
     opacity: .8;
     border-radius: 50%;
     cursor: pointer;
@@ -20,14 +20,14 @@
 }
 
 .scrollUp-arrow path {
-    fill: #fdfdfd;
+    fill: var(--branco);
 }
 
 .scrollUp-text {
     font-size: .6vw;
     width: 100px;
     position: absolute;
-    color: white;
+    color: var(--branco);
     display: flex;
     align-items: center;
     justify-content: center;
