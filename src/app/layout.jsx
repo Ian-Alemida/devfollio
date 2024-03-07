@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body className={ubuntu.className}>{children}</body>
+      <body className={`${ubuntu.className} body`}>{children}</body>
     </html>
   )
 }

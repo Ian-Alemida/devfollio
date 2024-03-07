@@ -1,11 +1,12 @@
-.content{
+.content {
     width: 95vw;
     height: calc(100vh - 70px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.content-text{
+
+.content-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,11 +22,13 @@
     line-height: 40px;
     color: var(--cor-principal);
 }
+
 .content-animation__container {
     font-weight: 600;
     overflow: hidden;
     height: 40px;
 }
+
 .content-animation__container__list {
     margin-top: 0;
     padding-left: 0;
@@ -38,56 +41,65 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
 }
+
 .content-animation__container__list__item {
     font-size: 1.5vw;
     filter: drop-shadow(6px 6px 3px var(--cor-principal-translucida))
 }
+
 @keyframes change {
     0%, 12.66%, 100% {
-    transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 
     33.32%, 45.98% {
-    transform: translate3d(0, -50%, 0);
+        transform: translate3d(0, -50%, 0);
     }
 
     66.64%, 79.3% {
-    transform: translate3d(0, -50%, 0);
+        transform: translate3d(0, -50%, 0);
     }
-}/*Fim change text animation*/
-
-.content-text h2{
-    font-size: 5vw;
 }
-.content-text h2 span{
+
+/*Fim change text animation*/
+
+.content-text-h2 {
+    font-size: 5vw;
+    margin-bottom: .3vh;
+}
+
+.content-text-span {
     color: var(--cor-principal);
 }
 
 /* animation writing "sou um desenvolvedor"*/
-.content-text p{
-    font-size: 2.65vw;
-}
+
 @keyframes typing {
     from {
         width: 2px;
     }
-    }
-    @keyframes blink-caret {
+}
+
+@keyframes blink-caret {
     50% {
         border-color: transparent;
     }
-    }
-.animation {
-font: 200% Consolas, releway, monospace;
-border-right: .1em solid var(--branco);
-width: 33ch;
-white-space: nowrap;
-overflow: hidden;
--webkit-animation: typing 8s steps(33, end),
-        blink-caret .7s step-end infinite alternate;
-} /* Fim da animação wrinting*/
+}
 
-.content-button{
+.animation {
+    border-right: .1em solid var(--branco);
+    font-size: 2.65vw;
+    margin-bottom: .9vh;
+    width: 43.5vw;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 8s steps(33, end),
+        blink-caret .7s step-end infinite alternate;
+}
+
+/* Fim da animação wrinting*/
+
+.content-button {
     margin-top: 9px;
     display: flex;
     gap: 39px;

@@ -11,7 +11,7 @@
     margin-bottom: .6vh;
     display: flex;
 }
-.footer-Links-header ul li a{
+.footer-Links-header-a{
     text-decoration: none;
 }
 .footer-Links-header ul li a:hover{

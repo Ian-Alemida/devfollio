@@ -35,17 +35,17 @@
     margin-right: 42px;
 }
 
-.content-about-text h2{
+.content-about-text-h2{
     font-size: 3.9vw;
     font-weight: 400;
 }
 
-.content-about-text h3{
+.content-about-text-h3{
     color: var(--cor-principal);
     font-size: .9vw;
 }
 
-.content-about-text p{
+.content-about-text-p{
     font-size: 1.3vw;
     font-weight: 400;
     margin: 12px 0;
