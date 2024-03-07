@@ -276,19 +276,19 @@ function App() {
   },
   // Livros -------------------------------------------------
   {
-    "nome": "Pentest: explorando vulnerabilidades em aplicações web",
+    "nome": "Vida 3.0: O ser humano na era da inteligência artificial", 
     "skill": 'Livros',
-    'img': ''
+    'img': '/livro-Vida3.jpg'
   },
   {
-    "nome": "Pentest: explorando vulnerabilidades em aplicações web",
+    "nome": "Entendendo Algoritmos: Um Guia Ilustrado Para Programadores e Outros Curiosos",
     "skill": 'Livros',
-    'img': ''
+    'img': '/livro-entendendoAlgoritmos.jpg'
   },
   {
-    "nome": "Pentest: explorando vulnerabilidades em aplicações web",
+    "nome": "Algoritmos e Lógica da Programação",
     "skill": 'Livros',
-    'img': ''
+    'img': '/livro-algoritmosLogica.jpg'
   }
 ]
 

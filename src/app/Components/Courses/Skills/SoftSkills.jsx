@@ -8,7 +8,7 @@ function SoftSkills() {
             <h3>Soft Skills</h3>
             <div className="skills-list">
                 {skills.map((skill, indice) => {
-                    return <p key={indice}>{skill}</p>
+                        return <p key={indice}>{`-${skill}`}</p>
                 })}
             </div>
         </div>

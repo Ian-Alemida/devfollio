@@ -6,7 +6,8 @@ import HardSkills from './Skills/HardSkills';
 import SoftSkills from './Skills/SoftSkills';
 import Idiomas from './Skills/Idiomas';
 import { useState } from 'react';
-import { roboto} from "@/app/fonts"
+import { roboto } from "@/app/fonts"
+import CardBooks from './Cards/CardBooks';
 
 function Courses({ cursos }) {
     const [skillActive, setSkillActive] = useState('Front-end')
@@ -44,16 +45,23 @@ function Courses({ cursos }) {
                                 time={curso.time}
                                 type={curso.type}
                             />
-                        }) :
-                        skillVisible.map((curso, indice) => {
-                            return <CardCourses
-                                key={indice}
-                                link={curso.link}
-                                nome={curso.nome}
-                                plataform={curso.plataform}
-                                time={curso.time}
-                            />
-                        })}
+                        }) : skillActive === 'Livros' ?
+                            skillVisible.map((curso, indice) => {
+                                return <CardBooks
+                                    key={indice}
+                                    nome={curso.nome}
+                                    img={curso.img}
+                                />
+                            }) :
+                            skillVisible.map((curso, indice) => {
+                                return <CardCourses
+                                    key={indice}
+                                    link={curso.link}
+                                    nome={curso.nome}
+                                    plataform={curso.plataform}
+                                    time={curso.time}
+                                />
+                            })}
                 </ul>
             </article>
             <article className='content-courses-skills'>
