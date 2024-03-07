@@ -281,6 +281,11 @@ function App() {
     'img': '/livro-Vida3.jpg'
   },
   {
+    "nome": "Clean Code: A Handbook of Agile Software Craftsmanship",
+    "skill": 'Livros',
+    'img': '/livro-cleanCode.jpg'
+  },
+  {
     "nome": "Entendendo Algoritmos: Um Guia Ilustrado Para Programadores e Outros Curiosos",
     "skill": 'Livros',
     'img': '/livro-entendendoAlgoritmos.jpg'
@@ -289,7 +294,8 @@ function App() {
     "nome": "Algoritmos e Lógica da Programação",
     "skill": 'Livros',
     'img': '/livro-algoritmosLogica.jpg'
-  }
+  },
+  
 ]
 
   return (

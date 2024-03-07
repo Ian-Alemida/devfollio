@@ -43,12 +43,12 @@ function Technology() {
     {
         "img": tailwindIcon,
         "nome": "Tailwind",
-        "text": "O tailwind é um FrameWork do CSS utilizado para estilizar os elementos através de classes."
+        "text": "Tailwind é um FrameWork CSS utilizado para estilizar os elementos através de classes."
     },
     {
         "img": flutterIcon,
         "nome": "Flutter",
-        "text": "Utilizo  o Flutter juntamente com o Dart para a criação de telas para dispositivos mobile."
+        "text": "Utilizo Flutter juntamente com Dart para criação de telas em dispositivos mobile."
     },
     {
         "img": gitIcon,

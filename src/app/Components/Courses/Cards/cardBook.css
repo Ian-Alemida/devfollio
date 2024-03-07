@@ -35,3 +35,6 @@
     height: 30vh;
     box-shadow: .9px .9px 9px var(--cinza-medio)
 }
+.content-cardCourses-books:hover img{
+    scale: 1.041;
+}
