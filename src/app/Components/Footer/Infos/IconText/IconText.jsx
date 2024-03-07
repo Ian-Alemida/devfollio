@@ -5,7 +5,7 @@ function IconText (props) {
     return (
             <div className='Content-Infos-text-info'>
                 <Image src={props.icon} alt="Phone Icon"/>
-                <p>{props.text}</p>
+                <p className='Content-Infos-text-info-p'>{props.text}</p>
             </div>
     )
 }

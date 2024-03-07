@@ -4,7 +4,7 @@
     margin-top: 2vh;
     font-size: 1.1vw;
 }
-.Content-Infos-form legend{
+.Content-Infos-form-legend{
     margin-bottom: .5vh;
 }
 
@@ -14,10 +14,10 @@
     display: flex;
     box-sizing: border-box;
 }
-.Content-Infos-form-div input{
+.Content-Infos-form-div-input{
     border-radius: 6px 0 0 6px;
 }
-.Content-Infos-form-div button{
+.Content-Infos-form-div-button{
     background-color: var(--cor-secundaria);
     padding: 3px;
     box-sizing: border-box;

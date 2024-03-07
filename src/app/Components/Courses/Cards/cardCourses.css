@@ -18,9 +18,10 @@
     font-size: 1.23vw;
 }
 .content-cardCourses-p{
+    color: var(--branco);
     font-size: 1.32vw;
     font-weight: bold;
-    color: var(--branco);
+    margin: 6px 0;
     text-align: start;
 }
 .content-cardCourses-p small{

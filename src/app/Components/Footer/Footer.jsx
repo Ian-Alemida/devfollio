@@ -11,7 +11,7 @@ function Footer () {
                 <InfosNav></InfosNav>
             </div>
             <hr />
-            <p className={`${merriweather.className} 'Content-footer-copy'`}>© 2023 - Design and code by Ian Almeida.</p>
+            <p className={`${merriweather.className } Content-footer-copy`}>© 2023 - Design and code by Ian Almeida.</p>
         </section>
     )
 }
