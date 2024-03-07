@@ -1,0 +1,23 @@
+.footer-Links-header{
+    color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 3vh 12.5%;
+    margin-right: 6vw;
+}
+.footer-Links-header ul li{
+    margin-bottom: .6vh;
+    display: flex;
+}
+.footer-Links-header ul li a{
+    text-decoration: none;
+}
+.footer-Links-header ul li a:hover{
+    border-bottom: 1px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+}
+.footer-Links-header-text{
+    font-size: 1.2vw;
+}

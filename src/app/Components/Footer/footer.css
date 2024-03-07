@@ -1,0 +1,21 @@
+.Content-footer{
+    width: 99.8%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--preto);
+    color: var(--cinza);
+    text-align: center;
+}
+.Content-footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Content-footer hr{
+    width: 100%;
+    border: 1px solid #21212155;
+}
+.Content-footer-copy{
+    font-size: .6vw;
+    margin-bottom: 1vh;
+}
