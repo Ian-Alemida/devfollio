@@ -1,0 +1,17 @@
+:root {
+  /* Definindo variáveis de cores */
+  --cor-principal: #55c9f6;
+  --cor-principal-translucida: #55c9f644;
+  --cor-secundaria: #2191ff;
+  --preto: #000000;
+  --preto-translucido: #11111166;
+  --branco: #efefef;
+  --cinza: #a1a1a1;
+  --cinza-medio: #414141;
+  --cinza-escuro: #1c1c1c;
+}
+.root{
+  background-image: linear-gradient(97.54deg, #000000 35.49%, #00001f 165.37%);
+  height: 100%;
+  color: white;
+}
