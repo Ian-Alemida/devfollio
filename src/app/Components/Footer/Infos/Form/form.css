@@ -19,6 +19,7 @@
 }
 .Content-Infos-form-div-button{
     background-color: var(--cor-secundaria);
+    color: var(--branco);
     padding: 3px;
     box-sizing: border-box;
     border-radius: 0 6px 6px 0;

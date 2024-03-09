@@ -1,5 +1,5 @@
 .footer-Links-header{
-    color: #efefef;
+    color: var(--cinza);
     display: flex;
     flex-direction: column;
     justify-content: center;
