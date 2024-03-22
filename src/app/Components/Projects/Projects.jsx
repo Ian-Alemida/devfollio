@@ -4,7 +4,17 @@ import { roboto, ubuntu} from "@/app/fonts"
 
 function Projects() {
 
-    const projetos = [{
+    const projetos = [
+        {
+            nameProject: 'Mystic App',
+            imgProject: './assets/images/MysticApp.png',
+            text: 'Aplicativo em React com uma galeria de fotos do cosmos e algumas de teor místicas. Utilizei Styled Components para personalizar o layout e estilo, os hooks useState e useEffect para gerenciar o estado e implementar lógicas de atualização dinâmica. A galeria possui recursos de zoom, descrições e categorização por tags, proporcionando uma experiência interativa e informativa aos usuários.',
+            isMobile: false,
+            tecnologias: 'React - Styled Components',
+            linkCode: 'https://github.com/Ian-Alemida/brahmand-app',
+            linkView: 'https://mystic-app.vercel.app/'
+        },
+        {
         nameProject: 'Planet Sky',
         imgProject: './assets/images/PlanetSky.png',
         text: 'Uma aplicação autoral que te permite explorar o cosmos de forma envolvente e descobrir curiosidades fascinantes sobre o sistema solar! Usando Flutter e Dart pude fixar conceitos de Desenvolvimento Cross-Platform, sistema de navegação de rotas com Navigator e arvore de widgets.',
@@ -48,15 +58,6 @@ function Projects() {
         tecnologias: 'JavaScript - HTML5 - CSS3',
         linkCode: 'https://github.com/Ian-Alemida/Apeperia.git',
         linkView: 'https://apeperia-azure.vercel.app/'
-    },
-    {
-        nameProject: 'Optimus Tech',
-        imgProject: './assets/images/optimustech.png',
-        text: 'Site produzido no workshop "7DaysOfCode" se trata de uma pagina de anuncio de vagas de uma  empresa chamada "Optimus Tech". Pude Treinar conceitos de HTML & CSS, como FlexBox e display Grid.',
-        isMobile: false,
-        tecnologias: 'HTML5 - CSS3',
-        linkCode: 'https://github.com/Ian-Alemida/OptimusTech.git',
-        linkView: 'https://optimus-tech-indol.vercel.app/'
     },]
 
     return (
