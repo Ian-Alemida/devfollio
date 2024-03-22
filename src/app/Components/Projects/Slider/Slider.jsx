@@ -15,7 +15,7 @@ function Slider({ projetos }) {
         <Carousel
             pause={'hover'}
             fade
-            style={{ height: '80vh' }}
+            style={{ height: '80vh', width: '100%' }}
         >
             {projetos.map((projeto, indice) => {
                 return (

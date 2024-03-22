@@ -39,6 +39,14 @@ function App() {
     "link": 'https://certificados.descomplica.com.br/graduacao/13a65a3e574b4da5b7163364671b81e3c215ee0ab04a800319684dd3e844992b',
     "skill": 'Faculdade'
   },
+  {
+    "type": 'Certificado',
+    "nome": 'Object-Oriented Developer',
+    "plataform": 'Descomplica faculdade digital',
+    "time": '240h - 2023',
+    "link": 'https://certificados.descomplica.com.br/graduacao/b904fe5b0c59988b3ee80697cc66283025a56af28c704c33c8098cfab78ae59c',
+    "skill": 'Faculdade'
+  },
   //Front-end ---------------------------------------------------------- 
   {
     "nome": 'Formação - Front-End',
