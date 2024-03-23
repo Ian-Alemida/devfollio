@@ -43,7 +43,7 @@ function App() {
     "type": 'Certificado',
     "nome": 'Object-Oriented Developer',
     "plataform": 'Descomplica faculdade digital',
-    "time": '240h - 2023',
+    "time": '240h - 2024',
     "link": 'https://certificados.descomplica.com.br/graduacao/b904fe5b0c59988b3ee80697cc66283025a56af28c704c33c8098cfab78ae59c',
     "skill": 'Faculdade'
   },
@@ -53,6 +53,13 @@ function App() {
     "plataform": 'Alura',
     "time": '115h - 2023',
     "link": 'https://cursos.alura.com.br/user/iangtaonline1/degree-front-end-113709/certificate',
+    "skill": 'Front-end'
+  },
+  {
+    "nome": 'React: estilize componentes com Styled Components',
+    "plataform": 'Alura',
+    "time": '10h - 2023',
+    "link": 'https://cursos.alura.com.br/user/iangtaonline1/course/react-estilize-componentes-styled-components-manipule-arquivos-estaticos/certificate',
     "skill": 'Front-end'
   },
   {
