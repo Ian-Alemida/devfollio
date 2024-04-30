@@ -1,9 +1,10 @@
+'use client'
 import './botao.css'
 import React, { useState } from 'react'
 import Image from 'next/image'
 
-function Botao ({link, text, icon1, icon2, isDownload = false}){
-    
+function Botao({ link, text, icon1, icon2, isDownload = false }) {
+
     const [isHover, setIsHover] = useState(false);
 
     const handleHover = () => {
@@ -14,18 +15,18 @@ function Botao ({link, text, icon1, icon2, isDownload = false}){
     }
 
     return (
-        <a 
-            href={link} 
-            className='animated-button' 
-            target="_blank" 
+        <a
+            href={link}
+            className='animated-button'
+            target="_blank"
             rel='noreferrer noopener'
             onMouseLeave={handleHoverLeave}
             onMouseEnter={handleHover}
             download={isDownload ? true : false}
         >
             <span className='span-text'>
-                <Image className='icon' src={!isHover? icon1 : icon2} alt="" /> 
-                {text} 
+                <Image className='icon' src={!isHover ? icon1 : icon2} alt="" />
+                {text}
             </span>
             <span></span>
         </a>
