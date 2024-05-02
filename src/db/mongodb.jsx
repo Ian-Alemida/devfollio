@@ -3,7 +3,6 @@ const uri = "mongodb+srv://iandb:ckoimKd9u6amibgF@cluster0.ogzyvdv.mongodb.net/?
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
-
 async function getCollectionData() {
     try {
         // Conectar ao MongoDB
@@ -27,6 +26,5 @@ async function getCollectionData() {
         console.log('Conexão com o MongoDB fechada.');
     }
 }
-
-let tecdb = getCollectionData()
-console.log("oi" + tecdb)
+module.exports = { getCollectionData };
+console.log(getCollectionData())
