@@ -1,4 +1,4 @@
-const tecnologiasdb = require("../Model/models");
+const { tecnologiasdb, cursosdb } = require("../Model/models");
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
@@ -26,9 +26,18 @@ db.on("error", console.error.bind(console, "Erro de conexão com o MongoDB:"));
 db.once("open", () => {});
 
 // Defina rotas para fornecer os dados do MongoDB
-app.get("/api/dados", async (req, res) => {
+app.get("/api/tecnologiasdb", async (req, res) => {
   try {
     const dados = await tecnologiasdb.find(); // MeuModelo é seu modelo do Mongoose
+    res.json(dados);
+  } catch (erro) {
+    console.error(erro);
+    res.status(500).json({ message: "Erro ao buscar dados." });
+  }
+});
+app.get("/api/cursosdb", async (req, res) => {
+  try {
+    const dados = await cursosdb.find(); // MeuModelo é seu modelo do Mongoose
     res.json(dados);
   } catch (erro) {
     console.error(erro);

@@ -22,5 +22,6 @@ const cursosSchema = new mongoose.Schema(
   { collection: "cursos" }
 );
 const tecnologiasdb = mongoose.model("tecnologiasdb", tecnologiasSchema);
+const cursosdb = mongoose.model("cursosdb", cursosSchema);
 
-module.exports = tecnologiasdb;
+module.exports = { tecnologiasdb, cursosdb };
