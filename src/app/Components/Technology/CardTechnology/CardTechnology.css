@@ -41,11 +41,11 @@
 }
 .technology-card-img-div {
     width: 95%;
-    height: 75%;
+    height: 63%;
     background-color: var(--branco);
     border-radius: 50%;
     position: absolute;
-    top: 12%;
+    top: 18%;
     left: 3%;
 }
 .technology-card-img-div-hid {

@@ -6,7 +6,7 @@ import iconDownload from './images/download-icon.svg'
 import instagramIcon from './images/instagram-icon.svg'
 import Card from './Card/Card'
 import Image from 'next/image'
-import Curriculo from './Curriculo.pdf'
+import Curriculo from './Currículo-IanAlmeida.pdf'
 import { roboto} from "@/app/fonts"
 
 function About () {

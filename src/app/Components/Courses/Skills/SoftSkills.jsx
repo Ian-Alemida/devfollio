@@ -2,7 +2,7 @@ import './skills.css'
 
 function SoftSkills() {
 
-    const skills = ['Resolução de problemas', 'Comunicação eficaz', 'Flexibilidade', 'Rápida aprendizagem', 'Escuta ativa', 'Criatividade', 'Disciplina para seguir protocolos', 'Trabalho sob pressão', 'Curiosidade', 'Trabalho em equipe', 'Adaptação']
+    const skills = ['Resolução de problemas', 'Comunicação eficaz', 'Flexibilidade', 'Rápida aprendizagem', 'Escuta ativa', 'Disciplina para seguir protocolos','Criatividade', 'Trabalho sob pressão', 'Curiosidade', 'Trabalho em equipe', 'Adaptação']
     return (
         <div className='skills'>
             <h3>Soft Skills</h3>
