@@ -2,14 +2,13 @@ const { tecnologiasdb, cursosdb } = require("../Model/models");
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-
-const uri =
-  "mongodb+srv://iandb:ckoimKd9u6amibgF@cluster0.ogzyvdv.mongodb.net/devfollio?retryWrites=true&w=majority&appName=Cluster0";
 const PORT = process.env.PORT || 5000; // Porta para o servidor
+const URI =
+  "mongodb+srv://iandb:ckoimKd9u6amibgF@cluster0.ogzyvdv.mongodb.net/devfollio?retryWrites=true&w=majority&appName=Cluster0";
 
 // Conectando ao MongoDB
 mongoose
-  .connect(uri, {
+  .connect(URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
