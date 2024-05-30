@@ -4,14 +4,11 @@ const mongoose = require("mongoose");
 const app = express();
 const PORT = process.env.PORT || 5000; // Porta para o servidor
 const URI =
-  "mongodb+srv://iandb:ckoimKd9u6amibgF@cluster0.ogzyvdv.mongodb.net/devfollio?retryWrites=true&w=majority&appName=Cluster0";
+  "mongodb+srv://devfollioDB:uaMmrchkml7QPs2e@cluster0.ogzyvdv.mongodb.net/devfollio?retryWrites=true&w=majority&appName=Cluster0";
 
 // Conectando ao MongoDB
 mongoose
-  .connect(URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(URI, {})
   .then(() => {
     console.log("Conectado ao MongoDB Atlas!");
   })
