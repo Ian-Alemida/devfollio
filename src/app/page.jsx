@@ -13,11 +13,11 @@ import ScrollUp from './Components/ScrollUp/ScrollUp';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 
-const getTechnologies = async () => {
+const getCursos = async () => {
   try {
-    const response = await axios.get('http://localhost:5000/api/tecnologiasdb');
-    const technologies = response.data;
-    return technologies;
+    const response = await axios.get('http://localhost:5000/api/cursosdb');
+    const cursos = response.data;
+    return cursos;
   } catch (error) {
     console.error(error);
     return [{
@@ -28,12 +28,12 @@ const getTechnologies = async () => {
 
 function App() {
 
-  const [technologies, setTechnologies] = useState([]);
+  const [cursosdb, setCursosdb] = useState([]);
 
   useEffect(() => {
-    getTechnologies().then((data) => setTechnologies(data));
+    getCursos().then((data) => setCursosdb(data));
   }, []);
-  console.log(technologies)
+
   const cursos = [
     //Faculdade -----------------------------------------
     {
