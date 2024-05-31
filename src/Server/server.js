@@ -12,8 +12,8 @@ mongoose
   .then(() => {
     console.log("Conectado ao MongoDB Atlas!");
   })
-  .catch((err) => {
-    console.error("Erro ao conectar ao MongoDB Atlas:", err);
+  .catch((error) => {
+    console.error("Erro ao conectar ao MongoDB Atlas:", error);
   });
 
 // Verificar conexão com o MongoDB
@@ -21,10 +21,10 @@ const db = mongoose.connection;
 db.on("error", console.error.bind(console, "Erro de conexão com o MongoDB:"));
 db.once("open", () => {});
 
-// Defina rotas para fornecer os dados do MongoDB
+// Definindo rotas para fornecer os dados do MongoDB
 app.get("/api/tecnologiasdb", async (req, res) => {
   try {
-    const dados = await tecnologiasdb.find(); // MeuModelo é seu modelo do Mongoose
+    const dados = await tecnologiasdb.find(); // O modelo do banco de dados no Mongoose
     res.json(dados);
   } catch (erro) {
     console.error(erro);
@@ -33,7 +33,7 @@ app.get("/api/tecnologiasdb", async (req, res) => {
 });
 app.get("/api/cursosdb", async (req, res) => {
   try {
-    const dados = await cursosdb.find(); // MeuModelo é seu modelo do Mongoose
+    const dados = await cursosdb.find(); // O modelo do banco de dados no Mongoose
     res.json(dados);
   } catch (erro) {
     console.error(erro);
