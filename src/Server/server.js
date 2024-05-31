@@ -5,6 +5,10 @@ const app = express();
 const PORT = process.env.PORT || 5000; // Porta para o servidor
 const URI =
   "mongodb+srv://devfollioDB:uaMmrchkml7QPs2e@cluster0.ogzyvdv.mongodb.net/devfollio?retryWrites=true&w=majority&appName=Cluster0";
+const cors = require("cors");
+
+// permite acesso de qualquer origem
+app.use(cors());
 
 // Conectando ao MongoDB
 mongoose

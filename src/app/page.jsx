@@ -10,9 +10,30 @@ import Projects from './Components/Projects/Projects';
 import Courses from './Components/Courses/Courses';
 import Footer from './Components/Footer/Footer';
 import ScrollUp from './Components/ScrollUp/ScrollUp';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios'
+
+const getTechnologies = async () => {
+  try {
+    const response = await axios.get('http://localhost:5000/api/tecnologiasdb');
+    const technologies = response.data;
+    return technologies;
+  } catch (error) {
+    console.error(error);
+    return [{
+      "erro": "erro"
+    }];
+  }
+};
 
 function App() {
 
+  const [technologies, setTechnologies] = useState([]);
+
+  useEffect(() => {
+    getTechnologies().then((data) => setTechnologies(data));
+  }, []);
+  console.log(technologies)
   const cursos = [
     //Faculdade -----------------------------------------
     {
