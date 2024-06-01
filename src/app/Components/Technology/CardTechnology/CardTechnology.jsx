@@ -26,7 +26,7 @@ function CardTechnology({ img, h3, text }) {
             onMouseEnter={handleHover}
             onMouseLeave={handleMouseLeave}>
             <div className='technology-card-img'>
-                <img className={`${isHover ? 'flipped' : ''}`} src={img} alt="" />
+                <Image width={1000} height={1000} className={`${isHover ? 'flipped' : ''}`} src={img} alt="" />
                 <div className={h3 === 'Next.JS' ? 'technology-card-img-div' : `technology-card-img-div-hid technology-card-img-div`}></div>
             </div>
             <h3>{h3}</h3>
