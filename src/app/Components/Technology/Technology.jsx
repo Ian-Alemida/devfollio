@@ -11,7 +11,7 @@ import flutterIcon from './images/flutter.png'
 import nextIcon from './images/Next.js.svg'
 import javaIcon from './images/java.svg'
 import { roboto } from "@/app/fonts"
-import axios from 'axios'
+
 
 
 function Technology() {
