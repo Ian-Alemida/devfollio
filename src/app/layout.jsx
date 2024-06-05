@@ -13,7 +13,7 @@ export const metadata = {
     shortcut: [
       'apple-touch-icon.png'
     ]
-    
+
   },
   manifest: '/site.webmanifest'
 }

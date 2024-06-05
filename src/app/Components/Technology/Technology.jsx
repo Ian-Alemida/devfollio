@@ -1,6 +1,6 @@
 import CardTechnology from './CardTechnology/CardTechnology';
 import './technology.css';
-import { roboto } from "@/app/fonts"
+import { roboto } from "../../fonts"
 
 function Technology({ Tecnologias }) {
 

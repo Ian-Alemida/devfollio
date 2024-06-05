@@ -6,7 +6,7 @@ import HardSkills from './Skills/HardSkills';
 import SoftSkills from './Skills/SoftSkills';
 import Idiomas from './Skills/Idiomas';
 import { useState } from 'react';
-import { roboto } from "@/app/fonts"
+import { roboto } from "../../fonts"
 import CardBooks from './Cards/CardBooks';
 
 function Courses({ cursos }) {
