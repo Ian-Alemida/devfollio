@@ -19,8 +19,16 @@ function App() {
   const [tecnologiasdb, setTecnologiasdb] = useState([]);
 
   useEffect(() => { // useEffect sendo usado para atualizar a nossa aplicação assim que os dados da API forem buscados
-    getCursos().then((data) => setCursosdb(data));
-    getTecnologias().then((data) => setTecnologiasdb(data));
+    async function buscarDados() {
+      try {
+        axios.get('./api/getTecnologies.js').then((response) => setTecnologiasdb(response));
+        axios.get('./api/getCourses.js').then((response) => setCursosdb(response));
+      } catch (error) {
+        console.error('Erro ao buscar dados:', error);
+        // Implementar lógica para lidar com o erro (ex: exibir mensagem, redirecionar, etc.)
+      }
+    }
+    buscarDados()
   }, []);
 
   return (
@@ -39,7 +47,7 @@ function App() {
   );
 }
 
-// Utilizando axios para fazer a requisição dos dados na nossa api, em forma de função assíncrona  
+/*// Utilizando axios para fazer a requisição dos dados na nossa api, em forma de função assíncrona  
 const getCursos = async () => {
   try {
     const response = await axios.get('http://localhost:5000/api/cursosdb');
@@ -63,6 +71,6 @@ const getTecnologias = async () => {
       "erro": "erro ao buscar tecnologias db"
     }];
   }
-};
+};*/
 
 export default App;

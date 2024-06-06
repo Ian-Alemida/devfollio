@@ -1,5 +1,5 @@
-const { connectDB } = require("../db/db.js");
-const tecnologiasdb = require("../Model/models.js");
+const { connectDB } = require("../../db/db.js");
+const tecnologiasdb = require("../../Model/models.js");
 
 async function getTechnologies(req, res) {
   await connectDB();
@@ -12,4 +12,4 @@ async function getTechnologies(req, res) {
   }
 }
 
-module.exports = { getTechnologies };
+export default getTechnologies;

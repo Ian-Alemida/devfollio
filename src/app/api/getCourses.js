@@ -1,10 +1,12 @@
-const { connectDB } = require("../db/db.js");
-const cursosdb = require("../Model/models.js");
+const { connectDB } = require("../../db/db.js");
+const cursosdb = require("../../Model/models.js");
 
 async function getCourses(req, res) {
   await connectDB();
   try {
-    const cursos = await cursosdb.find(); // Busca todos os usuários
+    const cursos = await cursosdb.find(); // Busca todos os us
+
+    uários;
     res.status(200).json(cursos);
   } catch (error) {
     console.error("Erro ao buscar cursos:", error);
@@ -12,4 +14,4 @@ async function getCourses(req, res) {
   }
 }
 
-module.exports = { getCourses };
+export default getCourses;
