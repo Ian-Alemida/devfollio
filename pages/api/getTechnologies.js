@@ -1,5 +1,5 @@
 import db from "@/db/db";
-import tecnologiasdb from "@/db/schemas/models.js";
+import tecnologiasdb from "@/Model/models.js";
 
 async function getTechnologies(req, res) {
   await db.connectDB();
