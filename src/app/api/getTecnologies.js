@@ -1,8 +1,8 @@
-const { connectDB } = require("../../db/db.js");
-const tecnologiasdb = require("../../Model/models.js");
+import db from "@/db/db";
+import tecnologiasdb from "@/db/schemas/models.js";
 
 async function getTechnologies(req, res) {
-  await connectDB();
+  await db.connectDB();
   try {
     const tecnologias = await tecnologiasdb.find(); // Busca todos os usuários
     res.status(200).json(tecnologias);

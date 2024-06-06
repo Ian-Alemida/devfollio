@@ -21,8 +21,8 @@ function App() {
   useEffect(() => { // useEffect sendo usado para atualizar a nossa aplicação assim que os dados da API forem buscados
     async function buscarDados() {
       try {
-        axios.get('./api/getTecnologies.js').then((response) => setTecnologiasdb(response));
-        axios.get('./api/getCourses.js').then((response) => setCursosdb(response));
+        axios.get('api/getCourses.js').then((response) => setTecnologiasdb(response));
+        axios.get('api/getCourses.js').then((response) => setCursosdb(response));
       } catch (error) {
         console.error('Erro ao buscar dados:', error);
         // Implementar lógica para lidar com o erro (ex: exibir mensagem, redirecionar, etc.)

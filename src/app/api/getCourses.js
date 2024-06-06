@@ -1,12 +1,10 @@
-const { connectDB } = require("../../db/db.js");
-const cursosdb = require("../../Model/models.js");
+import db from "@/db/db";
+import cursosdb from "@/db/schemas/models.js";
 
 async function getCourses(req, res) {
-  await connectDB();
+  await db.connectDB();
   try {
-    const cursos = await cursosdb.find(); // Busca todos os us
-
-    uários;
+    const cursos = await cursosdb.find(); // Busca todos os usuários;
     res.status(200).json(cursos);
   } catch (error) {
     console.error("Erro ao buscar cursos:", error);

@@ -1,4 +1,4 @@
-const { tecnologiasdb, cursosdb } = require("../Model/models");
+const { tecnologiasdb, cursosdb } = require("../db/schemas/TechnologiesSchema");
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
