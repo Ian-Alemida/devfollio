@@ -1,4 +1,4 @@
-const { tecnologiasdb, cursosdb } = require("../db/schemas/TechnologiesSchema");
+/*const { tecnologiasdb, cursosdb } = require("../Model/models.js");
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
@@ -48,4 +48,4 @@ app.get("/api/cursosdb", async (req, res) => {
 // Iniciar o servidor
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
-});
+});*/

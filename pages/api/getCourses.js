@@ -1,5 +1,5 @@
-import db from "@/db/db";
-import cursosdb from "@/Model/models.js";
+import db from "@/db/db.js";
+import cursosdb from "@/db/schemas/cursosSchema";
 
 async function getCourses(req, res) {
   await db.connectDB();

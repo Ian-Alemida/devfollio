@@ -5,17 +5,29 @@ import CardCourses from './Cards/CardCourses';
 import HardSkills from './Skills/HardSkills';
 import SoftSkills from './Skills/SoftSkills';
 import Idiomas from './Skills/Idiomas';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { roboto } from "../../fonts"
 import CardBooks from './Cards/CardBooks';
+import axios from 'axios'
 
-function Courses({ cursos }) {
+function Courses() {
     const [skillActive, setSkillActive] = useState('Front-end')
-
+    const [cursosdb, setCursosdb] = useState([]);
     const Skills = ['Front-end', 'Back-end', 'Mobile', 'Faculdade', 'Cyber Security', 'Livros']
 
+    useEffect(() => { // useEffect sendo usado para atualizar a nossa aplicação assim que os dados da API forem buscados
+        async function buscarDados() {
+            try {
+                axios.get('/api/getCourses').then((response) => setCursosdb(response.data));
+            } catch (error) {
+                console.error('Erro ao buscar dados:', error);
+                // Implementar lógica para lidar com o erro (ex: exibir mensagem, redirecionar, etc.)
+            }
+        }
+        buscarDados()
+    }, []);
     const skillVisible = skillActive ?
-        cursos.filter(curso => curso.skill === skillActive) : null;
+        cursosdb.filter(curso => curso.skill === skillActive) : null;
 
     return (
         <section className='content-courses' id='Courses'>

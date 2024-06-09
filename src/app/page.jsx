@@ -11,18 +11,15 @@ import Courses from './Components/Courses/Courses';
 import Footer from './Components/Footer/Footer';
 import ScrollUp from './Components/ScrollUp/ScrollUp';
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'
 
 function App() {
 
   const [cursosdb, setCursosdb] = useState([]);
-  const [tecnologiasdb, setTecnologiasdb] = useState([]);
 
   useEffect(() => { // useEffect sendo usado para atualizar a nossa aplicação assim que os dados da API forem buscados
     async function buscarDados() {
       try {
-        axios.get('api/getCourses.js').then((response) => setTecnologiasdb(response));
-        axios.get('api/getCourses.js').then((response) => setCursosdb(response));
+        axios.get('/api/getCourses').then((response) => setCursosdb(response));
       } catch (error) {
         console.error('Erro ao buscar dados:', error);
         // Implementar lógica para lidar com o erro (ex: exibir mensagem, redirecionar, etc.)
@@ -37,7 +34,7 @@ function App() {
         <Header></Header>
         <Banner></Banner>
         <About></About>
-        <Technology Tecnologias={tecnologiasdb}></Technology>
+        <Technology></Technology>
         <Projects></Projects>
         <Courses cursos={cursosdb}></Courses>
         <Footer></Footer>
