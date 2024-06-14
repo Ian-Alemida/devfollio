@@ -10,23 +10,8 @@ import Projects from './Components/Projects/Projects';
 import Courses from './Components/Courses/Courses';
 import Footer from './Components/Footer/Footer';
 import ScrollUp from './Components/ScrollUp/ScrollUp';
-import React, { useState, useEffect } from 'react';
 
 function App() {
-
-  const [cursosdb, setCursosdb] = useState([]);
-
-  useEffect(() => { // useEffect sendo usado para atualizar a nossa aplicação assim que os dados da API forem buscados
-    async function buscarDados() {
-      try {
-        axios.get('/api/getCourses').then((response) => setCursosdb(response));
-      } catch (error) {
-        console.error('Erro ao buscar dados:', error);
-        // Implementar lógica para lidar com o erro (ex: exibir mensagem, redirecionar, etc.)
-      }
-    }
-    buscarDados()
-  }, []);
 
   return (
     <section className='root'>
@@ -36,38 +21,12 @@ function App() {
         <About></About>
         <Technology></Technology>
         <Projects></Projects>
-        <Courses cursos={cursosdb}></Courses>
+        <Courses></Courses>
         <Footer></Footer>
       </div>
       <ScrollUp></ScrollUp>
     </section>
   );
 }
-
-/*// Utilizando axios para fazer a requisição dos dados na nossa api, em forma de função assíncrona  
-const getCursos = async () => {
-  try {
-    const response = await axios.get('http://localhost:5000/api/cursosdb');
-    const cursos = response.data;
-    return cursos;
-  } catch (error) {
-    console.error(error);
-    return [{
-      "erro": "erro ao buscar cursosdb"
-    }];
-  }
-};
-const getTecnologias = async () => {
-  try {
-    const response = await axios.get('http://localhost:5000/api/tecnologiasdb');
-    const tecnologias = response.data;
-    return tecnologias;
-  } catch (error) {
-    console.error(error);
-    return [{
-      "erro": "erro ao buscar tecnologias db"
-    }];
-  }
-};*/
 
 export default App;
