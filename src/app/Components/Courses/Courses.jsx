@@ -1,4 +1,3 @@
-'use client';
 import './courses.css'
 import CardTecnologo from './Cards/CardTecnologo';
 import CardCourses from './Cards/CardCourses';
@@ -21,7 +20,6 @@ function Courses() {
                 axios.get('/api/getCourses').then((response) => setCursosdb(response.data));
             } catch (error) {
                 console.error('Erro ao buscar dados:', error);
-                // Implementar lógica para lidar com o erro (ex: exibir mensagem, redirecionar, etc.)
             }
         }
         buscarDados()

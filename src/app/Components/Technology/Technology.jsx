@@ -14,7 +14,6 @@ function Technology() {
                 axios.get('/api/getTechnologies').then((response) => setTecnologiasdb(response.data));
             } catch (error) {
                 console.error('Erro ao buscar dados:', error);
-                // Implementar lógica para lidar com o erro (ex: exibir mensagem, redirecionar, etc.)
             }
         }
         buscarDados()
