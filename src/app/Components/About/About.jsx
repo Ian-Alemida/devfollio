@@ -7,9 +7,9 @@ import instagramIcon from './images/instagram-icon.svg'
 import Card from './Card/Card'
 import Image from 'next/image'
 import Curriculo from './Currículo-IanAlmeida.pdf'
-import { roboto} from "@/app/fonts"
+import { roboto } from "../../fonts"
 
-function About () {
+function About() {
     return (
         <div className="content-about" id='About'>
             <div className='content-about-img'>
