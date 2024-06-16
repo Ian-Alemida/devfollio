@@ -59,7 +59,8 @@ Também utilizei as seguintes bibliotecas para auxiliar em tempo de desenvolvime
 
 # Como Rodar Este Projeto em sua Maquina?
 
-Você pode acessar o link e ver o projeto na vercell: [Portfolio pessoal](https://devfollio.vercel.app/)
+Você pode acessar o link e ver o projeto na vercel: [Portfolio pessoal](https://devfollio.vercel.app/)
+
 Ou siga as instruções abaixo para rodar o projeto no seu computador:
 
 ## Pré-requisitos
