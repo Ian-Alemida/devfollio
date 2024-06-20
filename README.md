@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Devfollio
 
-## Getting Started
+O Devfollio é um portfólio SPA (Single Page Application) dinâmico e interativo,, construído com **React**, **Next.js** e **MongoDB**. O projeto destaca-se pelos seus componentes interativos e responsivos, aproveitando os principais hooks do React e a renderização condicional para criar uma experiência dinâmica. Além disso, utiliza recursos do Next.js, como a renderização de páginas dinâmicas e estáticas com SSR e SSG, e a API integrada do Next.js para buscar dados do MongoDB Atlas. O projeto segue o padrão de arquitetura de pasta do Next.js, proporcionando uma organização clara e facilitando a manutenção.
 
-First, run the development server:
+
+## Principais Funcionalidades
+
+- **API Next.js**: Utiliza a API do Next.js para recuperar dados do MongoDB Atlas, permitindo que o portfólio seja atualizado com novos projetos e informações sem a necessidade de redeploy.
+- **Componentes Interativos**: Efeitos visuais atraentes, como animações, transições e efeitos de hover, tornam a navegação mais intuitiva e engajadora.
+- **Hooks do React**: Utiliza os principais hooks do React para gerenciar o estado e o ciclo de vida dos componentes do portfólio, tornando o código mais modular e fácil de manter.
+- **Renderização Dinâmica & Estática**: Otimização do desempenho e da experiência do usuário com 'useClient' do Next.js, que permite renderizar páginas dinâmicas ou estáticas conforme necessário.
+
+
+## Tecnologias e Conceitos Utilizados
+
+- **React & Next.js**: As tecnologias centrais que impulsionam o desenvolvimento deste portfólio, escolhidas por sua robustez na construção de interfaces de usuário interativas.
+- **Renderização do Lado do Cliente**: 'useClient' do Next.js oferece decisões inteligentes sobre a renderização de conteúdo no cliente, otimizando o desempenho.
+- **Banco de dados MongoDB Atlas**: Conecta-se com o MongoDB Atlas para requisitar dados que são utilizados em várias partes do portfólio.
+- **Hooks do React**:useEffect, useState, useContext e outros aprimoram a organização e a funcionalidade do código.
+- **Bootstrap**: Biblioteca CSS comumente utilizada para auxiliar no desenvolvimento de interfaces responsivas.
+- **Renderização condicional**: Um conceito fundamental do React para exibir elementos apenas quando as condições forem atendidas.
+
+
+## Impacto e Aprendizados
+
+O desenvolvimento deste portfólio pessoal não apenas aprimorou minhas habilidades técnicas em React e Next.js, mas também aprofundou meu entendimento sobre gerenciamento de estado, arquitetura baseada em componentes e práticas de desenvolvimento full-stack cruciais para aplicações web modernas. Mais especificamente, esse projeto me ajudou a evoluir em:
+- **Aprimoramento de Habilidades em React e Next.js**: Domínio de conceitos essenciais como gerenciamento de estado, arquitetura de componentes e boas práticas de desenvolvimento full-stack.
+- **Desenvolvimento Front-end**: Aprofundamento do conhecimento sobre as capacidades do Next.js, incluindo SSR e SSG, e aprimoramento das habilidades de design e programação front-end.
+- **Habilidades Back-end Sólidas**: Compreensão e aplicação de conceitos importantes de criação de API e ambientes de servidor Node.js.
+- **Integração de Banco de Dados**: Desenvolvimento de habilidades na integração do MongoDB em APIs Node.js, expandindo as possibilidades do projeto.
+
+Como resultado, me sinto mais confiante para desenvolver projetos web complexos e de alta qualidade.
+
+
+## Bibliotecas Utilizadas
+
+- **axios**: Usada para fazer requisições HTTP.
+- **bootstrap**: Framework CSS para estilização rápida e responsiva.
+- **cors**: Middleware para habilitar CORS em aplicações web.
+- **express**: Framework para aplicações web Node.js.
+- **mongodb**: Driver oficial para interação com o MongoDB.
+- **mongoose**: Biblioteca para modelagem de dados do MongoDB.
+- **next**: Framework React para renderização de páginas e roteamento.
+- **react**: Biblioteca JavaScript para criar interfaces de usuário.
+- **react-bootstrap**: Integração do Bootstrap com componentes React.
+- **react-dom**: Pacote para manipulação do DOM em aplicações React.
+- **react-inspector**: Ferramenta para inspeção de estados e props no React.
+- **react-scripts**: Conjunto de scripts para criação de aplicações React.
+- **web-vitals**: Biblioteca para medição de métricas de qualidade da web.
+
+### Dependências de Desenvolvimento
+
+Também utilizei as seguintes bibliotecas para auxiliar em tempo de desenvolvimento:
+
+- **ESLint**: Ajuda a encontrar e corrigir problemas no código.
+- **Prettier**: Ferramenta que faz a formatação do código, corrigindo aspectos como espaçamentos, vírgulas, identação, entre outros.
+
+
+
+# Como Rodar Este Projeto em sua Maquina?
+
+Você pode acessar o link e ver o projeto na vercel: [Portfolio pessoal](https://devfollio.vercel.app/)
+
+Ou siga as instruções abaixo para rodar o projeto no seu computador:
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de que você tem o seguinte instalado:
+- Node.js
+- npm (geralmente vem com o Node.js)
+- Git
+
+
+## passo a passo
+
+1. **Clone o repositório**: Primeiro, você precisa clonar o repositório do GitHub para o seu computador. Abra o terminal e execute o seguinte comando:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <URL_DO_REPOSITÓRIO>
+```
+Substitua <URL_DO_REPOSITÓRIO> pela URL do repositório do projeto.
+
+2. **Navegue até o diretório do projeto**: Use o comando cd para navegar até o diretório do projeto:
+
+```bash
+cd <NOME_DO_DIRETÓRIO>
+```
+Substitua <NOME_DO_DIRETÓRIO> pelo nome do diretório do projeto.
+
+3. **Instale as dependências**: Agora, você precisa instalar todas as dependências listadas no arquivo package.json. Para isso, execute o seguinte comando:
+
+```bash
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Inicie o servidor de desenvolvimento**: Por fim, você pode iniciar o servidor de desenvolvimento executando o seguinte comando:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+````bash
+npm run dev
+````
+Agora, você deve ser capaz de acessar o projeto no seu navegador através da URL: http://localhost:3000.
