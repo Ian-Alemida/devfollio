@@ -1,4 +1,4 @@
-.App-header{
+.App-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -6,8 +6,10 @@
     text-align: center;
     width: 99.9%;
     height: 7vh;
-    border-bottom: 1px solid var(--cinza-medio);
+    border-bottom: 1px solid var(--cinza-escuro);
+    background-color: var(--preto);
 }
+
 .App-logo {
     height: 7vh;
     pointer-events: none;
@@ -26,11 +28,13 @@
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
 }
-.App-header nav{
+
+.App-header nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,21 +42,23 @@
     text-align: center;
 }
 
-.Links-header{
+.Links-header {
     color: var(--branco);
     display: flex;
     margin: auto 0;
     margin-right: 6vw;
 }
 
-.Links-header li a{
+.Links-header li a {
     margin: auto 1vw;
     color: var(--branco);
     text-decoration: none;
 }
-.Links-header li a:hover{
+
+.Links-header li a:hover {
     border-bottom: 2.1px solid var(--cor-principal);
 }
-.Links-header-text{
+
+.Links-header-text {
     font-size: 1.4vw;
 }
