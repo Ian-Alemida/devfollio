@@ -21,7 +21,7 @@ function Banner() {
                         </ul>
                     </div>
                 </div>
-                <h2 className={`${roboto.className} content-text-h2`}>Prazer, Eu sou Ian Almeida<span className='content-text-span'>.</span></h2>
+                <h2 className={`${roboto.className} content-text-h2`}>Prazer, eu sou Ian Almeida<span className='content-text-span'>.</span></h2>
                 <p className={`${ubuntu.className} animation`}>Sou um desenvolvedor Full-Stack...</p>
                 <div className='content-button'>
                     <Botao icon1={iconLinkedin} icon2={iconLinkedinBlack} link="https://www.linkedin.com/in/ian-almeida-3a707a240/" text={'Linkedin'}></Botao>
