@@ -87,14 +87,14 @@
 }
 
 .animation {
-    border-right: .1em solid var(--branco);
+    border-right: .09em solid var(--branco);
     font-size: 2.65vw;
     margin-bottom: .9vh;
-    width: 43.5vw;
+    width: 45vw;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-animation: typing 8s steps(33, end),
-        blink-caret .7s step-end infinite alternate;
+    -webkit-animation: typing 6s steps(34, end),
+        blink-caret .6s step-end infinite alternate;
 }
 
 /* Fim da animação wrinting*/
