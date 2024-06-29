@@ -1,4 +1,4 @@
-.content-technology{
+.content-technology {
     width: 95vw;
     height: 85vh;
     display: flex;
@@ -8,17 +8,28 @@
     margin-bottom: 25vh;
 }
 
-.content-technology h2{
+.content-technology h2 {
     font-size: 5.4vw;
     font-weight: 400;
     margin: 0 0 5vh;
 }
 
-.card-tech{
+.card-tech {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
     height: 45%;
     gap: 12px;
+}
+
+@media (max-width: 430px) {
+    .content-technology h2 {
+        font-size: 3rem;
+    }
+
+    .content-technology {
+        height: auto;
+        margin-bottom: 6vh;
+    }
 }

@@ -58,6 +58,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         height: 110vh;
+        margin-bottom: 6vh;
     }
 
     .content-about-img {
