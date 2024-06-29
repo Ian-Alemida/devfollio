@@ -1,4 +1,4 @@
-.content-projects{
+.content-projects {
     width: 95vw;
     display: flex;
     flex-direction: column;
@@ -7,13 +7,13 @@
     margin-bottom: 18vh;
 }
 
-.content-projects h2{
+.content-projects h2 {
     font-size: 5.4vw;
     font-weight: 400;
-    margin:  1vh 10%;
+    margin: 1vh 10%;
 }
 
-.content-projects h2 hr{
+.content-projects h2 hr {
     width: 10%;
     margin: 12px 0;
     background-color: var(--cor-principal);
@@ -22,7 +22,27 @@
     opacity: 1;
 }
 
-.slider{
+.slider {
     width: 81%;
     margin: 2vh 10%;
+}
+
+@media (max-width: 430px) {
+    .content-projects {
+        border-radius: 30px;
+        margin-bottom: 6vh;
+    }
+
+    .content-projects h2 {
+        font-size: 3rem;
+    }
+
+    .content-projects h2 hr {
+        width: 21%;
+    }
+
+    .slider {
+        width: 96%;
+        margin: 2vh 0;
+    }
 }
