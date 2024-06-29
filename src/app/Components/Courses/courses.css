@@ -53,3 +53,27 @@
     color: var(--cor-principal);
     border-bottom: 3.9px solid var(--cor-principal);
 }
+
+@media (max-width: 430px) {
+    .content-courses {
+        margin-bottom: 6vh;
+    }
+
+    .content-courses h2 {
+        font-size: 3rem;
+    }
+
+    .content-courses .cards {
+        margin: 1vh 3%;
+        gap: 12px;
+    }
+
+    .content-courses-menu {
+        margin: 1vh 2%;
+    }
+
+    .content-courses-menu button {
+        font-size: 1.17rem;
+        margin: 0 0 9px 6px;
+    }
+}
