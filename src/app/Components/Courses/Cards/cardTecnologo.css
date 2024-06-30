@@ -9,23 +9,26 @@
     justify-content: space-between;
     text-decoration: none;
 }
-.content-cardTecnologo:hover{
+
+.content-cardTecnologo:hover {
     border-color: var(--cor-principal);
 }
 
-.content-cardTecnologo h3{
+.content-cardTecnologo h3 {
     color: var(--cinza);
     font-size: 1.2vw;
     margin: 0;
 }
-.content-cardTecnologo-p{
+
+.content-cardTecnologo-p {
     margin: 0 0 1vh 0;
     font-size: 1.8vw;
     font-weight: 700;
     margin: 6px 0;
     color: var(--branco);
 }
-.content-cardTecnologo-p small{
+
+.content-cardTecnologo-p small {
     font-weight: 200;
     color: var(--cinza);
     font-size: 1.2vw;
@@ -35,4 +38,27 @@
     color: var(--cinza);
     font-size: 1vw;
     margin-top: 1.2vh;
+}
+
+@media (max-width: 430px) {
+    .content-cardTecnologo {
+        width: 100%;
+        padding: .9rem;
+    }
+
+    .content-cardTecnologo h3 {
+        font-size: 1rem;
+    }
+
+    .content-cardTecnologo-p {
+        font-size: 1.2rem;
+    }
+
+    .content-cardTecnologo-p small {
+        font-size: 1rem;
+    }
+
+    .content-cardTecnologo span {
+        font-size: 1rem;
+    }
 }

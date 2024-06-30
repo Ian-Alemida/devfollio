@@ -52,3 +52,36 @@
     font-weight: 400;
     margin: 15px 0;
 }
+
+@media (max-width: 430px) {
+    .content-about {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 110vh;
+        margin-bottom: 6vh;
+    }
+
+    .content-about-img {
+        margin: 0 auto;
+        width: 94%;
+        height: 36%;
+    }
+
+    .content-about-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-about-text-h2 {
+        font-size: 3rem;
+    }
+
+    .content-about-text-h3 {
+        font-size: .69rem;
+    }
+
+    .content-about-text-p {
+        font-size: 1.05rem;
+        margin: 9px 0;
+    }
+}

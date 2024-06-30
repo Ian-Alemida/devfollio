@@ -1,4 +1,4 @@
-.Content-footer{
+.Content-footer {
     width: 99.8%;
     display: flex;
     flex-direction: column;
@@ -6,16 +6,33 @@
     color: var(--cinza);
     text-align: center;
 }
-.Content-footer-top{
+
+.Content-footer-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.Content-footer hr{
+
+.Content-footer hr {
     width: 100%;
     border: 1px solid #21212155;
 }
-.Content-footer-copy{
-    font-size: .6vw;
+
+.Content-footer-copy {
+    font-size: .75vw;
     margin-bottom: 1vh;
+}
+
+@media (max-width: 430px) {
+    .Content-footer-top {
+        display: inline;
+    }
+
+    .Content-footer-copy {
+        font-size: .87rem;
+    }
+
+    .Content-footer-copy span {
+        font-size: .66rem;
+    }
 }
