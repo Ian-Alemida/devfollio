@@ -19,12 +19,20 @@
 }
 
 .Content-footer-copy {
-    font-size: .6vw;
+    font-size: .75vw;
     margin-bottom: 1vh;
 }
 
 @media (max-width: 430px) {
     .Content-footer-top {
         display: inline;
+    }
+
+    .Content-footer-copy {
+        font-size: .87rem;
+    }
+
+    .Content-footer-copy span {
+        font-size: .66rem;
     }
 }
