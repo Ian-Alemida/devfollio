@@ -85,3 +85,34 @@
         margin: 9px 0;
     }
 }
+
+@media (max-width: 1024px) {
+    .content-about {
+        margin-bottom: 12vh;
+    }
+
+    .content-about-img {
+        margin: auto;
+        width: 90%;
+        height: 72%;
+    }
+
+    .content-about-text {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .content-about-text-h2 {
+        font-size: 3.3rem;
+    }
+
+    .content-about-text-h3 {
+        font-size: .9rem;
+    }
+
+    .content-about-text-p {
+        font-size: 1.2rem;
+        margin: 9px 0;
+    }
+}
