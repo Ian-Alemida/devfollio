@@ -59,13 +59,13 @@
     opacity: 1;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 430px) and (max-width: 1024px) {
     .animated-button {
-        width: 186px;
+        width: 213px;
     }
 
     .icon {
-        height: 5.4vh;
+        height: 4.2vh;
         margin-right: 1.5vw;
     }
 

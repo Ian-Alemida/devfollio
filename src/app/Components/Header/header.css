@@ -62,7 +62,7 @@
     font-size: 1.4vw;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 431px) and (max-width: 1024px) {
     .App-header {
         height: 9.3vh;
     }

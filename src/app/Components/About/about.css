@@ -57,8 +57,8 @@
     .content-about {
         flex-direction: column;
         justify-content: space-evenly;
-        height: 110vh;
-        margin-bottom: 6vh;
+        height: 140vh;
+        margin-bottom: 16vh;
     }
 
     .content-about-img {
@@ -86,19 +86,19 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 431px) and (max-width: 1024px) {
     .content-about {
-        margin-bottom: 12vh;
+        margin-bottom: 9vh;
     }
 
     .content-about-img {
         margin: auto;
-        width: 90%;
-        height: 72%;
+        width: 80%;
+        height: 42%;
     }
 
     .content-about-text {
-        width: 100%;
+        width: 60%;
         text-align: center;
         margin-right: 0;
     }
