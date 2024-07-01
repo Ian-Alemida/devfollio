@@ -23,7 +23,6 @@
     }
 }
 
-
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
@@ -61,4 +60,24 @@
 
 .Links-header-text {
     font-size: 1.4vw;
+}
+
+@media (max-width: 1024px) {
+    .App-header {
+        height: 9.3vh;
+    }
+
+    .App-logo {
+        height: 12vh;
+        width: 12vh;
+        margin-left: 5.1vw;
+    }
+
+    .Links-header {
+        margin-right: 3vw;
+    }
+
+    .Links-header-text {
+        font-size: 1.41rem;
+    }
 }
