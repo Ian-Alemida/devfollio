@@ -75,3 +75,33 @@
         font-size: 1rem;
     }
 }
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .imgSlider {
+        height: 76.2vh;
+        border-radius: 42px;
+        background-size: cover;
+    }
+
+    .imgSlider h3 {
+        font-size: 3rem;
+    }
+
+    .carousel-caption {
+        width: 96%;
+        right: 1.5%;
+        left: 1.5%;
+    }
+
+    .carousel-caption h4 {
+        font-size: 1.11rem;
+    }
+
+    .carousel-caption h4 small {
+        font-size: .87rem;
+    }
+
+    .carousel-caption span {
+        font-size: 1.32rem;
+    }
+}
