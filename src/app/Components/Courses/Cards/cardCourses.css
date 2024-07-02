@@ -61,3 +61,27 @@
         font-size: 0.9rem;
     }
 }
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .content-cardCourses {
+        width: 31%;
+        padding: .6rem;
+    }
+
+    .content-cardCourses h3 {
+        font-size: 1.35rem;
+    }
+
+    .content-cardCourses-p {
+        font-size: 1.29rem;
+        margin: 3px 0;
+    }
+
+    .content-cardCourses-p small {
+        font-size: 1.11rem;
+    }
+
+    .content-cardCourses span {
+        font-size: 1.29rem;
+    }
+}

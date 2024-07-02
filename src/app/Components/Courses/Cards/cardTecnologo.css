@@ -62,3 +62,26 @@
         font-size: 1rem;
     }
 }
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .content-cardTecnologo {
+        width: 100%;
+        padding: .9rem;
+    }
+
+    .content-cardTecnologo h3 {
+        font-size: 1.5rem;
+    }
+
+    .content-cardTecnologo-p {
+        font-size: 1.59rem;
+    }
+
+    .content-cardTecnologo-p small {
+        font-size: 1.29rem;
+    }
+
+    .content-cardTecnologo span {
+        font-size: 1.59rem;
+    }
+}
