@@ -69,3 +69,15 @@
         height: 2.7rem;
     }
 }
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .Btn-infos {
+        width: 4.2rem;
+        height: 3.3rem;
+        justify-content: space-between;
+    }
+
+    .svgIcon-infos {
+        height: 2.7rem;
+    }
+}
