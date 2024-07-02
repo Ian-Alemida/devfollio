@@ -42,3 +42,17 @@
         width: 100%;
     }
 }
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .Content-Infos-form {
+        font-size: 1.11rem;
+    }
+
+    .Content-Infos-form-div-button {
+        font-size: 1.5rem;
+    }
+
+    .Content-Infos-form-div-input {
+        width: 100%;
+    }
+}
