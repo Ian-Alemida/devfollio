@@ -19,6 +19,10 @@
     .Content-Infos-text-info-p {
         font-size: 1.2rem;
     }
+}
 
-    .Content-Infos-text-info {}
+@media (min-width: 431px) and (max-width: 1024px) {
+    .Content-Infos-text-info-p {
+        font-size: 1.29rem;
+    }
 }

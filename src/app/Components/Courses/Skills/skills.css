@@ -63,3 +63,25 @@
         width: 80%;
     }
 }
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .skills {
+        margin: 1vh 2%;
+    }
+
+    .skills h3 {
+        font-size: 1.56rem;
+        margin: 1.2vh 0;
+    }
+
+    .skills-list p {
+        font-size: 1.2rem;
+        margin-bottom: .3vh;
+        width: 33.3%;
+    }
+
+    .skills-column p {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+}

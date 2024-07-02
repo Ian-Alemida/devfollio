@@ -95,3 +95,18 @@
         height: 2.1rem;
     }
 }
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .btns {
+        margin: 0 27px;
+    }
+
+    .Btn {
+        width: 39px;
+        height: 39px;
+    }
+
+    .svgIcon {
+        height: 2.1rem;
+    }
+}

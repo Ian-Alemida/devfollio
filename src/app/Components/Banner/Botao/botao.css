@@ -59,6 +59,22 @@
     opacity: 1;
 }
 
+@media (min-width: 430px) and (max-width: 1024px) {
+    .animated-button {
+        width: 213px;
+    }
+
+    .icon {
+        height: 4.2vh;
+        margin-right: 1.5vw;
+    }
+
+    .span-text {
+        font-size: 1.44rem;
+        padding: 3px 0;
+    }
+}
+
 @media (max-width: 430px) {
     .animated-button {
         width: 177px;

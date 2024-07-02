@@ -46,3 +46,23 @@
         margin: 2vh 0;
     }
 }
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .content-projects {
+        border-radius: 30px;
+        margin-bottom: 6vh;
+    }
+
+    .content-projects h2 {
+        font-size: 3.3rem;
+    }
+
+    .content-projects h2 hr {
+        width: 18%;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 2vh 0;
+    }
+}

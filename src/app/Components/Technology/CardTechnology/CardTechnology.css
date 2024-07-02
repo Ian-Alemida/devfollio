@@ -84,3 +84,25 @@
         height: 63%;
     }
 }
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .technology-card {
+        width: 31%;
+        height: auto;
+    }
+
+    .technology-card h3 {
+        font-size: 1.8rem;
+        margin: 3px 0 3px;
+    }
+
+    .technology-card p {
+        font-size: 1.23rem;
+    }
+
+    .technology-card-img-div {
+        width: 78%;
+        margin: 0 12px;
+        height: 66%;
+    }
+}

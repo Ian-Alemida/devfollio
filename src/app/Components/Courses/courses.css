@@ -77,3 +77,27 @@
         margin: 0 0 9px 6px;
     }
 }
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .content-courses {
+        margin-bottom: 6vh;
+    }
+
+    .content-courses h2 {
+        font-size: 3.3rem;
+    }
+
+    .content-courses .cards {
+        margin: 1vh 0;
+        gap: 18px;
+    }
+
+    .content-courses-menu {
+        margin: 1vh 2%;
+    }
+
+    .content-courses-menu button {
+        font-size: 1.332rem;
+        margin: 0 6px 9px 0;
+    }
+}

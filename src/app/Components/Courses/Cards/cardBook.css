@@ -59,3 +59,19 @@
         height: 21vh;
     }
 }
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .content-cardCourses-books {
+        width: 48.2%;
+        padding: 1.2vh 2.1vh;
+        margin: 0;
+    }
+
+    .content-cardCourses-books h3 {
+        font-size: 1.29rem;
+    }
+
+    .content-cardCourses-books img {
+        height: 33vh;
+    }
+}

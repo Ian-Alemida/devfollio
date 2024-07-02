@@ -30,6 +30,17 @@
 
     .content-technology {
         height: auto;
+        margin-bottom: 16vh;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .content-technology h2 {
+        font-size: 3.3rem;
+    }
+
+    .content-technology {
+        height: auto;
         margin-bottom: 6vh;
     }
 }
