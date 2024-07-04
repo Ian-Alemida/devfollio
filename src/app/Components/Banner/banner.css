@@ -126,6 +126,7 @@
     .content-button {
         justify-content: space-around;
         gap: 0px;
+        margin-top: 1.2rem;
     }
 }
 
