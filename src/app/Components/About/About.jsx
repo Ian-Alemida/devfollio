@@ -23,7 +23,7 @@ function About() {
                 <p className='content-about-text-p'>Olá! Sou um Desenvolvedor Full-Stack especializado em Next.js e Node.js, apaixonado por tecnologia e com uma sólida experiência em HTML5, CSS3 e JavaScript. Para complementar meu know-how, também estou imerso nos estudos de cibersegurança e sou um entusiasta da inteligência artificial.</p>
                 <p className='content-about-text-p'>Desde 2022, tenho me dedicado ao desenvolvimento de software, e essa jornada tem sido verdadeiramente apaixonante. Cresci fascinado pela tecnologia e, desde cedo, tive interesse na computação. Em 2023, decidi dar um passo adiante e me matriculei no curso de Análise e Desenvolvimento de Sistemas, buscando aprimorar minhas habilidades e me manter em constante desenvolvimento. </p>
                 <p className='content-about-text-p'>Estou comprometido em aprimorar minhas habilidades e contribuir com meu conhecimento para ajudar a comunidade alcançar seus objetivos.</p>
-                <div className='content-button'>
+                <div className='content-button content-button-about'>
                     <Botao icon1={iconDownloadGray} icon2={iconDownload} link={Curriculo} isDownload text={'Baixar CV'}></Botao>
                     <Botao icon1={instagramGrayIcon} icon2={instagramIcon} link="https://www.instagram.com/binary_jouney/?igshid=OGQ5ZDc2ODk2ZA=='" text={'Instagram'}></Botao>
                 </div>

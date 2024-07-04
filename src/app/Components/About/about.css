@@ -115,4 +115,8 @@
         font-size: 1.2rem;
         margin: 9px 0;
     }
+
+    .content-button-about {
+        margin-right: 1.5rem;
+    }
 }

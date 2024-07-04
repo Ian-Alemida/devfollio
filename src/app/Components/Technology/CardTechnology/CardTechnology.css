@@ -66,17 +66,17 @@
 
 @media (max-width: 430px) {
     .technology-card {
-        width: 32%;
+        width: 42%;
         height: auto;
     }
 
     .technology-card h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin: 9px 0 3px;
     }
 
     .technology-card p {
-        font-size: .8rem;
+        font-size: .96rem;
     }
 
     .technology-card-img-div {
