@@ -91,20 +91,20 @@
     }
 
     .Links-header-text {
-        font-size: 1.41rem;
+        font-size: 1.62rem;
     }
 
     .menu-hamburguer {
-        background-color: #111111dd;
         color: var(--cinza);
-        padding: 0 20px;
+        padding: 0 9px;
+        margin: 0 12px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
     .menu-icon {
-        font-size: 51px;
+        font-size: 42px;
         font-weight: bold;
         cursor: pointer;
         display: block;
@@ -146,15 +146,15 @@
     }
 
     .App-logo {
-        height: 6.9rem;
-        width: 6.6rem;
-        margin-right: 2.1%;
+        height: 5.1rem;
+        width: 6rem;
+        margin-right: 18px;
     }
 }
 
 @media (min-width: 431px) and (max-width: 1024px) {
     .App-header {
-        height: 9.3vh;
+        height: 8.4vh;
         flex-wrap: wrap;
     }
 
@@ -164,8 +164,8 @@
         justify-content: space-between;
         align-items: center;
         text-align: center;
-        width: 90%;
-        height: 7vh;
+        width: 99.9%;
+        height: 7.2vh;
     }
 
     .App-header-mobile {
