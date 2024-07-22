@@ -47,6 +47,7 @@ Como resultado, me sinto mais confiante para desenvolver projetos web complexos 
 - **react-inspector**: Ferramenta para inspeção de estados e props no React.
 - **react-scripts**: Conjunto de scripts para criação de aplicações React.
 - **web-vitals**: Biblioteca para medição de métricas de qualidade da web.
+- **Styled-components**: Biblioteca utilizada para customizar componentes, foi usada para criar o background juntamente com o keyframes para criar animações.
 
 ### Dependências de Desenvolvimento
 
@@ -54,7 +55,22 @@ Também utilizei as seguintes bibliotecas para auxiliar em tempo de desenvolvime
 
 - **ESLint**: Ajuda a encontrar e corrigir problemas no código.
 - **Prettier**: Ferramenta que faz a formatação do código, corrigindo aspectos como espaçamentos, vírgulas, identação, entre outros.
-
+  
+### Notas de atualização
+<details>
+  <summary>v1.0 - O portfólio é hospedado na Vercel.</summary>
+  <ul>
+    <li>v1.1 - Alterando valores de fontes e espaçamentos para responder dinamicamente ao tamanho da tela, utilizando medidas como vw e rem.</li>
+    <li>v1.2 - Modificando o layout do site.</li>
+    <li>v1.3 - Os projetos agora são exibidos em um carrossel.</li>
+    <li>v1.4 - Mudanças nas customizações do site, criando variáveis globais para armazenar valores como tamanhos de fontes e cores</li>
+    <li>v1.5 - Mudanças na forma de visualizar as formações, separando por categorias e deixanndo mais dinâmico</li>
+    <li>v2.0 - Todo o projeto foi migrado para o framework NextJS.</li>
+    <li>v2.1 - Os dados são requisitados para o MongoDB Atlas fazendo uma chamada de API utilizando os recursos do próprio NextJS.</li>
+    <li>v2.2 - Alterando background para um bg dinâmico de céu estrelado, utilizando styled-components + atualização nos textos da página.</li>
+    <li>v2.3 - adicionando mais responsividade ao projeto, agora ele se adapta a diferentes tamanhos de tela</li>
+  </ul>
+</details>
 
 
 # Como Rodar Este Projeto em sua Maquina?
