@@ -1,12 +1,24 @@
-.content-img{
+.content-img {
     width: 60%;
     display: flex;
     justify-content: right;
     align-items: center;
 }
 
-.img{
+.img {
     width: 90%;
     height: 90%;
     transition: transform 0.1s ease;
+}
+
+@media (max-width: 430px) {
+    .content-img {
+        display: none;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 1024px) {
+    .content-img {
+        width: 75%;
+    }
 }

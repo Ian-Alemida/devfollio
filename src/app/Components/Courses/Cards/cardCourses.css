@@ -9,22 +9,25 @@
     justify-content: space-between;
     text-decoration: none;
 }
-.content-cardCourses:hover{
+
+.content-cardCourses:hover {
     border-color: var(--cor-principal);
 }
 
-.content-cardCourses h3{
+.content-cardCourses h3 {
     color: var(--cinza);
     font-size: 1.23vw;
 }
-.content-cardCourses-p{
+
+.content-cardCourses-p {
     color: var(--branco);
     font-size: 1.32vw;
     font-weight: bold;
     margin: 6px 0;
     text-align: start;
 }
-.content-cardCourses-p small{
+
+.content-cardCourses-p small {
     font-weight: 200;
     color: var(--cinza);
     font-size: 1.11vw;
@@ -33,4 +36,52 @@
 .content-cardCourses span {
     color: var(--cinza);
     font-size: 0.9vw;
+}
+
+@media (max-width: 430px) {
+    .content-cardCourses {
+        width: 31%;
+        padding: .42rem;
+    }
+
+    .content-cardCourses h3 {
+        font-size: .9rem;
+    }
+
+    .content-cardCourses-p {
+        font-size: .9rem;
+        margin: 3px 0;
+    }
+
+    .content-cardCourses-p small {
+        font-size: .8rem;
+    }
+
+    .content-cardCourses span {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .content-cardCourses {
+        width: 31%;
+        padding: .6rem;
+    }
+
+    .content-cardCourses h3 {
+        font-size: 1.35rem;
+    }
+
+    .content-cardCourses-p {
+        font-size: 1.29rem;
+        margin: 3px 0;
+    }
+
+    .content-cardCourses-p small {
+        font-size: 1.11rem;
+    }
+
+    .content-cardCourses span {
+        font-size: 1.29rem;
+    }
 }
