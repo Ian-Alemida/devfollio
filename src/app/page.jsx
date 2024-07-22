@@ -10,11 +10,18 @@ import Projects from './Components/Projects/Projects';
 import Courses from './Components/Courses/Courses';
 import Footer from './Components/Footer/Footer';
 import ScrollUp from './Components/ScrollUp/ScrollUp';
+import BackgroundStars from './Components/Background-stars/Background-stars';
+import styled from 'styled-components';
 
+
+const Container = styled.section`
+color: white;
+`
 function App() {
 
   return (
-    <section className='root'>
+    <Container>
+      <BackgroundStars />
       <div className="App">
         <Header></Header>
         <Banner></Banner>
@@ -25,7 +32,7 @@ function App() {
         <Footer></Footer>
       </div>
       <ScrollUp></ScrollUp>
-    </section>
+    </Container>
   );
 }
 

@@ -1,4 +1,4 @@
-.imgSlider{
+.imgSlider {
     height: 77vh;
     border-radius: 33px;
     background-size: cover;
@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: start;
 }
+
 .imgSlider h3 {
     font-size: 3vw;
     background-color: #111111dd;
@@ -14,7 +15,7 @@
     font-weight: bold;
 }
 
-.carousel-caption{
+.carousel-caption {
     background-color: #111111dd;
     border-radius: 18px;
     padding: 18px;
@@ -22,25 +23,85 @@
     right: 10%;
     left: 10%;
 }
-.carousel-caption h4{
-    text-align: left;
-    font-size: 1.32vw;
-    margin-bottom: 12px;
-}
-.carousel-caption h4 small{
+
+
+
+.carousel-caption h4 small {
     font-size: .9vw;
     font-weight: 200;
 }
-.carousel-caption div{
+
+.carousel-caption div {
     display: flex;
     justify-Content: space-between;
     align-items: center;
 }
-.isMobile{
+
+.isMobile {
     display: none;
 }
 
-.carousel-caption span{
+.carousel-caption span {
     font-size: 1vw;
     font-weight: 400;
+}
+
+@media (max-width: 430px) {
+    .imgSlider {
+        height: 75vh;
+        border-radius: 42px;
+        background-size: contain;
+    }
+
+    .imgSlider h3 {
+        font-size: 2.7rem;
+    }
+
+    .carousel-caption {
+        width: 93%;
+        right: 3.5%;
+        left: 3.5%;
+    }
+
+    .carousel-caption h4 {
+        font-size: .9rem;
+    }
+
+    .carousel-caption h4 small {
+        font-size: .6rem;
+    }
+
+    .carousel-caption span {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .imgSlider {
+        height: 76.2vh;
+        border-radius: 42px;
+        background-size: cover;
+    }
+
+    .imgSlider h3 {
+        font-size: 3rem;
+    }
+
+    .carousel-caption {
+        width: 96%;
+        right: 1.5%;
+        left: 1.5%;
+    }
+
+    .carousel-caption h4 {
+        font-size: 1.11rem;
+    }
+
+    .carousel-caption h4 small {
+        font-size: .87rem;
+    }
+
+    .carousel-caption span {
+        font-size: 1.32rem;
+    }
 }
