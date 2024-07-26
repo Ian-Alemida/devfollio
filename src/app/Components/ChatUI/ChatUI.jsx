@@ -32,6 +32,25 @@ const TextMessage = styled.p`
 `
 
 export default function ChatUI() {
+
+    const [responseGemini, setResponseGemini] = useState('');
+
+    useEffect(() => {
+        // Função para chamar a API
+        const fetchGeminiResponse = async () => {
+            try {
+                // Substitua com a sua chamada de API real
+                const res = await fetch('/api/gemini'); // Exemplo de endpoint
+                const data = await res.json();
+                setResponseGemini(data.message);
+            } catch (error) {
+                console.error('Erro ao buscar a resposta do Gemini IA:', error);
+            }
+        };
+
+        fetchGeminiResponse();
+    }, []);
+
     return (
         <ChatModal>
             <MessageBubble>
