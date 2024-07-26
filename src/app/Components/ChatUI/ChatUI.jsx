@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
+import { styled } from "styled-components"
 
-function ChatUI() {
+
+export default function ChatUI() {
     return (
-        <></>
+        <modal>
+            <p>hello</p>
+        </modal>
     )
 }

@@ -2,6 +2,7 @@
 import '@/app/reset.css'
 import './page.css'
 import '@/app/globals.css'
+import BackgroundStars from './Components/Background-stars/Background-stars';
 import Header from './Components/Header/Header';
 import Banner from './Components/Banner/Banner';
 import About from './Components/About/About';
@@ -10,7 +11,7 @@ import Projects from './Components/Projects/Projects';
 import Courses from './Components/Courses/Courses';
 import Footer from './Components/Footer/Footer';
 import ScrollUp from './Components/ScrollUp/ScrollUp';
-import BackgroundStars from './Components/Background-stars/Background-stars';
+import ChatUI from './Components/ChatUI/ChatUI';
 import styled from 'styled-components';
 
 
@@ -32,6 +33,7 @@ function App() {
         <Footer></Footer>
       </div>
       <ScrollUp></ScrollUp>
+      <ChatUI></ChatUI>
     </Container>
   );
 }
