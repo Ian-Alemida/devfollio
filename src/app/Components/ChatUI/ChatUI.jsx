@@ -70,20 +70,23 @@ export default function ChatUI() {
 
     const [messages, setMessages] = useState(['teste']);
     const [newMessage, setNewMessage] = useState('');
-    console.log(newMessage)
-    useEffect(() => {
-        // Função para chamar a API
-        const fetchGeminiResponse = async () => {
-            try {
-                const response = await axios.get('/api/getGemini');
-                setMessages((prevMessages) => [response.data, ...prevMessages]);
-            } catch (error) {
-                console.error('Erro ao buscar a resposta do Gemini IA:', error);
-            }
-        };
 
-        fetchGeminiResponse();
-    }, []);
+    // Função para chamar a API
+    async function fetchGeminiResponse(newMessage) {
+        try {
+            const response = await axios.get('/api/getGemini');
+            setMessages((prevMessages) => [response.data, ...prevMessages]);
+        } catch (error) {
+            console.error('Erro ao buscar a resposta do Gemini IA:', error);
+        }
+    };
+
+    const clickSendMessage = () => {
+        setMessages([newMessage, ...messages]);
+        fetchGeminiResponse(newMessage);
+        setNewMessage('');
+    };
+
     return (
         <ChatModal>
             <InputContainer>
@@ -92,7 +95,7 @@ export default function ChatUI() {
                     value={newMessage}
                     onChange={(e) => setNewMessage(e.target.value)}
                     placeholder="Digite sua mensagem" />
-                <SendButton>Send</SendButton>
+                <SendButton onClick={clickSendMessage}>Send</SendButton>
             </InputContainer>
             <MessagesContainer>
                 {messages.map((message, index) =>
