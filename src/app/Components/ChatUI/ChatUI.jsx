@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { styled } from "styled-components"
+import { styled } from "styled-components";
+import axios from 'axios';
 
 const ChatModal = styled.div`
     background-color: var(--cinza-medio);
@@ -33,16 +34,13 @@ const TextMessage = styled.p`
 
 export default function ChatUI() {
 
-    const [responseGemini, setResponseGemini] = useState('');
+    const [responseGemini, setResponseGemini] = useState('ola');
 
     useEffect(() => {
         // Função para chamar a API
         const fetchGeminiResponse = async () => {
             try {
-                // Substitua com a sua chamada de API real
-                const res = await fetch('/api/gemini'); // Exemplo de endpoint
-                const data = await res.json();
-                setResponseGemini(data.message);
+                await axios.get('/api/getGemini').then((response) => setResponseGemini(response.data))
             } catch (error) {
                 console.error('Erro ao buscar a resposta do Gemini IA:', error);
             }
@@ -50,11 +48,11 @@ export default function ChatUI() {
 
         fetchGeminiResponse();
     }, []);
-
+    console.log(responseGemini)
     return (
         <ChatModal>
             <MessageBubble>
-                <TextMessage>hello</TextMessage>
+                <TextMessage>{responseGemini}</TextMessage>
             </MessageBubble>
         </ChatModal>
     )
