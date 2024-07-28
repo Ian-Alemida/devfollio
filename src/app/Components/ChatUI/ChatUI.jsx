@@ -13,8 +13,8 @@ const ChatModal = styled.div`
     right: 3vw;
     bottom: 12vh;
     padding-bottom: 21px;
-    width: 520px;
-    height: 660px;
+    width: 720px;
+    height: 860px;
     overflow: hidden;
     `
 const MessagesContainer = styled.div`
@@ -71,13 +71,11 @@ export default function ChatUI() {
     const [messages, setMessages] = useState([]);
     const [newMessage, setNewMessage] = useState('');
 
-
-
-    const clickSendMessage = async () => {
-        setMessages([newMessage, ...messages]);
+    async function clickSendMessage() {
+        setMessages([{ role: 'user', message: newMessage }, ...messages]);
         try {
             const response = await axios.post('/api/getGemini', { userQuestion: newMessage });
-            setMessages((prevMessages) => [response.data, ...prevMessages]);
+            setMessages((prevMessages) => [{ role: 'chatbot', message: response.data }, ...prevMessages]);
         } catch (error) {
             console.error('Erro ao buscar a resposta do Gemini IA:', error);
         }
@@ -91,13 +89,13 @@ export default function ChatUI() {
                     type="text"
                     value={newMessage}
                     onChange={(e) => setNewMessage(e.target.value)}
-                    placeholder="Digite sua mensagem" />
+                    placeholder="Digite sua pergunta..." />
                 <SendButton onClick={clickSendMessage}>Send</SendButton>
             </InputContainer>
             <MessagesContainer>
                 {messages.map((message, index) =>
                     <MessageBubble key={index}>
-                        <TextMessage>{message}</TextMessage>
+                        <TextMessage>{message.role}</TextMessage>
                     </MessageBubble>
                 )}
             </MessagesContainer>

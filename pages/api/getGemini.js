@@ -13,7 +13,6 @@ async function getGemini(req, res) {
       const result = await chat.sendMessage(userQuestion);
       const response = await result.response;
       const text = response.text();
-      console.log(text);
       res.status(200).json(text);
     } catch (error) {
       res.status(500).json({ error: "Falha ao gerar resposta" });
