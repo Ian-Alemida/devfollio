@@ -1,18 +1,26 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { inicializarChat, chat } from "@/geminiAI/startGemini";
 
-const genAI = new GoogleGenerativeAI("AIzaSyAODjtaXlOeanmooLC4pcJGtcWQ_HFB5RA");
+async function getGemini(req, res) {
+  if (req.method === "POST") {
+    const { userQuestion } = req.body;
 
-export default async function handler(req, res, usermessage) {
-  try {
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-    const prompt = usermessage;
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const text = response.text();
+    if (!chat) {
+      inicializarChat();
+      console.log("O chat foi inicializado");
+    }
 
-    res.status(200).json(text);
-  } catch (error) {
-    console.error("Erro ao chamar o Gemini:", error);
-    res.status(500).json({ error: "Erro ao chamar o Gemini AI" });
+    try {
+      const result = await chat.sendMessage(userQuestion);
+      const response = await result.response;
+      const text = response.text();
+      console.log(text);
+      res.status(200).json(text);
+    } catch (error) {
+      res.status(500).json({ error: "Falha ao gerar resposta" });
+    }
+  } else {
+    res.status(405).json({ error: "Method not allowed" });
   }
 }
+
+export default getGemini;

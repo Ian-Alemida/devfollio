@@ -68,22 +68,19 @@ const SendButton = styled.button`
 
 export default function ChatUI() {
 
-    const [messages, setMessages] = useState(['teste']);
+    const [messages, setMessages] = useState([]);
     const [newMessage, setNewMessage] = useState('');
 
-    // Função para chamar a API
-    async function fetchGeminiResponse(newMessage) {
+
+
+    const clickSendMessage = async () => {
+        setMessages([newMessage, ...messages]);
         try {
-            const response = await axios.get('/api/getGemini');
+            const response = await axios.post('/api/getGemini', { userQuestion: newMessage });
             setMessages((prevMessages) => [response.data, ...prevMessages]);
         } catch (error) {
             console.error('Erro ao buscar a resposta do Gemini IA:', error);
         }
-    };
-
-    const clickSendMessage = () => {
-        setMessages([newMessage, ...messages]);
-        fetchGeminiResponse(newMessage);
         setNewMessage('');
     };
 
