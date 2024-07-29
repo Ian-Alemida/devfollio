@@ -27,6 +27,7 @@ function inicializarChat() {
       },
     ],
     generationConfig: {
+      //define o máximo de tokens que o sistema irá utilizar
       maxOutputTokens: 1000,
     },
   });

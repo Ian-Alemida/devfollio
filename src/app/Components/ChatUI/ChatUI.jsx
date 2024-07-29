@@ -54,16 +54,16 @@ const Input = styled.input`
 
 const SendButton = styled.button`
     padding: 10px 20px;
-  border: none;
-  border-radius: 0 18px 18px 0;
-  background-color: var(--cor-secundaria);
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
+    border: none;
+    border-radius: 0 18px 18px 0;
+    background-color: var(--cor-secundaria);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 
-  &:hover{
-    background-color: var(--cor-principal);
-  }
+    &:hover{
+        background-color: var(--cor-principal);
+    }
 `
 
 export default function ChatUI() {
@@ -71,11 +71,11 @@ export default function ChatUI() {
     const [messages, setMessages] = useState([]);
     const [newMessage, setNewMessage] = useState('');
 
-    async function clickSendMessage() {
+    async function clickSendMessage() { //  configura o comportamento do componente após o usuário clicar no botão de enviar a mensagem
         setMessages([{ role: 'user', message: newMessage }, ...messages]);
         try {
-            const response = await axios.post('/api/getGemini', { userQuestion: newMessage });
-            setMessages((prevMessages) => [{ role: 'chatbot', message: response.data }, ...prevMessages]);
+            const response = await axios.post('/api/getGemini', { userQuestion: newMessage }); // faz o POST utilizando o axios, passando para ele a variável que armazena a pergunta do usuário
+            setMessages((prevMessages) => [{ role: 'model', message: response.data }, ...prevMessages]);
         } catch (error) {
             console.error('Erro ao buscar a resposta do Gemini IA:', error);
         }
@@ -95,7 +95,7 @@ export default function ChatUI() {
             <MessagesContainer>
                 {messages.map((message, index) =>
                     <MessageBubble key={index}>
-                        <TextMessage>{message.role}</TextMessage>
+                        <TextMessage>{message.message}</TextMessage>
                     </MessageBubble>
                 )}
             </MessagesContainer>
