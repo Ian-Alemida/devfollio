@@ -14,12 +14,12 @@ async function getGemini(req, res) {
       const result = await chat.sendMessage(userQuestion); //Envia a mensagem para a API do gemini
       const response = await result.response;
       const text = response.text();
-      res.status(200).json(text); // passa a resposta do gemini para a resposta da requisição e devolve para minha pagina em  forma de texto
+      res.status(200).json(text); // passa a resposta do gemini para a resposta da requisição e devolve para minha pagina em forma de texto
     } catch (error) {
       res.status(500).json({ error: "Falha ao gerar resposta" });
     }
   } else {
-    res.status(405).json({ error: "Método não permitido" });
+    res.status(405).json({ error: "Método não permitido  " });
   }
 }
 

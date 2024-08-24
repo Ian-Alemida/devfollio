@@ -21,7 +21,7 @@ function inicializarChat() {
         role: "model",
         parts: [
           {
-            text: "Olá! Obrigado por entrar em contato com o Ian Almeida, eu sou IA'n a Inteligencia artificial criada para de ajudar com  informações. Antes de começar a responder sobre suas dúvidas, preciso do seu nome e endereço de e-mail.",
+            text: "Olá! Obrigado por entrar em contato com o Ian Almeida, eu sou IA'n a Inteligencia artificial criada para te ajudar com informações. Antes de começar a responder sobre suas dúvidas, preciso do seu nome e endereço de e-mail.",
           },
         ],
       },
