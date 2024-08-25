@@ -68,7 +68,7 @@ const SendButton = styled.button`
 
 export default function ChatUI() {
 
-    const [messages, setMessages] = useState([]);
+    const [messages, setMessages] = useState([{ role: 'model', message: "Olá! Eu sou IA'n, a Inteligência Artificial do Ian Almeida, um desenvolvedor full-stack com vasta experiência em diversas áreas de tecnologia. Fui criado para responder suas perguntas e te auxiliar a entender melhor as qualificações e experiências do Ian. Precisa de alguma informação específica sobre ele? Você pode me perguntar coisas como: * Quais as tecnologias que o Ian domina? * Quais projetos ele já desenvolveu? * experiencias de trabalho do Ian? * Como posso entrar em contato com o Ian? Estou aqui para te ajudar a descobrir se o Ian é a pessoa certa para o seu projeto!" },]);
     const [newMessage, setNewMessage] = useState('');
 
     async function clickSendMessage() { //  configura o comportamento do componente após o usuário clicar no botão de enviar a mensagem
