@@ -100,8 +100,8 @@ export default function ChatUI() {
             <MessagesContainer>
                 {messages.map((message, index) =>
                     <MessageBubble key={index} >
+                        {message.role === 'model' ? <ModelMessage dangerouslySetInnerHTML={{ __html: message.message }}></ModelMessage> : <UserMessage>{message.message}</UserMessage>}
 
-                        <ModelMessage dangerouslySetInnerHTML={{ __html: message.message }}></ModelMessage>
                     </MessageBubble>
                 )}
             </MessagesContainer>
