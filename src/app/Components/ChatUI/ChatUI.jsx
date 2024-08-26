@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { styled } from "styled-components";
 import axios from 'axios';
+import { formatResponse } from '@/geminiAI/formatResponse';
 
 const ChatModal = styled.div`
     background-color: var(--cinza-medio);
@@ -34,8 +35,12 @@ const MessageBubble = styled.div`
     background-color: white;
 `
 
-const TextMessage = styled.p`
+const UserMessage = styled.p`
     margin: 0 1rem;
+    background-color: red;
+`
+const ModelMessage = styled.div`
+    margin: 1rem;
 `
 
 const InputContainer = styled.div`
@@ -75,7 +80,7 @@ export default function ChatUI() {
         setMessages([{ role: 'user', message: newMessage }, ...messages]);
         try {
             const response = await axios.post('/api/getGemini', { userQuestion: newMessage }); // faz o POST utilizando o axios, passando para ele a variável que armazena a pergunta do usuário
-            setMessages((prevMessages) => [{ role: 'model', message: response.data }, ...prevMessages]);
+            setMessages((prevMessages) => [{ role: 'model', message: formatResponse(response.data) }, ...prevMessages]);
         } catch (error) {
             console.error('Erro ao buscar a resposta do Gemini IA:', error);
         }
@@ -94,8 +99,9 @@ export default function ChatUI() {
             </InputContainer>
             <MessagesContainer>
                 {messages.map((message, index) =>
-                    <MessageBubble key={index}>
-                        <TextMessage>{message.message}</TextMessage>
+                    <MessageBubble key={index} >
+
+                        <ModelMessage dangerouslySetInnerHTML={{ __html: message.message }}></ModelMessage>
                     </MessageBubble>
                 )}
             </MessagesContainer>
