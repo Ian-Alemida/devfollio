@@ -1,4 +1,5 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import axios from "axios";
 
 const genAI = new GoogleGenerativeAI("AIzaSyAODjtaXlOeanmooLC4pcJGtcWQ_HFB5RA");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
@@ -6,6 +7,13 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 let chat;
 
 function inicializarChat() {
+  async function getData() {
+    axios.get("http://localhost:3000/api/getCourses").then((response) => {
+      console.log(`resposta dentro do gemini: ${response.data}`);
+      console.log(`acabou meu chapa`);
+    });
+  }
+  getData();
   // Inicializa o chat passando  um histórico de conversa para guiar as próximas ações do chatbot
   chat = model.startChat({
     history: [

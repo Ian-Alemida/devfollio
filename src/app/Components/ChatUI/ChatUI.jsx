@@ -27,20 +27,20 @@ const MessagesContainer = styled.div`
 `
 const MessageBubble = styled.div`
     margin-bottom: 9px;
-    width: 96%;
+    width: 93%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 18px;
-    background-color: white;
 `
 
 const UserMessage = styled.p`
-    margin: 0 1rem;
+    padding: .3rem 1rem;
+    margin: 0;
     background-color: red;
 `
 const ModelMessage = styled.div`
-    margin: 1rem;
+    padding: .3rem 1rem;
+    background-color: white;
 `
 
 const InputContainer = styled.div`
@@ -101,7 +101,6 @@ export default function ChatUI() {
                 {messages.map((message, index) =>
                     <MessageBubble key={index} >
                         {message.role === 'model' ? <ModelMessage dangerouslySetInnerHTML={{ __html: message.message }}></ModelMessage> : <UserMessage>{message.message}</UserMessage>}
-
                     </MessageBubble>
                 )}
             </MessagesContainer>
