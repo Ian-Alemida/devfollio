@@ -3,6 +3,10 @@ const URI =
   "mongodb+srv://devfollioDB:uaMmrchkml7QPs2e@cluster0.ogzyvdv.mongodb.net/devfollio?retryWrites=true&w=majority&appName=Cluster0";
 
 async function connectDB() {
+  if (mongoose.connection.readyState >= 1) {
+    return;
+  }
+
   mongoose
     .connect(URI, {})
     .then(() => {
