@@ -1,6 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import axios from "axios";
 import { connectDB } from "@/db/db";
+import removeProperties from "./removePropeties";
 
 const genAI = new GoogleGenerativeAI("AIzaSyAODjtaXlOeanmooLC4pcJGtcWQ_HFB5RA");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
@@ -13,8 +14,8 @@ async function getData() {
     await connectDB();
 
     const response = await axios.get("http://localhost:3000/api/getCourses");
-    console.log(response.data);
-    cursosDB = response.data;
+    console.log(removeProperties(response.data));
+    cursosDB = removeProperties(response.data);
   } catch (error) {
     console.error(
       "Erro ao fazer a requisição:",
