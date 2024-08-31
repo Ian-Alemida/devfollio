@@ -33,6 +33,7 @@ await getData();
 
 async function inicializarChat() {
   // Inicializa o chat passando  um histórico de conversa para guiar as próximas ações do chatbot
+  console.log("iniciou o chat dnv");
   chat = model.startChat({
     history: [
       {
@@ -43,15 +44,7 @@ async function inicializarChat() {
               technologiesDB
             )}, mais o mongoDB como banco de dados e varias soluções e API's de IA; cursos que  já fez: ${JSON.stringify(
               cursosDB
-            )}; experiencias profissionais: ${Json.stringify(experiencias)}`,
-          },
-        ],
-      },
-      {
-        role: "model",
-        parts: [
-          {
-            text: "Olá! Obrigado por entrar em contato com o Ian Almeida, eu sou IA'n a Inteligencia artificial criada para te ajudar com informações. Antes de começar a responder sobre suas dúvidas, preciso do seu nome e endereço de e-mail.",
+            )}; experiencias profissionais: ${JSON.stringify(experiencias)}`,
           },
         ],
       },
