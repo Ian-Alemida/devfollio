@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { formatResponse } from '@/geminiAI/formatResponse';
-import { ChatModal, Input, InputContainer, MessageBubble, MessagesContainer, ModelMessage, SendButton, UserMessage } from './ChatUI.styles';
+import { ChatModal, Container, Input, InputContainer, MessageBubble, MessageBubbleColumn, MessageBubbleContainer, MessageBubbleImage, MessageBubbleName, MessageBubbleRow, ModelMessage, SendButton, UserMessage } from './ChatUI.styles';
 
 export default function ChatUI() {
 
@@ -29,13 +29,21 @@ export default function ChatUI() {
                     placeholder="Digite sua pergunta..." />
                 <SendButton onClick={clickSendMessage}>Send</SendButton>
             </InputContainer>
-            <MessagesContainer>
+            <Container>
                 {messages.map((message, index) =>
                     <MessageBubble key={index} >
-                        {message.role === 'model' ? <ModelMessage dangerouslySetInnerHTML={{ __html: message.message }}></ModelMessage> : <UserMessage>{message.message}</UserMessage>}
+                        <MessageBubbleRow>
+                            <MessageBubbleImage></MessageBubbleImage>
+                            <MessageBubbleColumn>
+                                <MessageBubbleName>{message.role === 'model' ? '- IA´n Chatbot' : '- User'}</MessageBubbleName>
+                                <MessageBubbleContainer>
+                                    {message.role === 'model' ? <ModelMessage dangerouslySetInnerHTML={{ __html: message.message }}></ModelMessage> : <UserMessage>{message.message}</UserMessage>}
+                                </MessageBubbleContainer>
+                            </MessageBubbleColumn>
+                        </MessageBubbleRow>
                     </MessageBubble>
                 )}
-            </MessagesContainer>
+            </Container>
         </ChatModal>
     )
 }

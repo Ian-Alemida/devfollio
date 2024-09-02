@@ -9,13 +9,13 @@ export const ChatModal = styled.div`
     position: fixed;
     z-index: 2;
     right: 3vw;
-    bottom: 12vh;
+    bottom: 6vh;
     padding-bottom: 21px;
-    width: 720px;
-    height: 860px;
+    width: 54vw;
+    height: 93vh;
     overflow: hidden;
     `
-export const MessagesContainer = styled.div`
+export const Container = styled.div`
     overflow-y: auto;
     width: 100%;
     display: flex;
@@ -24,18 +24,40 @@ export const MessagesContainer = styled.div`
 `
 export const MessageBubble = styled.div`
     margin-bottom: 9px;
-    width: 93%;
+    width: 100%;
+    background-color: #fff;
+`
+export const MessageBubbleRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+`
+export const MessageBubbleImage = styled.div`
+    background-color: rosybrown;
+    border-radius: 50%;
+    width: 69px;
+    height: 69px;
+    flex: 0 0 69px;
+`
+export const MessageBubbleColumn = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    margin: 0 9px;
+`
+export const MessageBubbleName = styled.p`
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 3px;
+`
+export const MessageBubbleContainer = styled.div`
+    padding: 0;
+    margin: 0;
 `
 export const UserMessage = styled.p`
-    padding: .3rem 1rem;
-    margin: 0;
-    background-color: blue;
 `
 export const ModelMessage = styled.div`
-    padding: .3rem 1rem;
     background-color: white;
 `
 
