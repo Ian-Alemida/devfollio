@@ -11,7 +11,7 @@ export const ChatModal = styled.div`
     right: 3vw;
     bottom: 6vh;
     padding-bottom: 21px;
-    width: 54vw;
+    width: 51vw;
     height: 93vh;
     overflow: hidden;
     `
@@ -36,24 +36,27 @@ export const MessageBubbleRow = styled.div`
 export const MessageBubbleImage = styled.div`
     background-color: rosybrown;
     border-radius: 50%;
-    width: 69px;
-    height: 69px;
-    flex: 0 0 69px;
+    width: 75px;
+    height: 75px;
+    flex: 0 0 75px;
+    margin: 12px 0 0 6px;
 `
 export const MessageBubbleColumn = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin: 0 9px;
+    margin: 1.5vh 90px 0 9px; 
+    text-align: justify;
 `
 export const MessageBubbleName = styled.p`
     font-weight: bold;
     font-size: 1.5rem;
-    margin-bottom: 3px;
+    margin-bottom: 9px;
 `
 export const MessageBubbleContainer = styled.div`
     padding: 0;
     margin: 0;
+    font-size: 1.26rem;
 `
 export const UserMessage = styled.p`
 `
