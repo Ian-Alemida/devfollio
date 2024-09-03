@@ -29,11 +29,12 @@ async function getData() {
   }
 }
 
-await getData();
+if (!chat) {
+  await getData();
+}
 
 async function inicializarChat() {
   // Inicializa o chat passando  um histórico de conversa para guiar as próximas ações do chatbot
-  console.log("iniciou o chat dnv");
   chat = model.startChat({
     history: [
       {
