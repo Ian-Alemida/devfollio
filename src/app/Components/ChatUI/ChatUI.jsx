@@ -2,6 +2,8 @@ import { useState } from 'react';
 import axios from 'axios';
 import { formatResponse } from '@/geminiAI/formatResponse';
 import { ChatModal, Container, Input, InputContainer, MessageBubble, MessageBubbleColumn, MessageBubbleContainer, MessageBubbleImage, MessageBubbleName, MessageBubbleRow, ModelMessage, SendButton, UserMessage } from './ChatUI.styles';
+import { ImageConfigContext } from 'next/dist/server/future/route-modules/app-page/vendored/contexts/entrypoints';
+import Image from 'next/image';
 
 export default function ChatUI() {
 
@@ -33,7 +35,7 @@ export default function ChatUI() {
                 {messages.map((message, index) =>
                     <MessageBubble key={index} >
                         <MessageBubbleRow>
-                            <MessageBubbleImage></MessageBubbleImage>
+                            <MessageBubbleImage>{message.role === 'model' ? <img src="/IA.jpg" alt='icone da IA' /> : <img src="/userIcon.webp" alt='icone da IA' />}</MessageBubbleImage>
                             <MessageBubbleColumn>
                                 <MessageBubbleName>{message.role === 'model' ? '- IA´n Chatbot' : '- User'}</MessageBubbleName>
                                 <MessageBubbleContainer>

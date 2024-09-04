@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const ChatModal = styled.div`
-    background-color: var(--cinza-medio);
+    background-color: #ddd;
     color: black;
     display: flex;
     flex-direction: column-reverse;
@@ -11,8 +11,8 @@ export const ChatModal = styled.div`
     right: 3vw;
     bottom: 6vh;
     padding-bottom: 21px;
-    width: 51vw;
-    height: 93vh;
+    width: 42vw;
+    height: 87vh;
     overflow: hidden;
     `
 export const Container = styled.div`
@@ -25,7 +25,11 @@ export const Container = styled.div`
 export const MessageBubble = styled.div`
     margin-bottom: 9px;
     width: 100%;
-    background-color: #fff;
+    background-color: #eee;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 `
 export const MessageBubbleRow = styled.div`
     display: flex;
@@ -34,12 +38,14 @@ export const MessageBubbleRow = styled.div`
     width: 100%;
 `
 export const MessageBubbleImage = styled.div`
-    background-color: rosybrown;
     border-radius: 50%;
     width: 75px;
     height: 75px;
     flex: 0 0 75px;
     margin: 12px 0 0 6px;
+    img {
+        border-radius: 50%;
+    }
 `
 export const MessageBubbleColumn = styled.div`
     display: flex;
@@ -61,7 +67,6 @@ export const MessageBubbleContainer = styled.div`
 export const UserMessage = styled.p`
 `
 export const ModelMessage = styled.div`
-    background-color: white;
 `
 
 export const InputContainer = styled.div`
