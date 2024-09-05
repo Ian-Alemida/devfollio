@@ -10,7 +10,6 @@ export const ChatModal = styled.div`
     z-index: 2;
     right: 3vw;
     bottom: 6vh;
-    padding-bottom: 21px;
     width: 42vw;
     height: 87vh;
     overflow: hidden;
@@ -67,22 +66,25 @@ export const MessageBubbleContainer = styled.div`
 export const UserMessage = styled.p`
 `
 export const ModelMessage = styled.div`
+li::before{
+    content: '• '
+}
 `
 
 export const InputContainer = styled.div`
-    width: 96%;
+    background-color: #fff;
+    border-radius: 33px;
     display: flex;
-    margin-top: 12px;
+    padding: 9px;
+    margin: 12px 0;
+    width: 96%;
 `
 export const Input = styled.input`
     flex: 1;
-    padding: 10px;
+    padding: 0 12px;
     border: none;
-    border-top: 1px solid #ccc;
-    border-radius: 18px 0 0 18px;
     outline: none;
 `
-
 export const SendButton = styled.button`
     padding: 10px 20px;
     border: none;
