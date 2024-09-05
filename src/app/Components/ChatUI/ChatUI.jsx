@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { formatResponse } from '@/geminiAI/formatResponse';
-import { ChatModal, Container, Input, InputContainer, MessageBubble, MessageBubbleColumn, MessageBubbleContainer, MessageBubbleImage, MessageBubbleName, MessageBubbleRow, ModelMessage, SendButton, UserMessage } from './ChatUI.styles';
+import { ChatModal, CloseButton, Container, HeaderChat, Input, InputContainer, MessageBubble, MessageBubbleColumn, MessageBubbleContainer, MessageBubbleImage, MessageBubbleName, MessageBubbleRow, ModelMessage, SendButton, UserMessage } from './ChatUI.styles';
+import { FaArrowUp, FaTimes } from 'react-icons/fa'
 
 export default function ChatUI() {
 
@@ -27,7 +28,7 @@ export default function ChatUI() {
                     value={newMessage}
                     onChange={(e) => setNewMessage(e.target.value)}
                     placeholder="Digite sua pergunta..." />
-                <SendButton onClick={clickSendMessage}>Send</SendButton>
+                <SendButton onClick={clickSendMessage}><FaArrowUp fontSize={21} /></SendButton>
             </InputContainer>
             <Container>
                 {messages.map((message, index) =>
@@ -44,6 +45,9 @@ export default function ChatUI() {
                     </MessageBubble>
                 )}
             </Container>
+            <HeaderChat>
+                <CloseButton><FaTimes fontSize={21} fontWeight={1} color='red' /></CloseButton>
+            </HeaderChat>
         </ChatModal>
     )
 }

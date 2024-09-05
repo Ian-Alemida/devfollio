@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const ChatModal = styled.div`
-    background-color: #ddd;
+    background-color: #dee6f2;
     color: black;
     display: flex;
     flex-direction: column-reverse;
@@ -70,7 +70,7 @@ li::before{
     content: '• '
 }
 `
-
+// Barra de input
 export const InputContainer = styled.div`
     background-color: #fff;
     border-radius: 33px;
@@ -86,9 +86,10 @@ export const Input = styled.input`
     outline: none;
 `
 export const SendButton = styled.button`
-    padding: 10px 20px;
+    width: 45px;
+    height: 45px;
     border: none;
-    border-radius: 0 18px 18px 0;
+    border-radius: 50%;
     background-color: var(--cor-secundaria);
     color: white;
     font-weight: bold;
@@ -96,5 +97,24 @@ export const SendButton = styled.button`
 
     &:hover{
         background-color: var(--cor-principal);
+        color: #aaa;
     }
+`
+// header
+export const HeaderChat = styled.div`
+    background-color: #dee6f2;
+    position: absolute;
+    top: 0;
+    height: 42px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0 1.5rem;
+`
+export const CloseButton = styled.button`
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
 `
