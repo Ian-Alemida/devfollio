@@ -10,7 +10,7 @@ export const ChatModal = styled.div`
     right: 3vw;
     bottom: 6vh;
     width: 42vw;
-    height: 87vh;
+    height: 90vh;
     overflow: hidden;
     display: ${({ isClose }) => (isClose ? 'none' : 'flex')};
     `
@@ -113,6 +113,7 @@ export const HeaderChat = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 1.5rem;
+    border-bottom: 2.1px solid var(--cinza);
 `
 export const HeaderAttention = styled.p`
     color: #000;
@@ -128,4 +129,56 @@ export const CloseButton = styled.button`
     height: 30px;
     border-radius: 50%;
     background-color: #fff;
+`
+//ChatbotIcon
+export const ContainerChatbotIconUI = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 93vw;
+    bottom: 12vh;
+    border: none;
+    z-index: 2;
+`
+export const ChatbotIconUI = styled.button`
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B, #FF2525,#FFE53B);
+    cursor: pointer;
+    padding-top: 3px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
+    position: relative;
+    background-size: 300%;
+    background-position: left;
+    transition-duration: 1s;
+    span {
+        position: absolute;
+        top: -40px;
+        opacity: 0;
+        background-color: rgb(255, 180, 82);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: .5s;
+        pointer-events: none;
+        letter-spacing: 0.5px;
+    }
+    &:hover .tooltip {
+        opacity: 1;
+        transition-duration: .5s;
+    }
+    &:hover {
+        background-position: right;
+        transition-duration: 1s;
+    }
 `

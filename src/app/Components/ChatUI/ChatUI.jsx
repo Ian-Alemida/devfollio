@@ -35,7 +35,7 @@ export default function ChatUI() {
                 {messages.map((message, index) =>
                     <MessageBubble key={index} >
                         <MessageBubbleRow>
-                            <MessageBubbleImage>{message.role === 'model' ? <img src="/IA.jpg" alt='icone da IA' /> : <img src="/userIcon.webp" alt='icone da IA' />}</MessageBubbleImage>
+                            <MessageBubbleImage>{message.role === 'model' ? <img src="/IA.jpg" alt='icone da IA' /> : <img src="/userIcon.webp" alt='icone do usuario' />}</MessageBubbleImage>
                             <MessageBubbleColumn>
                                 <MessageBubbleName>{message.role === 'model' ? '- IA´n Chatbot' : '- User'}</MessageBubbleName>
                                 <MessageBubbleContainer>

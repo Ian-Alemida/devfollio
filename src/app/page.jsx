@@ -13,6 +13,7 @@ import Footer from './Components/Footer/Footer';
 import ScrollUp from './Components/ScrollUp/ScrollUp';
 import ChatUI from './Components/ChatUI/ChatUI';
 import styled from 'styled-components';
+import ChatbotIcon from './Components/ChatUI/ChatbotIcon/ChatbotIcon';
 
 
 const Container = styled.section`
@@ -33,6 +34,7 @@ function App() {
         <Footer></Footer>
       </div>
       <ScrollUp></ScrollUp>
+      <ChatbotIcon />
       <ChatUI></ChatUI>
     </Container>
   );
