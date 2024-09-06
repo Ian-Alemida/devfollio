@@ -3,7 +3,6 @@ import { styled } from "styled-components";
 export const ChatModal = styled.div`
     background-color: #dee6f2;
     color: black;
-    display: flex;
     flex-direction: column-reverse;
     align-items: center;  
     position: fixed;
@@ -13,6 +12,7 @@ export const ChatModal = styled.div`
     width: 42vw;
     height: 87vh;
     overflow: hidden;
+    display: ${({ isClose }) => (isClose ? 'none' : 'flex')};
     `
 export const Container = styled.div`
     overflow-y: auto;
@@ -20,6 +20,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin-top: 36px;
 `
 export const MessageBubble = styled.div`
     margin-bottom: 9px;
@@ -108,9 +109,19 @@ export const HeaderChat = styled.div`
     height: 42px;
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 0 1.5rem;
+`
+export const HeaderAttention = styled.p`
+    color: #000;
+    margin: 0;
+
+    strong{
+        color: #fc1818;
+        font-weight: bold;
+    }
 `
 export const CloseButton = styled.button`
     width: 30px;
