@@ -1,7 +1,6 @@
-import { FaTimes } from "react-icons/fa";
-import { ChatbotIconUI, ContainerChatbotIconUI } from "../ChatUI.styles";
+import { ChatbotIconUI, ContainerChatbotIconUI } from "../ChatUI/ChatUI.styles";
 
-export default function ChatbotIcon() {
+export default function ChatIcon() {
     return (
         <ContainerChatbotIconUI>
             <ChatbotIconUI>

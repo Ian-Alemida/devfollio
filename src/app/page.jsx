@@ -11,17 +11,14 @@ import Projects from './Components/Projects/Projects';
 import Courses from './Components/Courses/Courses';
 import Footer from './Components/Footer/Footer';
 import ScrollUp from './Components/ScrollUp/ScrollUp';
-import ChatUI from './Components/ChatUI/ChatUI';
 import styled from 'styled-components';
-import ChatbotIcon from './Components/ChatUI/ChatbotIcon/ChatbotIcon';
+import ChatbotGemini from './Components/ChatbotGemini/ChatbotGemini';
 
 
 const Container = styled.section`
 color: white;
 `
-const ContainerChatbot = styled.div`
 
-`
 function App() {
 
 
@@ -38,10 +35,7 @@ function App() {
         <Footer></Footer>
       </div>
       <ScrollUp></ScrollUp>
-      <ContainerChatbot>
-        <ChatbotIcon />
-        <ChatUI ></ChatUI>
-      </ContainerChatbot>
+      <ChatbotGemini />
     </Container>
   );
 }
