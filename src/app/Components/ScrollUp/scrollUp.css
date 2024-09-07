@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    left: 87vw;
+    right: 1.2vw;
     bottom: 4.5vh;
     border: none;
     z-index: 2;
@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: -21px;
+    bottom: -33px;
     opacity: 0;
     transition-duration: .7s;
 }

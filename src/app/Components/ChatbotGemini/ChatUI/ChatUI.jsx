@@ -4,11 +4,10 @@ import { formatResponse } from '@/geminiAI/formatResponse';
 import { ChatModal, CloseButton, Container, HeaderAttention, HeaderChat, Input, InputContainer, MessageBubble, MessageBubbleColumn, MessageBubbleContainer, MessageBubbleImage, MessageBubbleName, MessageBubbleRow, ModelMessage, SendButton, UserMessage } from './ChatUI.styles';
 import { FaArrowUp, FaTimes } from 'react-icons/fa'
 
-export default function ChatUI() {
+export default function ChatUI({ isClose, setIsClose }) {
 
     const [messages, setMessages] = useState([{ role: 'model', message: "<p>Olá! Sou <strong>IA'n</strong>, a inteligência artificial criada para te ajudar a conhecer melhor o Ian Almeida, um desenvolvedor full-stack cheio de talento e paixão pela tecnologia. 😊</p><p>Imagine-me como seu guia pessoal nesse mundo digital! Estou aqui para:</p> <ul> <li><strong>Responder às suas perguntas:</strong> Se você tem curiosidade sobre a trajetória do Ian, as tecnologias que ele domina, seus projetos ou experiências, eu estou aqui para te ajudar!</li> <li><strong>Apresentar o melhor do Ian:</strong> Vou te mostrar o que o torna um profissional especial, com uma linguagem clara e organizada.</li><li><strong>Facilitar a sua decisão:</strong> Se você procura um desenvolvedor criativo, comprometido e com um amplo conhecimento técnico, o Ian é uma excelente opção!</li> </ul> <p>Então, me diga, o que te interessa saber sobre o Ian?</p>" },]);
     const [newMessage, setNewMessage] = useState('');
-    const [isClose, setIsClose] = useState(false);
 
     async function clickSendMessage() { //  configura o comportamento do componente após o usuário clicar no botão de enviar a mensagem
         setMessages([{ role: 'user', message: newMessage }, ...messages]);

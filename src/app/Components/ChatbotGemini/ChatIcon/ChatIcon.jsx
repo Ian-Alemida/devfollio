@@ -1,9 +1,9 @@
 import { ChatbotIconUI, ContainerChatbotIconUI } from "../ChatUI/ChatUI.styles";
 
-export default function ChatIcon() {
+export default function ChatIcon({ isClose, setIsClose }) {
     return (
         <ContainerChatbotIconUI>
-            <ChatbotIconUI>
+            <ChatbotIconUI isClose={isClose} onClick={() => setIsClose(!isClose)}>
                 <img src="./chatbot.png" alt="" />
                 <span>IA´n</span>
             </ChatbotIconUI>

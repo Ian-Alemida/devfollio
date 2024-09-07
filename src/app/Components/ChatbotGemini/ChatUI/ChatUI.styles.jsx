@@ -1,15 +1,33 @@
-import { styled } from "styled-components";
+import { keyframes, styled } from "styled-components";
 
+const openAnimation = keyframes`
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+`;
+const closeAnimation = keyframes`
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+`;
 export const ChatModal = styled.div`
     background-color: #dee6f2;
     color: black;
+    animation: ${({ isOpen }) => (isOpen ? closeAnimation : openAnimation)} 0.6s ease;
     flex-direction: column-reverse;
-    align-items: center;  
-    position: fixed;
+    align-items: center; 
     z-index: 2;
-    right: 3vw;
-    bottom: 6vh;
-    width: 42vw;
+    width: 45vw;
     height: 90vh;
     overflow: hidden;
     display: ${({ isClose }) => (isClose ? 'none' : 'flex')};
@@ -51,7 +69,7 @@ export const MessageBubbleColumn = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin: 1.5vh 90px 0 9px; 
+    margin: 1.5vh 2.1vw 0 9px; 
     text-align: justify;
 `
 export const MessageBubbleName = styled.p`
@@ -107,17 +125,18 @@ export const HeaderChat = styled.div`
     position: absolute;
     top: 0;
     height: 42px;
-    width: 100%;
+    width: 45vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 0 .9rem;
     border-bottom: 2.1px solid var(--cinza);
 `
 export const HeaderAttention = styled.p`
     color: #000;
     margin: 0;
+    font-size: .9rem;
 
     strong{
         color: #fc1818;
@@ -135,15 +154,13 @@ export const ContainerChatbotIconUI = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    left: 93vw;
-    bottom: 12vh;
     border: none;
     z-index: 2;
+    margin-bottom: 9vh;
 `
 export const ChatbotIconUI = styled.button`
-    width: 72px;
-    height: 72px;
+    width: ${({ isClose }) => (isClose ? '75px' : '141px')};
+    height: ${({ isClose }) => (isClose ? '75px' : '72px')};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,7 +177,7 @@ export const ChatbotIconUI = styled.button`
     transition-duration: 1s;
     span {
         position: absolute;
-        top: -40px;
+        top: ${({ isClose }) => (isClose ? '-40px' : '-57px')};
         opacity: 0;
         background-color: var(--cor-secundaria);
         color: white;
@@ -180,5 +197,6 @@ export const ChatbotIconUI = styled.button`
     &:hover {
         background-position: right;
         transition-duration: 1s;
+        scale: ${({ isClose }) => (isClose ? 1.2 : 1.1)};
     }
 `
