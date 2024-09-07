@@ -19,7 +19,11 @@ import ChatbotIcon from './Components/ChatUI/ChatbotIcon/ChatbotIcon';
 const Container = styled.section`
 color: white;
 `
+const ContainerChatbot = styled.div`
+
+`
 function App() {
+
 
   return (
     <Container>
@@ -34,8 +38,10 @@ function App() {
         <Footer></Footer>
       </div>
       <ScrollUp></ScrollUp>
-      <ChatbotIcon />
-      <ChatUI></ChatUI>
+      <ContainerChatbot>
+        <ChatbotIcon />
+        <ChatUI ></ChatUI>
+      </ContainerChatbot>
     </Container>
   );
 }

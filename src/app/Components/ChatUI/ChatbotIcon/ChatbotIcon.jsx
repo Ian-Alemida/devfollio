@@ -5,8 +5,8 @@ export default function ChatbotIcon() {
     return (
         <ContainerChatbotIconUI>
             <ChatbotIconUI>
-                <FaTimes fontSize={21} fontWeight={1} color='red' />
-                <span>Chat</span>
+                <img src="./chatbot.png" alt="" />
+                <span>IA´n</span>
             </ChatbotIconUI>
         </ContainerChatbotIconUI>
     )

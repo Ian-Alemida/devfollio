@@ -142,18 +142,18 @@ export const ContainerChatbotIconUI = styled.div`
     z-index: 2;
 `
 export const ChatbotIconUI = styled.button`
-    width: 55px;
-    height: 55px;
+    width: 72px;
+    height: 72px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     border: none;
-    background-color: #FFE53B;
-    background-image: linear-gradient(147deg, #FFE53B, #FF2525,#FFE53B);
+    background-color: var(--cor-secundaria);
+    background-image: linear-gradient(150deg,  var(--cinza-medio), var(--cor-secundaria), var(--cinza-medio));
     cursor: pointer;
     padding-top: 3px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
+    box-shadow: 0px 0px 39px 0px rgba(90, 90, 90, 150);
     position: relative;
     background-size: 300%;
     background-position: left;
@@ -162,7 +162,7 @@ export const ChatbotIconUI = styled.button`
         position: absolute;
         top: -40px;
         opacity: 0;
-        background-color: rgb(255, 180, 82);
+        background-color: var(--cor-secundaria);
         color: white;
         padding: 5px 10px;
         border-radius: 5px;
@@ -173,7 +173,7 @@ export const ChatbotIconUI = styled.button`
         pointer-events: none;
         letter-spacing: 0.5px;
     }
-    &:hover .tooltip {
+    &:hover span {
         opacity: 1;
         transition-duration: .5s;
     }
