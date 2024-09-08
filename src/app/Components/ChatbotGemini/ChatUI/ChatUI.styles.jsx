@@ -91,6 +91,13 @@ li::before{
 `
 // Barra de input
 export const InputContainer = styled.div`
+    background-color: #afc0d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+`
+export const InputComponent = styled.div`
     background-color: #fff;
     border-radius: 33px;
     display: flex;
@@ -121,7 +128,7 @@ export const SendButton = styled.button`
 `
 // header
 export const HeaderChat = styled.div`
-    background-color: #dee6f2;
+    background-color: #afc0d8;
     position: absolute;
     top: 0;
     height: 42px;

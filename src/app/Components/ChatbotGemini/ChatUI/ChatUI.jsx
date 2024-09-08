@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { formatResponse } from '@/geminiAI/formatResponse';
-import { ChatModal, CloseButton, Container, HeaderAttention, HeaderChat, Input, InputContainer, MessageBubble, MessageBubbleColumn, MessageBubbleContainer, MessageBubbleImage, MessageBubbleName, MessageBubbleRow, ModelMessage, SendButton, UserMessage } from './ChatUI.styles';
+import { ChatModal, CloseButton, Container, HeaderAttention, HeaderChat, Input, InputComponent, InputContainer, MessageBubble, MessageBubbleColumn, MessageBubbleContainer, MessageBubbleImage, MessageBubbleName, MessageBubbleRow, ModelMessage, SendButton, UserMessage } from './ChatUI.styles';
 import { FaArrowUp, FaTimes } from 'react-icons/fa'
 
 export default function ChatUI({ isClose, setIsClose }) {
@@ -23,12 +23,14 @@ export default function ChatUI({ isClose, setIsClose }) {
     return (
         <ChatModal isClose={isClose}>
             <InputContainer>
-                <Input
-                    type="text"
-                    value={newMessage}
-                    onChange={(e) => setNewMessage(e.target.value)}
-                    placeholder="Digite sua pergunta..." />
-                <SendButton onClick={clickSendMessage}><FaArrowUp fontSize={21} /></SendButton>
+                <InputComponent>
+                    <Input
+                        type="text"
+                        value={newMessage}
+                        onChange={(e) => setNewMessage(e.target.value)}
+                        placeholder="Digite sua pergunta..." />
+                    <SendButton onClick={clickSendMessage}><FaArrowUp fontSize={21} /></SendButton>
+                </InputComponent>
             </InputContainer>
             <Container>
                 {messages.map((message, index) =>

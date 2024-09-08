@@ -15,7 +15,7 @@ const ContainerChatbotGemini = styled.div`
 
 export default function ChatbotGemini() {
 
-    const [isClose, setIsClose] = useState(false);
+    const [isClose, setIsClose] = useState(true);
 
     return (
         <ContainerChatbotGemini>
