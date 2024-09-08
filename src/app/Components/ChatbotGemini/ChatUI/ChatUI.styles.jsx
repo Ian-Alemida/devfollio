@@ -23,7 +23,7 @@ const closeAnimation = keyframes`
 export const ChatModal = styled.div`
     background-color: #dee6f2;
     color: black;
-    animation: ${({ isOpen }) => (isOpen ? closeAnimation : openAnimation)} 0.6s ease;
+    animation: ${({ isOpen }) => (isOpen ? closeAnimation : openAnimation)} 0.78s ease;
     flex-direction: column-reverse;
     align-items: center; 
     z-index: 2;
