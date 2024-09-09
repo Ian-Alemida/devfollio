@@ -10,6 +10,8 @@ const tecnologiasSchema = new mongoose.Schema(
   { collection: "tecnologias" }
 );
 
-const tecnologiasdb = mongoose.model("tecnologiasdb", tecnologiasSchema);
+const tecnologiasdb =
+  mongoose.models.tecnologiasdb ||
+  mongoose.model("tecnologiasdb", tecnologiasSchema);
 
 export default tecnologiasdb;
