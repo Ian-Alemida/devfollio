@@ -11,6 +11,10 @@ const ContainerChatbotGemini = styled.div`
     right: 1.2vw;
     bottom: 7.2vh;
     z-index: 2;
+
+    @media (max-width: 1024px) {
+        display: none;
+  }
 `
 
 export default function ChatbotGemini() {
