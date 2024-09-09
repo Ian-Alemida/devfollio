@@ -24,13 +24,13 @@ function Projects() {
             linkView: 'https://planet-sky-5plu.vercel.app/#/initial'
         },
         {
-            nameProject: 'Organo Valorant',
-            imgProject: './assets/images/OrganoValoran.png',
-            text: "Um projeto em react que cria organogramas de personagens e classes do jogo FPS online Valorant. Esse projeto foi desenvolvido visando adquirir experiencia e melhorar meu entendimento de, formulários, Objetos de dados e como eles interagem entre si, através do gerenciamento de estados, passando informações de um componente para o outro e construindo novos cards. Utilizei algumas bibliotecas externas como o 'hex-to-rgba', 'react icons' e 'uuid'.",
+            nameProject: 'IA´n ChatBot',
+            imgProject: './assets/images/ChatBot.png',
+            text: "IA'n é um chatbot inteligente integrado ao meu portfólio, desenvolvido com a API do Gemini. Ele responde de forma eficiente e personalizada a perguntas sobre minha trajetória profissional, tecnologias utilizadas e habilidades, utilizando Next.JS, Node.JS e MongoDB. IA'n é otimizado para fornecer respostas rápidas e relevantes, economizando tokens e garantindo uma busca eficiente e experiência intuitiva para os usuários.",
             isMobile: false,
-            tecnologias: 'React',
-            linkCode: 'https://github.com/Ian-Alemida/organoValorant',
-            linkView: 'https://organo-valorant-rose.vercel.app/'
+            tecnologias: 'Next.js - Node.js - IA',
+            linkCode: 'https://github.com/Ian-Alemida/devfollio/tree/production/src/app/Components/ChatUI',
+            linkView: 'https://devfollio.vercel.app/'
         },
         {
             nameProject: 'Alura Books',
@@ -58,7 +58,17 @@ function Projects() {
             tecnologias: 'JavaScript - HTML5 - CSS3',
             linkCode: 'https://github.com/Ian-Alemida/Apeperia.git',
             linkView: 'https://apeperia-azure.vercel.app/'
-        },]
+        },
+        /*{
+            nameProject: 'Organo Valorant',
+            imgProject: './assets/images/OrganoValoran.png',
+            text: "Um projeto em react que cria organogramas de personagens e classes do jogo FPS online Valorant. Esse projeto foi desenvolvido visando adquirir experiencia e melhorar meu entendimento de, formulários, Objetos de dados e como eles interagem entre si, através do gerenciamento de estados, passando informações de um componente para o outro e construindo novos cards. Utilizei algumas bibliotecas externas como o 'hex-to-rgba', 'react icons' e 'uuid'.",
+            isMobile: false,
+            tecnologias: 'React',
+            linkCode: 'https://github.com/Ian-Alemida/organoValorant',
+            linkView: 'https://organo-valorant-rose.vercel.app/'
+        },*/
+    ]
 
     return (
         <div className="content-projects" id='Projects'>
