@@ -13,7 +13,7 @@
     right: 1.2vw;
     bottom: 4.5vh;
     border: none;
-    z-index: 2;
+    z-index: 3;
 }
 
 .scrollUp-Btn.visible {
@@ -25,14 +25,13 @@
 }
 
 .scrollUp-text {
-    font-size: .6vw;
-    width: 100px;
+    font-size: 1rem;
     position: absolute;
     color: var(--branco);
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: -33px;
+    bottom: -42px;
     opacity: 0;
     transition-duration: .7s;
 }
@@ -55,5 +54,11 @@
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media (max-width: 430px) {
+    .scrollUp-Btn {
+        display: none;
     }
 }

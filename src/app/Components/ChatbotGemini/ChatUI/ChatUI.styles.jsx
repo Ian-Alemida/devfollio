@@ -163,7 +163,6 @@ export const ContainerChatbotIconUI = styled.div`
     align-items: center;
     border: none;
     z-index: 2;
-    margin-bottom: 9vh;
 `
 export const ChatbotIconUI = styled.button`
     width: ${({ isClose }) => (isClose ? '75px' : '141px')};
@@ -180,6 +179,7 @@ export const ChatbotIconUI = styled.button`
     box-shadow: 0px 0px 39px 0px rgba(90, 90, 90, 150);
     position: relative;
     background-size: 300%;
+    margin-bottom: 180px;
     background-position: left;
     transition-duration: 1s;
     span {

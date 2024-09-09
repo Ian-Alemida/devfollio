@@ -44,13 +44,13 @@
 }
 
 .technology-card-img-div {
-    width: 95%;
+    width: 63%;
     height: 63%;
     background-color: var(--branco);
     border-radius: 50%;
     position: absolute;
-    top: 18%;
-    left: 3%;
+    top: 21%;
+    left: 18%;
 }
 
 .technology-card-img-div-hid {
@@ -85,7 +85,7 @@
     }
 }
 
-@media (min-width: 431px) and (max-width: 1024px) {
+@media (min-width: 431px) and (max-width: 1025px) {
     .technology-card {
         width: 31%;
         height: auto;

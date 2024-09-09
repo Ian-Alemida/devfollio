@@ -34,7 +34,7 @@
     }
 }
 
-@media (min-width: 431px) and (max-width: 1024px) {
+@media (min-width: 431px) and (max-width: 1025px) {
     .content-technology h2 {
         font-size: 3.3rem;
     }
