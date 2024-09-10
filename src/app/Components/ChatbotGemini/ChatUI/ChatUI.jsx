@@ -10,14 +10,15 @@ export default function ChatUI({ isClose, setIsClose }) {
     const [newMessage, setNewMessage] = useState('');
 
     async function clickSendMessage() { //  configura o comportamento do componente após o usuário clicar no botão de enviar a mensagem
-        setMessages([{ role: 'user', message: newMessage }, ...messages]);
+        let userMessage = newMessage;
+        setNewMessage('');
+        setMessages([{ role: 'user', message: userMessage }, ...messages]);
         try {
-            const response = await axios.post('/api/getGemini', { userQuestion: newMessage }); // faz o POST utilizando o axios, passando para ele a variável que armazena a pergunta do usuário
+            const response = await axios.post('/api/getGemini', { userQuestion: userMessage }); // faz o POST utilizando o axios, passando para ele a variável que armazena a pergunta do usuário
             setMessages((prevMessages) => [{ role: 'model', message: formatResponse(response.data) }, ...prevMessages]);
         } catch (error) {
             console.error('Erro ao buscar a resposta do Gemini IA:', error);
         }
-        setNewMessage('');
     };
 
     return (
@@ -28,8 +29,9 @@ export default function ChatUI({ isClose, setIsClose }) {
                         type="text"
                         value={newMessage}
                         onChange={(e) => setNewMessage(e.target.value)}
+                        onKeyDown={(e) => { e.key === 'Enter' ? clickSendMessage() : null }}
                         placeholder="Digite sua pergunta..." />
-                    <SendButton onClick={clickSendMessage}><FaArrowUp fontSize={21} /></SendButton>
+                    <SendButton onClick={clickSendMessage} ><FaArrowUp fontSize={21} /></SendButton>
                 </InputComponent>
             </InputContainer>
             <Container>
