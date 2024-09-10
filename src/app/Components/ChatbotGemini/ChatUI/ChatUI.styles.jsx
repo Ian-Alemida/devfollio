@@ -80,7 +80,7 @@ export const MessageBubbleName = styled.p`
 export const MessageBubbleContainer = styled.div`
     padding: 0;
     margin: 0;
-    font-size: 1.26rem;
+    font-size: 1.11rem;
 `
 export const UserMessage = styled.p`
 `
@@ -143,7 +143,7 @@ export const HeaderChat = styled.div`
 export const HeaderAttention = styled.p`
     color: #000;
     margin: 0;
-    font-size: .9rem;
+    font-size: .81rem;
 
     strong{
         color: #fc1818;
@@ -179,7 +179,7 @@ export const ChatbotIconUI = styled.button`
     box-shadow: 0px 0px 39px 0px rgba(90, 90, 90, 150);
     position: relative;
     background-size: 300%;
-    margin-bottom: 180px;
+    margin-bottom: 141px;
     background-position: left;
     transition-duration: 1s;
     span {
