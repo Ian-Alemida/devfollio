@@ -3,7 +3,7 @@ import axios from "axios";
 import { connectDB } from "@/db/db";
 import removeProperties from "./removePropeties";
 import { experiencias, tragetoria } from "./experienceData";
-const genAI = new GoogleGenerativeAI("AIzaSyAODjtaXlOeanmooLC4pcJGtcWQ_HFB5RA");
+const genAI = new GoogleGenerativeAI("AIzaSyAVyq3Fjxw-bToza-IswuRix4ADTPInQZ8");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 let chat;
