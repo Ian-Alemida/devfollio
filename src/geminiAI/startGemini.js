@@ -3,7 +3,7 @@ import axios from "axios";
 import { connectDB } from "@/db/db";
 import removeProperties from "./removePropeties";
 import { experiencias, tragetoria } from "./experienceData";
-const genAI = new GoogleGenerativeAI("AIzaSyAVyq3Fjxw-bToza-IswuRix4ADTPInQZ8");
+const genAI = new GoogleGenerativeAI(process.env.API_GEMINI);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 let chat;
@@ -34,7 +34,7 @@ if (!chat) {
 }
 
 async function inicializarChat() {
-  // Inicializa o chat passando  um histórico de conversa para guiar as próximas ações do chatbot
+  // Inicializa o chat passando um histórico de conversa para guiar as próximas ações do chatbot
   chat = model.startChat({
     history: [
       {
