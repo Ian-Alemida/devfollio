@@ -6,7 +6,7 @@ import removeProperties from "./removePropeties";
 import { experiencias, tragetoria } from "./experienceData";
 
 const genAI = new GoogleGenerativeAI(process.env.API_GEMINI);
-const model = genAI.getGenerativeModel({ model: "gemini-3.1-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-3.5-flash" });
 
 let chat = null;
 

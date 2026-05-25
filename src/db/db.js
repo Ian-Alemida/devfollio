@@ -6,14 +6,7 @@ async function connectDB() {
     return;
   }
 
-  mongoose
-    .connect(URI, {})
-    .then(() => {
-      console.log("Conectado ao MongoDB Atlas!");
-    })
-    .catch((error) => {
-      console.error("Erro ao conectar ao MongoDB Atlas:", error);
-    });
+  await mongoose.connect(URI);
 }
 
 module.exports = {
