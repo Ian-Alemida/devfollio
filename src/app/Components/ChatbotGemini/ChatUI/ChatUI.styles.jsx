@@ -30,7 +30,7 @@ export const ChatModal = styled.div`
     width: 45vw;
     height: 90vh;
     overflow: hidden;
-    display: ${({ isClose }) => (isClose ? 'none' : 'flex')};
+    display: ${({ $isClose }) => ($isClose ? 'none' : 'flex')};
     `
 export const Container = styled.div`
     overflow-y: auto;
@@ -165,8 +165,8 @@ export const ContainerChatbotIconUI = styled.div`
     z-index: 2;
 `
 export const ChatbotIconUI = styled.button`
-    width: ${({ isClose }) => (isClose ? '75px' : '141px')};
-    height: ${({ isClose }) => (isClose ? '75px' : '72px')};
+    width: ${({ $isClose }) => ($isClose ? '75px' : '141px')};
+    height: ${({ $isClose }) => ($isClose ? '75px' : '72px')};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,7 +184,7 @@ export const ChatbotIconUI = styled.button`
     transition-duration: 1s;
     span {
         position: absolute;
-        top: ${({ isClose }) => (isClose ? '-40px' : '-57px')};
+        top: ${({ $isClose }) => ($isClose ? '-40px' : '-57px')};
         opacity: 0;
         background-color: var(--cor-secundaria);
         color: white;
@@ -204,6 +204,6 @@ export const ChatbotIconUI = styled.button`
     &:hover {
         background-position: right;
         transition-duration: 1s;
-        scale: ${({ isClose }) => (isClose ? 1.2 : 1.1)};
+        scale: ${({ $isClose }) => ($isClose ? 1.2 : 1.1)};
     }
 `

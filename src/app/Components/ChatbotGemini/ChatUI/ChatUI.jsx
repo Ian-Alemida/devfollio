@@ -22,7 +22,7 @@ export default function ChatUI({ isClose, setIsClose }) {
     };
 
     return (
-        <ChatModal isClose={isClose}>
+        <ChatModal $isClose={isClose}>
             <InputContainer>
                 <InputComponent>
                     <Input
