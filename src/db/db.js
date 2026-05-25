@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
-const URI =
-  "mongodb+srv://devfollioDB:uaMmrchkml7QPs2e@cluster0.ogzyvdv.mongodb.net/devfollio?retryWrites=true&w=majority&appName=Cluster0";
+const URI = process.env.MONGODB_URI;
 
 async function connectDB() {
   if (mongoose.connection.readyState >= 1) {

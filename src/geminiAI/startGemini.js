@@ -1,10 +1,12 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import axios from "axios";
 import { connectDB } from "@/db/db";
+import cursosdb from "@/db/schemas/cursosSchema";
+import tecnologiasdb from "@/db/schemas/technologiesSchema";
 import removeProperties from "./removePropeties";
 import { experiencias, tragetoria } from "./experienceData";
+
 const genAI = new GoogleGenerativeAI(process.env.API_GEMINI);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-3.1-flash" });
 
 let chat;
 let cursosDB;
@@ -13,19 +15,10 @@ let technologiesDB;
 async function getData() {
   try {
     await connectDB();
-
-    cursosDB = await axios
-      .get("http://localhost:3000/api/getCourses")
-      .then((response) => removeProperties(response.data));
-
-    technologiesDB = await axios
-      .get("http://localhost:3000/api/getTechnologies")
-      .then((response) => removeProperties(response.data));
+    cursosDB = removeProperties(await cursosdb.find().lean());
+    technologiesDB = removeProperties(await tecnologiasdb.find().lean());
   } catch (error) {
-    console.error(
-      "Erro ao fazer a requisição:",
-      error.response ? error.response.data : error.message
-    );
+    console.error("Erro ao buscar dados:", error.message);
   }
 }
 
