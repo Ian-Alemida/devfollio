@@ -68,7 +68,8 @@ Também utilizei as seguintes bibliotecas para auxiliar em tempo de desenvolvime
     <li>v2.0 - Todo o projeto foi migrado para o framework NextJS.</li>
     <li>v2.1 - Os dados são requisitados para o MongoDB Atlas fazendo uma chamada de API utilizando os recursos do próprio NextJS.</li>
     <li>v2.2 - Alterando background para um bg dinâmico de céu estrelado, utilizando styled-components + atualização nos textos da página.</li>
-    <li>v2.3 - adicionando mais responsividade ao projeto, agora ele se adapta a diferentes tamanhos de tela</li>
+    <li>v2.3 - Adicionando mais responsividade ao projeto, agora ele se adapta a diferentes tamanhos de tela</li>
+    <li>v3.0 - Adicionando o IA'n, minha IA pessoal treinada com meus dados para dar vida e deixar o portfolio mais interativo</li>
   </ul>
 </details>
 
