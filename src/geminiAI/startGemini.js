@@ -8,26 +8,15 @@ import { experiencias, tragetoria } from "./experienceData";
 const genAI = new GoogleGenerativeAI(process.env.API_GEMINI);
 const model = genAI.getGenerativeModel({ model: "gemini-3.1-flash" });
 
-let chat;
-let cursosDB;
-let technologiesDB;
+let chat = null;
 
-async function getData() {
-  try {
-    await connectDB();
-    cursosDB = removeProperties(await cursosdb.find().lean());
-    technologiesDB = removeProperties(await tecnologiasdb.find().lean());
-  } catch (error) {
-    console.error("Erro ao buscar dados:", error.message);
-  }
-}
+async function getChat() {
+  if (chat) return chat;
 
-if (!chat) {
-  await getData();
-}
+  await connectDB();
+  const cursosDB = removeProperties(await cursosdb.find().lean());
+  const technologiesDB = removeProperties(await tecnologiasdb.find().lean());
 
-async function inicializarChat() {
-  // Inicializa o chat passando um histórico de conversa para guiar as próximas ações do chatbot
   chat = model.startChat({
     history: [
       {
@@ -44,10 +33,11 @@ async function inicializarChat() {
       },
     ],
     generationConfig: {
-      //define o máximo de tokens que o sistema irá utilizar
       maxOutputTokens: 10000,
     },
   });
+
+  return chat;
 }
 
-export { inicializarChat, chat };
+export { getChat };
