@@ -3,7 +3,7 @@ import phoneSvg from './Images/phone.svg';
 import mapSvg from './Images/map.svg';
 import emailSvg from './Images/email.svg';
 import instagram from './Images/instagram.svg'
-import linkedin from './Images/linnkedin.svg'
+import linkedin from './Images/linkedin.svg'
 import githubWithe from './Images/githubWithe.svg'
 import IconText from './IconText/IconText';
 import Form from './Form/Form';

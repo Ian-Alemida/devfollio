@@ -47,9 +47,9 @@ function Courses() {
             <article>
                 <ul className='cards'>
                     {skillActive === 'Faculdade' ?
-                        skillVisible.map((curso, indice) => {
+                        skillVisible.map((curso) => {
                             return <CardTecnologo
-                                key={indice}
+                                key={curso._id}
                                 link={curso.link}
                                 nome={curso.nome}
                                 plataform={curso.plataform}
@@ -57,16 +57,16 @@ function Courses() {
                                 type={curso.type}
                             />
                         }) : skillActive === 'Livros' ?
-                            skillVisible.map((curso, indice) => {
+                            skillVisible.map((curso) => {
                                 return <CardBooks
-                                    key={indice}
+                                    key={curso._id}
                                     nome={curso.nome}
                                     img={curso.img}
                                 />
                             }) :
-                            skillVisible.map((curso, indice) => {
+                            skillVisible.map((curso) => {
                                 return <CardCourses
-                                    key={indice}
+                                    key={curso._id}
                                     link={curso.link}
                                     nome={curso.nome}
                                     plataform={curso.plataform}

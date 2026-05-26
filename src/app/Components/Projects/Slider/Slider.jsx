@@ -12,9 +12,9 @@ function Slider({ projetos }) {
             fade
             style={{ height: '81vh', width: '102%' }}
         >
-            {projetos.map((projeto, indice) => {
+            {projetos.map((projeto) => {
                 return (
-                    <Carousel.Item key={indice} >
+                    <Carousel.Item key={projeto.nameProject} >
                         <ImgSlider nameProject={projeto.nameProject} img={projeto.imgProject} />
                         <Carousel.Caption className='carousel-caption'>
                             <h4>{projeto.text} <small className={projeto.isMobile ? '' : 'isMobile'}>OBS: lembre-se de colocar o navegador no modo mobile em inspecionar</small></h4>

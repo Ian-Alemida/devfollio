@@ -23,9 +23,9 @@ function Technology() {
         <div className="content-technology" id='Technology'>
             <h2 className={roboto.className}>Tecnologias</h2>
             <div className='card-tech'>
-                {tecnologiasdb.map((tecnologia, indice) =>
+                {tecnologiasdb.map((tecnologia) =>
                     <CardTechnology
-                        key={indice}
+                        key={tecnologia._id}
                         className='card-tech-1'
                         img={tecnologia.img}
                         h3={tecnologia.nome}
