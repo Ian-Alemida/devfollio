@@ -11,7 +11,8 @@ function Technology() {
     useEffect(() => { // useEffect sendo usado para atualizar a nossa aplicação assim que os dados da API forem buscados
         async function buscarDados() {
             try {
-                axios.get('/api/getTechnologies').then((response) => setTecnologiasdb(response.data));
+                const response = await axios.get('/api/getTechnologies');
+                setTecnologiasdb(response.data);
             } catch (error) {
                 console.error('Erro ao buscar dados:', error);
             }

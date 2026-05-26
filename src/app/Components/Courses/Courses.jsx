@@ -17,7 +17,8 @@ function Courses() {
     useEffect(() => { // useEffect sendo usado para atualizar a nossa aplicação assim que os dados da API forem buscados
         async function buscarDados() {
             try {
-                axios.get('/api/getCourses').then((response) => setCursosdb(response.data));
+                const response = await axios.get('/api/getCourses');
+                setCursosdb(response.data);
             } catch (error) {
                 console.error('Erro ao buscar dados:', error);
             }
