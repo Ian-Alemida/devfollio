@@ -22,19 +22,21 @@ function ButtonProject({ linkCode, linkView }) {
         <div className='btns'>
             <a href={linkCode} target="_blank" rel='noreferrer noopener'>
                 <button className="Btn"
+                    aria-label="Ver código do projeto"
                     onMouseEnter={handleHover}
                     onMouseLeave={handleHoverLeave}
                 >
-                    <Image className='svgIcon' src={isHover ? codeWitheIcon : codeIcon} alt="icon button" />
+                    <Image className='svgIcon' src={isHover ? codeWitheIcon : codeIcon} alt="" />
                     <small className="tooltipp">ver código</small>
                 </button>
             </a>
             <a href={linkView} target="_blank" rel='noreferrer noopener'>
                 <button className="Btn"
+                    aria-label="Ver projeto"
                     onMouseEnter={handleHover}
                     onMouseLeave={handleHoverLeave}
                 >
-                    <Image className='svgIcon' src={isHover ? viewWitheIcon : viewIcon} alt="icon button" />
+                    <Image className='svgIcon' src={isHover ? viewWitheIcon : viewIcon} alt="" />
                     <small className="tooltipp">Ver projeto</small>
                 </button>
             </a>
