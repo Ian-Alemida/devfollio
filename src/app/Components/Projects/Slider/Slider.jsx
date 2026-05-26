@@ -1,13 +1,8 @@
-import dynamic from 'next/dynamic';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './slider.css'
 import Carousel from 'react-bootstrap/Carousel';
 import ImgSlider from './ImgSlider';
-import ButtonProject from '../ButtonProject/ButonProject';
-
-const DynamicBootstrapComponent = dynamic(() => import('bootstrap/dist/css/bootstrap.min.css'), {
-    ssr: false,
-});
+import ButtonProject from '../ButtonProject/ButtonProject';
 
 function Slider({ projetos }) {
 

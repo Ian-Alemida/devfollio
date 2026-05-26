@@ -2,7 +2,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { connectDB } from "@/db/db";
 import cursosdb from "@/db/schemas/cursosSchema";
 import tecnologiasdb from "@/db/schemas/technologiesSchema";
-import removeProperties from "./removePropeties";
+import removeProperties from "./removeProperties";
 import { experiencias, tragetoria } from "./experienceData";
 
 const genAI = new GoogleGenerativeAI(process.env.API_GEMINI);
