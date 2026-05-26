@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import DOMPurify from 'dompurify';
 import { formatResponse } from '@/geminiAI/formatResponse';
 import { ChatModal, CloseButton, Container, HeaderAttention, HeaderChat, Input, InputComponent, InputContainer, MessageBubble, MessageBubbleColumn, MessageBubbleContainer, MessageBubbleImage, MessageBubbleName, MessageBubbleRow, ModelMessage, SendButton, UserMessage } from './ChatUI.styles';
 import { FaArrowUp, FaTimes } from 'react-icons/fa'
@@ -42,7 +43,7 @@ export default function ChatUI({ isClose, setIsClose }) {
                             <MessageBubbleColumn>
                                 <MessageBubbleName>{message.role === 'model' ? '- IA´n Chatbot' : '- User'}</MessageBubbleName>
                                 <MessageBubbleContainer>
-                                    {message.role === 'model' ? <ModelMessage dangerouslySetInnerHTML={{ __html: message.message }}></ModelMessage> : <UserMessage>{message.message}</UserMessage>}
+                                    {message.role === 'model' ? <ModelMessage dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(message.message) }}></ModelMessage> : <UserMessage>{message.message}</UserMessage>}
                                 </MessageBubbleContainer>
                             </MessageBubbleColumn>
                         </MessageBubbleRow>
