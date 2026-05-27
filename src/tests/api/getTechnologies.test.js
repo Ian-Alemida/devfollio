@@ -34,7 +34,7 @@ describe('GET /api/getTechnologies', () => {
     tecnologiasSchema.find.mockResolvedValue(techMock)
 
     const res = mockRes()
-    await getTechnologies({}, res)
+    await getTechnologies({ method: 'GET' }, res)
 
     expect(res.status).toHaveBeenCalledWith(200)
     expect(res.json).toHaveBeenCalledWith(techMock)
@@ -45,7 +45,7 @@ describe('GET /api/getTechnologies', () => {
     const consoleSpy = jest.spyOn(console, 'error').mockImplementation(() => {})
 
     const res = mockRes()
-    await getTechnologies({}, res)
+    await getTechnologies({ method: 'GET' }, res)
 
     expect(res.status).toHaveBeenCalledWith(500)
     expect(res.json).toHaveBeenCalledWith({ error: 'Erro interno do servidor' })

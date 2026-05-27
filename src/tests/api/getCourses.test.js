@@ -34,7 +34,7 @@ describe('GET /api/getCourses', () => {
     cursosSchema.find.mockResolvedValue(cursosMock)
 
     const res = mockRes()
-    await getCourses({}, res)
+    await getCourses({ method: 'GET' }, res)
 
     expect(res.status).toHaveBeenCalledWith(200)
     expect(res.json).toHaveBeenCalledWith(cursosMock)
@@ -45,7 +45,7 @@ describe('GET /api/getCourses', () => {
     const consoleSpy = jest.spyOn(console, 'error').mockImplementation(() => {})
 
     const res = mockRes()
-    await getCourses({}, res)
+    await getCourses({ method: 'GET' }, res)
 
     expect(res.status).toHaveBeenCalledWith(500)
     expect(res.json).toHaveBeenCalledWith({ error: 'Erro interno do servidor' })
