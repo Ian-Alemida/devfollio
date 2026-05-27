@@ -25,7 +25,7 @@ function About() {
                 <p className='content-about-text-p'>Estou comprometido em aprimorar minhas habilidades e contribuir com meu conhecimento para ajudar a comunidade alcançar seus objetivos.</p>
                 <div className='content-button content-button-about'>
                     <Botao icon1={iconDownloadGray} icon2={iconDownload} link={Curriculo} isDownload text={'Baixar CV'}></Botao>
-                    <Botao icon1={instagramGrayIcon} icon2={instagramIcon} link="https://www.instagram.com/binary_jouney/?igshid=OGQ5ZDc2ODk2ZA=='" text={'Instagram'}></Botao>
+                    <Botao icon1={instagramGrayIcon} icon2={instagramIcon} link="https://www.instagram.com/binary_jouney/?igshid=OGQ5ZDc2ODk2ZA==" text={'Instagram'}></Botao>
                 </div>
             </div>
         </div>
