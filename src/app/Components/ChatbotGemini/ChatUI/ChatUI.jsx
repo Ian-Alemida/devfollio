@@ -11,7 +11,8 @@ export default function ChatUI({ isClose, setIsClose }) {
     const [newMessage, setNewMessage] = useState('');
 
     async function clickSendMessage() { //  configura o comportamento do componente após o usuário clicar no botão de enviar a mensagem
-        let userMessage = newMessage;
+        const userMessage = newMessage.trim();
+        if (!userMessage) return;
         setNewMessage('');
         setMessages([{ role: 'user', message: userMessage }, ...messages]);
         try {
