@@ -51,7 +51,7 @@ export default function ChatUI({ isClose, setIsClose }) {
                 )}
             </Container>
             <HeaderChat>
-                <HeaderAttention> <strong>Atenção:</strong> as respostas da IA não são 100% precisar mas tudo pode ser conferido aqui no portfolio</HeaderAttention>
+                <HeaderAttention> <strong>Atenção:</strong> as respostas da IA não são 100% precisas mas tudo pode ser conferido aqui no portfolio</HeaderAttention>
                 <CloseButton onClick={() => setIsClose(!isClose)}><FaTimes fontSize={21} fontWeight={1} color='red' /></CloseButton>
             </HeaderChat>
         </ChatModal>
