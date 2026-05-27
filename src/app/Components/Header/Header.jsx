@@ -32,12 +32,12 @@ function Header() {
                         &#9776; {/* Ícone de hambúrguer */}
                     </div>
                     <ul className={`nav-links ${menuIsOpen ? 'open' : ''}`}>
-                        <li><a href="#Banner"><span className='Links-header-text'>Home</span></a></li>
-                        <li><a href="#About"><span className='Links-header-text'>Sobre</span></a></li>
-                        <li><a href="#Technology"><span className='Links-header-text'>Tecnologias</span></a></li>
-                        <li><a href="#Projects"><span className='Links-header-text'>Projetos</span></a></li>
-                        <li><a href="#Courses"><span className='Links-header-text'>Formação</span></a></li>
-                        <li><a href="#Footer"><span className='Links-header-text'>Contato</span></a></li>
+                        <li><a href="#Banner" onClick={() => setMenuIsOpen(false)}><span className='Links-header-text'>Home</span></a></li>
+                        <li><a href="#About" onClick={() => setMenuIsOpen(false)}><span className='Links-header-text'>Sobre</span></a></li>
+                        <li><a href="#Technology" onClick={() => setMenuIsOpen(false)}><span className='Links-header-text'>Tecnologias</span></a></li>
+                        <li><a href="#Projects" onClick={() => setMenuIsOpen(false)}><span className='Links-header-text'>Projetos</span></a></li>
+                        <li><a href="#Courses" onClick={() => setMenuIsOpen(false)}><span className='Links-header-text'>Formação</span></a></li>
+                        <li><a href="#Footer" onClick={() => setMenuIsOpen(false)}><span className='Links-header-text'>Contato</span></a></li>
                     </ul>
                 </nav>
                 <Image src={logo} className="App-logo" alt="logo" />
