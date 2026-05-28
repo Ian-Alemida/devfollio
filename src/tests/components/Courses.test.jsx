@@ -18,9 +18,9 @@ jest.mock('../../app/Components/Courses/Cards/CardTecnologo', () =>
 jest.mock('../../app/Components/Courses/Cards/CardBooks', () =>
   function MockCardBooks({ nome }) { return <div data-testid="card-books">{nome}</div> }
 )
-jest.mock('../../app/Components/Courses/Skills/HardSkills', () => () => <div />)
-jest.mock('../../app/Components/Courses/Skills/SoftSkills', () => () => <div />)
-jest.mock('../../app/Components/Courses/Skills/Idiomas', () => () => <div />)
+jest.mock('../../app/Components/Courses/Skills/HardSkills', () => function MockHardSkills() { return <div /> })
+jest.mock('../../app/Components/Courses/Skills/SoftSkills', () => function MockSoftSkills() { return <div /> })
+jest.mock('../../app/Components/Courses/Skills/Idiomas', () => function MockIdiomas() { return <div /> })
 
 const mockCursos = [
   { _id: '1', nome: 'React Avançado', skill: 'Front-end', link: '', plataform: 'Alura', time: '20h' },
