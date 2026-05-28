@@ -12,27 +12,79 @@ import axios from 'axios'
 function Courses() {
     const [skillActive, setSkillActive] = useState('Front-end')
     const [cursosdb, setCursosdb] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const [hasError, setHasError] = useState(false);
     const Skills = ['Front-end', 'Back-end', 'Mobile', 'Faculdade', 'Cyber Security', 'Livros']
 
-    useEffect(() => { // useEffect sendo usado para atualizar a nossa aplicação assim que os dados da API forem buscados
+    useEffect(() => {
         async function buscarDados() {
             try {
-                axios.get('/api/getCourses').then((response) => setCursosdb(response.data));
+                const response = await axios.get('/api/getCourses');
+                setCursosdb(response.data);
             } catch (error) {
                 console.error('Erro ao buscar dados:', error);
+                setHasError(true);
+            } finally {
+                setIsLoading(false);
             }
         }
         buscarDados()
     }, []);
+
     const skillVisible = skillActive ?
         cursosdb.filter(curso => curso.skill === skillActive) : null;
+
+    const renderCards = () => {
+        if (isLoading) {
+            return Array.from({ length: 8 }).map((_, i) => (
+                <li key={i} className="skeleton-courses-card" data-testid="skeleton-courses">
+                    <div className="skeleton-courses-line label" />
+                    <div className="skeleton-courses-line title" />
+                    <div className="skeleton-courses-line meta" />
+                </li>
+            ));
+        }
+        if (hasError) {
+            return <li className="courses-error">Não foi possível carregar os cursos.</li>;
+        }
+        if (skillActive === 'Faculdade') {
+            return skillVisible.map((curso) => (
+                <CardTecnologo
+                    key={curso._id}
+                    link={curso.link}
+                    nome={curso.nome}
+                    plataform={curso.plataform}
+                    time={curso.time}
+                    type={curso.type}
+                />
+            ));
+        }
+        if (skillActive === 'Livros') {
+            return skillVisible.map((curso) => (
+                <CardBooks
+                    key={curso._id}
+                    nome={curso.nome}
+                    img={curso.img}
+                />
+            ));
+        }
+        return skillVisible.map((curso) => (
+            <CardCourses
+                key={curso._id}
+                link={curso.link}
+                nome={curso.nome}
+                plataform={curso.plataform}
+                time={curso.time}
+            />
+        ));
+    };
 
     return (
         <section className='content-courses' id='Courses'>
             <h2 className={roboto.className}>Formação<span>.</span></h2>
             <div className='content-courses-menu'>
-                {Skills.map(skill => {
-                    return <button
+                {Skills.map(skill => (
+                    <button
                         key={skill}
                         className={skill === skillActive ? 'content-courses-menu-active' : ''}
                         value={skill}
@@ -40,38 +92,12 @@ function Courses() {
                     >
                         {skill}
                     </button>
-                })}
+                ))}
                 <hr />
             </div>
             <article>
                 <ul className='cards'>
-                    {skillActive === 'Faculdade' ?
-                        skillVisible.map((curso, indice) => {
-                            return <CardTecnologo
-                                key={indice}
-                                link={curso.link}
-                                nome={curso.nome}
-                                plataform={curso.plataform}
-                                time={curso.time}
-                                type={curso.type}
-                            />
-                        }) : skillActive === 'Livros' ?
-                            skillVisible.map((curso, indice) => {
-                                return <CardBooks
-                                    key={indice}
-                                    nome={curso.nome}
-                                    img={curso.img}
-                                />
-                            }) :
-                            skillVisible.map((curso, indice) => {
-                                return <CardCourses
-                                    key={indice}
-                                    link={curso.link}
-                                    nome={curso.nome}
-                                    plataform={curso.plataform}
-                                    time={curso.time}
-                                />
-                            })}
+                    {renderCards()}
                 </ul>
             </article>
             <article className='content-courses-skills'>
@@ -79,7 +105,6 @@ function Courses() {
                 <SoftSkills></SoftSkills>
                 <Idiomas></Idiomas>
             </article>
-
         </section>
     )
 }

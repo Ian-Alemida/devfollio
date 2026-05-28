@@ -3,6 +3,9 @@ import { getChat } from "@/geminiAI/startGemini";
 async function getGemini(req, res) {
   if (req.method === "POST") {
     const { userQuestion } = req.body;
+    if (!userQuestion || typeof userQuestion !== 'string' || userQuestion.length > 2000) {
+      return res.status(400).json({ error: 'Pergunta inválida' });
+    }
     try {
       const chat = await getChat();
       const result = await chat.sendMessage(userQuestion);

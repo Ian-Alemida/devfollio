@@ -59,15 +59,6 @@ function Projects() {
             linkCode: 'https://github.com/Ian-Alemida/Apeperia.git',
             linkView: 'https://apeperia-azure.vercel.app/'
         },
-        /*{
-            nameProject: 'Organo Valorant',
-            imgProject: './assets/images/OrganoValoran.png',
-            text: "Um projeto em react que cria organogramas de personagens e classes do jogo FPS online Valorant. Esse projeto foi desenvolvido visando adquirir experiencia e melhorar meu entendimento de, formulários, Objetos de dados e como eles interagem entre si, através do gerenciamento de estados, passando informações de um componente para o outro e construindo novos cards. Utilizei algumas bibliotecas externas como o 'hex-to-rgba', 'react icons' e 'uuid'.",
-            isMobile: false,
-            tecnologias: 'React',
-            linkCode: 'https://github.com/Ian-Alemida/organoValorant',
-            linkView: 'https://organo-valorant-rose.vercel.app/'
-        },*/
     ]
 
     return (

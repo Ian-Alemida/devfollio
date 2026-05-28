@@ -1,21 +1,20 @@
 'use client';
 import './scrollUp.css'
-import React, {useState, useEffect, useCallback} from 'react'
+import React, {useState, useEffect, useCallback, useRef} from 'react'
 
 function ScrollUp  () {
-    const [isVisible, setIsVisible] = useState(false);//Controla se o botão esta visível
-    const [prevScrollY, setPrevScrollY] = useState(0);//Verifica a posição do scroll
+    const [isVisible, setIsVisible] = useState(false);
+    const prevScrollYRef = useRef(0);
 
-    //Função que verifica se o mouse está sendo scrolado para baixo ou para  cima, usei callBack para evitar que um novo objeto de função seja criado a cada renderização.
     const handleScroll = useCallback(() => {
-        const currentScrollY = window.scrollY;//verifica a posição do  scrollY
-        if (currentScrollY < prevScrollY) {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY < prevScrollYRef.current) {
             setIsVisible(true);
         } else {
             setIsVisible(false);
         }
-        setPrevScrollY(currentScrollY);
-    }, [prevScrollY]);
+        prevScrollYRef.current = currentScrollY;
+    }, []);
 
     //Scrola para o topo da pagina com uma animação suave
     const scrollToTop = () => {

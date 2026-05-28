@@ -7,30 +7,53 @@ import axios from 'axios'
 function Technology() {
 
     const [tecnologiasdb, setTecnologiasdb] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const [hasError, setHasError] = useState(false);
 
-    useEffect(() => { // useEffect sendo usado para atualizar a nossa aplicação assim que os dados da API forem buscados
+    useEffect(() => {
         async function buscarDados() {
             try {
-                axios.get('/api/getTechnologies').then((response) => setTecnologiasdb(response.data));
+                const response = await axios.get('/api/getTechnologies');
+                setTecnologiasdb(response.data);
             } catch (error) {
                 console.error('Erro ao buscar dados:', error);
+                setHasError(true);
+            } finally {
+                setIsLoading(false);
             }
         }
         buscarDados()
     }, []);
+
+    const renderContent = () => {
+        if (isLoading) {
+            return Array.from({ length: 10 }).map((_, i) => (
+                <div key={i} className="skeleton-tech-card" data-testid="skeleton-tech">
+                    <div className="skeleton-tech-img" />
+                    <div className="skeleton-tech-line" />
+                    <div className="skeleton-tech-line short" />
+                </div>
+            ));
+        }
+        if (hasError) {
+            return <p className="technology-error">Não foi possível carregar as tecnologias.</p>;
+        }
+        return tecnologiasdb.map((tecnologia) =>
+            <CardTechnology
+                key={tecnologia._id}
+                className='card-tech-1'
+                img={tecnologia.img}
+                h3={tecnologia.nome}
+                text={tecnologia.text}
+            />
+        );
+    };
+
     return (
-        <div className="content-technology" id='Technology'>
+        <div className={`content-technology ${isLoading ? 'content-technology--loading' : ''}`} id='Technology'>
             <h2 className={roboto.className}>Tecnologias</h2>
             <div className='card-tech'>
-                {tecnologiasdb.map((tecnologia, indice) =>
-                    <CardTechnology
-                        key={indice}
-                        className='card-tech-1'
-                        img={tecnologia.img}
-                        h3={tecnologia.nome}
-                        text={tecnologia.text}
-                    />
-                )}
+                {renderContent()}
             </div>
         </div>
     )

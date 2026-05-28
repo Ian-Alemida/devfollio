@@ -1,5 +1,7 @@
+'use client';
 import { useState } from 'react';
 import axios from 'axios';
+import DOMPurify from 'dompurify';
 import { formatResponse } from '@/geminiAI/formatResponse';
 import { ChatModal, CloseButton, Container, HeaderAttention, HeaderChat, Input, InputComponent, InputContainer, MessageBubble, MessageBubbleColumn, MessageBubbleContainer, MessageBubbleImage, MessageBubbleName, MessageBubbleRow, ModelMessage, SendButton, UserMessage } from './ChatUI.styles';
 import { FaArrowUp, FaTimes } from 'react-icons/fa'
@@ -10,7 +12,8 @@ export default function ChatUI({ isClose, setIsClose }) {
     const [newMessage, setNewMessage] = useState('');
 
     async function clickSendMessage() { //  configura o comportamento do componente após o usuário clicar no botão de enviar a mensagem
-        let userMessage = newMessage;
+        const userMessage = newMessage.trim();
+        if (!userMessage) return;
         setNewMessage('');
         setMessages([{ role: 'user', message: userMessage }, ...messages]);
         try {
@@ -42,7 +45,7 @@ export default function ChatUI({ isClose, setIsClose }) {
                             <MessageBubbleColumn>
                                 <MessageBubbleName>{message.role === 'model' ? '- IA´n Chatbot' : '- User'}</MessageBubbleName>
                                 <MessageBubbleContainer>
-                                    {message.role === 'model' ? <ModelMessage dangerouslySetInnerHTML={{ __html: message.message }}></ModelMessage> : <UserMessage>{message.message}</UserMessage>}
+                                    {message.role === 'model' ? <ModelMessage dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(message.message) }}></ModelMessage> : <UserMessage>{message.message}</UserMessage>}
                                 </MessageBubbleContainer>
                             </MessageBubbleColumn>
                         </MessageBubbleRow>
@@ -50,7 +53,7 @@ export default function ChatUI({ isClose, setIsClose }) {
                 )}
             </Container>
             <HeaderChat>
-                <HeaderAttention> <strong>Atenção:</strong> as respostas da IA não são 100% precisar mas tudo pode ser conferido aqui no portfolio</HeaderAttention>
+                <HeaderAttention> <strong>Atenção:</strong> as respostas da IA não são 100% precisas mas tudo pode ser conferido aqui no portfolio</HeaderAttention>
                 <CloseButton onClick={() => setIsClose(!isClose)}><FaTimes fontSize={21} fontWeight={1} color='red' /></CloseButton>
             </HeaderChat>
         </ChatModal>

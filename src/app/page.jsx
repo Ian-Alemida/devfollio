@@ -12,7 +12,8 @@ import Courses from './Components/Courses/Courses';
 import Footer from './Components/Footer/Footer';
 import ScrollUp from './Components/ScrollUp/ScrollUp';
 import styled from 'styled-components';
-import ChatbotGemini from './Components/ChatbotGemini/ChatbotGemini';
+import dynamic from 'next/dynamic';
+const ChatbotGemini = dynamic(() => import('./Components/ChatbotGemini/ChatbotGemini'), { ssr: false });
 
 
 const Container = styled.section`
