@@ -72,11 +72,21 @@ describe('Courses', () => {
     await waitFor(() => expect(screen.getByTestId('card-books')).toBeInTheDocument())
   })
 
-  test('erro na API mantém a lista vazia', async () => {
+  test('exibe skeletons enquanto os dados carregam', () => {
+    axios.get.mockImplementation(() => new Promise(() => {})) // nunca resolve
+    render(<Courses />)
+    expect(screen.getAllByTestId('skeleton-courses')).toHaveLength(8)
+    expect(screen.queryByTestId('card-courses')).not.toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Front-end' })).toBeInTheDocument()
+  })
+
+  test('erro na API: exibe mensagem de erro e não renderiza cards', async () => {
     const consoleSpy = jest.spyOn(console, 'error').mockImplementation(() => {})
     axios.get.mockRejectedValue(new Error('Network error'))
     render(<Courses />)
-    await waitFor(() => expect(consoleSpy).toHaveBeenCalled())
+    await waitFor(() => {
+      expect(screen.getByText('Não foi possível carregar os cursos.')).toBeInTheDocument()
+    })
     expect(screen.queryByTestId('card-courses')).not.toBeInTheDocument()
     consoleSpy.mockRestore()
   })

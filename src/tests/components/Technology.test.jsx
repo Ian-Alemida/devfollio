@@ -38,12 +38,22 @@ describe('Technology', () => {
     expect(screen.getByText('Next.js')).toBeInTheDocument()
   })
 
-  test('erro na API mantém a lista vazia e chama console.error', async () => {
+  test('erro na API: não exibe cards e exibe mensagem de erro', async () => {
     const consoleSpy = jest.spyOn(console, 'error').mockImplementation(() => {})
     axios.get.mockRejectedValue(new Error('Network error'))
     render(<Technology />)
-    await waitFor(() => expect(consoleSpy).toHaveBeenCalled())
+    await waitFor(() => {
+      expect(screen.getByText('Não foi possível carregar as tecnologias.')).toBeInTheDocument()
+    })
     expect(screen.queryByTestId('card-technology')).not.toBeInTheDocument()
+    expect(consoleSpy).toHaveBeenCalled()
     consoleSpy.mockRestore()
+  })
+
+  test('exibe skeletons enquanto os dados carregam', () => {
+    axios.get.mockImplementation(() => new Promise(() => {})) // nunca resolve
+    render(<Technology />)
+    expect(screen.getAllByTestId('skeleton-tech')).toHaveLength(10)
+    expect(screen.queryByTestId('card-technology')).not.toBeInTheDocument()
   })
 })
