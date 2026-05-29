@@ -17,14 +17,23 @@ const ContainerChatbotGemini = styled.div`
   }
 `
 
+const Overlay = styled.div`
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+`
+
 export default function ChatbotGemini() {
 
     const [isClose, setIsClose] = useState(true);
 
     return (
-        <ContainerChatbotGemini>
-            <ChatUI isClose={isClose} setIsClose={setIsClose} />
-            <ChatIcon isClose={isClose} setIsClose={setIsClose}></ChatIcon>
-        </ContainerChatbotGemini>
+        <>
+            {!isClose && <Overlay onClick={() => setIsClose(true)} />}
+            <ContainerChatbotGemini>
+                <ChatUI isClose={isClose} setIsClose={setIsClose} />
+                <ChatIcon isClose={isClose} setIsClose={setIsClose}></ChatIcon>
+            </ContainerChatbotGemini>
+        </>
     )
 }
