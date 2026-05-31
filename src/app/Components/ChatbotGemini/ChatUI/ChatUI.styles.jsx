@@ -1,209 +1,302 @@
-import { keyframes, styled } from "styled-components";
+import { keyframes, styled } from 'styled-components'
 
-const openAnimation = keyframes`
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-`;
-const closeAnimation = keyframes`
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0);
-    opacity: 0;
-  }
-`;
+// Animações
+const slideUp = keyframes`
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+`
+const closeDown = keyframes`
+  from { transform: translateY(0);    opacity: 1; }
+  to   { transform: translateY(20px); opacity: 0; }
+`
+const bounce = keyframes`
+  0%, 60%, 100% { transform: translateY(0);    opacity: 0.4; }
+  30%           { transform: translateY(-5px); opacity: 1;   }
+`
+
+// Painel principal
 export const ChatModal = styled.div`
-    background-color: #dee6f2;
-    color: black;
-    animation: ${({ $isClose }) => ($isClose ? closeAnimation : openAnimation)} 0.78s ease;
-    flex-direction: column-reverse;
-    align-items: center; 
-    z-index: 2;
-    width: 45vw;
-    height: 90vh;
-    overflow: hidden;
-    display: ${({ $isClose }) => ($isClose ? 'none' : 'flex')};
-    `
-export const Container = styled.div`
-    overflow-y: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    margin-top: 36px;
-`
-export const MessageBubble = styled.div`
-    margin-bottom: 9px;
-    width: 100%;
-    background-color: #eee;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-    &:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-`
-export const MessageBubbleRow = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    width: 100%;
-`
-export const MessageBubbleImage = styled.div`
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    flex: 0 0 75px;
-    margin: 12px 0 0 6px;
-    img {
-        border-radius: 50%;
-    }
-`
-export const MessageBubbleColumn = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    margin: 1.5vh 2.1vw 0 9px; 
-    text-align: justify;
-`
-export const MessageBubbleName = styled.p`
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 9px;
-`
-export const MessageBubbleContainer = styled.div`
-    padding: 0;
-    margin: 0;
-    font-size: 1.11rem;
-`
-export const UserMessage = styled.p`
-`
-export const ModelMessage = styled.div`
-li::before{
-    content: '• '
-}
-`
-// Barra de input
-export const InputContainer = styled.div`
-    background-color: #afc0d8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-`
-export const InputComponent = styled.div`
-    background-color: #fff;
-    border-radius: 33px;
-    display: flex;
-    padding: 9px;
-    margin: 12px 0;
-    width: 96%;
-`
-export const Input = styled.input`
-    flex: 1;
-    padding: 0 12px;
-    border: none;
-    outline: none;
-`
-export const SendButton = styled.button`
-    width: 45px;
-    height: 45px;
-    border: none;
-    border-radius: 50%;
-    background-color: var(--cor-secundaria);
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+  width: 36vw;
+  height: 85vh;
+  background: #071222;
+  border-radius: 16px;
+  border: 1px solid rgba(85, 201, 246, 0.15);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(85, 201, 246, 0.05);
+  display: ${({ $isClose }) => ($isClose ? 'none' : 'flex')};
+  flex-direction: column;
+  overflow: hidden;
+  animation: ${({ $isClose }) => ($isClose ? closeDown : slideUp)} 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 2;
 
-    &:hover{
-        background-color: var(--cor-principal);
-        color: #aaa;
-    }
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `
-// header
+
+// Header
 export const HeaderChat = styled.div`
-    background-color: #afc0d8;
-    position: absolute;
-    top: 0;
-    height: 42px;
-    width: 45vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1.5rem 0 .9rem;
-    border-bottom: 2.1px solid var(--cinza);
+  background: linear-gradient(135deg, #0d2344 0%, #071222 100%);
+  padding: 6px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(85, 201, 246, 0.1);
+  flex-shrink: 0;
 `
-export const HeaderAttention = styled.p`
-    color: #000;
-    margin: 0;
-    font-size: .81rem;
+export const HeaderLeft = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+`
+export const HeaderAvatar = styled.div`
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--cor-principal);
+  overflow: hidden;
+  flex-shrink: 0;
 
-    strong{
-        color: #fc1818;
-        font-weight: bold;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+`
+export const HeaderInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+`
+export const HeaderName = styled.p`
+  color: var(--cor-principal);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+`
+export const HeaderStatus = styled.p`
+  color: #4a9ab5;
+  font-size: 12px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+`
+export const StatusDot = styled.span`
+  width: 6px;
+  height: 6px;
+  background: #22d479;
+  border-radius: 50%;
+  display: inline-block;
 `
 export const CloseButton = styled.button`
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #fff;
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px;
+  border-radius: 4px;
+  line-height: 1;
+  transition: color 0.2s;
+
+  &:hover { color: #aaa; }
 `
-//ChatbotIcon
+
+// Aviso de precisão
+export const HeaderAttention = styled.p`
+  font-size: 11px;
+  color: #4a7a9b;
+  text-align: center;
+  padding: 3px 16px;
+  border-bottom: 1px solid rgba(85, 201, 246, 0.05);
+  margin: 0;
+  letter-spacing: 0.2px;
+  flex-shrink: 0;
+
+  strong {
+    color: #c05050;
+    font-weight: 600;
+  }
+`
+
+// Área de mensagens
+export const Container = styled.div`
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+
+  &::-webkit-scrollbar { width: 4px; }
+  &::-webkit-scrollbar-track { background: transparent; }
+  &::-webkit-scrollbar-thumb { background: #1a3a6b; border-radius: 2px; }
+`
+
+// Bolha wrapper (alinha à esq ou dir)
+export const MessageBubble = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  max-width: 88%;
+  align-self: ${({ $role }) => ($role === 'user' ? 'flex-end' : 'flex-start')};
+`
+export const MessageBubbleName = styled.span`
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 0 4px;
+  color: ${({ $role }) => ($role === 'user' ? 'var(--cor-secundaria)' : 'var(--cor-principal)')};
+  text-align: ${({ $role }) => ($role === 'user' ? 'right' : 'left')};
+`
+
+// Conteúdo da bolha
+export const ModelMessage = styled.div`
+  background: #0d2344;
+  color: #dde8f5;
+  border-left: 2px solid var(--cor-principal);
+  border-radius: 4px 12px 12px 12px;
+  padding: 12px 16px;
+  font-size: 15px;
+  line-height: 1.55;
+  word-break: break-word;
+
+  li::before { content: '• '; }
+`
+export const UserMessage = styled.p`
+  background: #0f2a50;
+  color: #c8d8ee;
+  border-right: 2px solid var(--cor-secundaria);
+  border-radius: 12px 4px 12px 12px;
+  padding: 12px 16px;
+  font-size: 15px;
+  line-height: 1.55;
+  word-break: break-word;
+  margin: 0;
+`
+
+// Indicador de digitando
+export const TypingDots = styled.div`
+  background: #0d2344;
+  border-left: 2px solid var(--cor-principal);
+  border-radius: 4px 12px 12px 12px;
+  padding: 12px 16px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+  span {
+    width: 6px;
+    height: 6px;
+    background: var(--cor-principal);
+    border-radius: 50%;
+    animation: ${bounce} 1.2s infinite;
+
+    &:nth-child(2) { animation-delay: 0.2s; }
+    &:nth-child(3) { animation-delay: 0.4s; }
+  }
+`
+
+// Input
+export const InputContainer = styled.div`
+  padding: 10px 14px 14px;
+  background: #050e1a;
+  border-top: 1px solid rgba(85, 201, 246, 0.08);
+  flex-shrink: 0;
+`
+export const InputComponent = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #0a1528;
+  border: 1px solid rgba(85, 201, 246, 0.15);
+  border-radius: 24px;
+  padding: 6px 6px 6px 14px;
+  transition: border-color 0.2s;
+
+  &:focus-within { border-color: rgba(85, 201, 246, 0.4); }
+`
+export const Input = styled.input`
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: #c8d8ee;
+  font-size: 14px;
+
+  &::placeholder { color: #3a5a7a; }
+`
+export const SendButton = styled.button`
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, var(--cor-secundaria), var(--cor-principal));
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  flex-shrink: 0;
+  transition: opacity 0.2s, transform 0.1s;
+
+  &:hover { opacity: 0.85; transform: scale(1.05); }
+  &:disabled { opacity: 0.4; cursor: not-allowed; }
+  &:disabled:hover { opacity: 0.4; transform: none; }
+`
+
+// ChatbotIcon (mantido do original — não alterado)
 export const ContainerChatbotIconUI = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  z-index: 2;
 `
 export const ChatbotIconUI = styled.button`
-    width: ${({ $isClose }) => ($isClose ? '75px' : '141px')};
-    height: ${({ $isClose }) => ($isClose ? '75px' : '72px')};
+  width: ${({ $isClose }) => ($isClose ? '75px' : '141px')};
+  height: ${({ $isClose }) => ($isClose ? '75px' : '72px')};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--cor-secundaria);
+  background-image: linear-gradient(150deg, var(--cinza-medio), var(--cor-secundaria), var(--cinza-medio));
+  cursor: pointer;
+  padding-top: 3px;
+  box-shadow: 0px 0px 39px 0px rgba(90, 90, 90, 150);
+  position: relative;
+  background-size: 300%;
+  margin-bottom: 141px;
+  background-position: left;
+  transition-duration: 1s;
+
+  span {
+    position: absolute;
+    top: ${({ $isClose }) => ($isClose ? '-40px' : '-57px')};
+    opacity: 0;
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    border: none;
-    background-color: var(--cor-secundaria);
-    background-image: linear-gradient(150deg,  var(--cinza-medio), var(--cor-secundaria), var(--cinza-medio));
-    cursor: pointer;
-    padding-top: 3px;
-    box-shadow: 0px 0px 39px 0px rgba(90, 90, 90, 150);
-    position: relative;
-    background-size: 300%;
-    margin-bottom: 141px;
-    background-position: left;
+    transition-duration: 0.5s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+  }
+  &:hover span {
+    opacity: 1;
+    transition-duration: 0.5s;
+  }
+  &:hover {
+    background-position: right;
     transition-duration: 1s;
-    span {
-        position: absolute;
-        top: ${({ $isClose }) => ($isClose ? '-40px' : '-57px')};
-        opacity: 0;
-        background-color: var(--cor-secundaria);
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition-duration: .5s;
-        pointer-events: none;
-        letter-spacing: 0.5px;
-    }
-    &:hover span {
-        opacity: 1;
-        transition-duration: .5s;
-    }
-    &:hover {
-        background-position: right;
-        transition-duration: 1s;
-        scale: ${({ $isClose }) => ($isClose ? 1.2 : 1.1)};
-    }
+    scale: ${({ $isClose }) => ($isClose ? 1.2 : 1.1)};
+  }
 `
