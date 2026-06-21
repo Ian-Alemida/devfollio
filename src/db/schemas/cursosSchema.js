@@ -13,6 +13,7 @@ const cursosSchema = new mongoose.Schema(
   { collection: "cursos" }
 );
 
-const cursosdb = mongoose.model("cursosdb", cursosSchema);
+const cursosdb =
+  mongoose.models.cursosdb || mongoose.model("cursosdb", cursosSchema);
 
 export default cursosdb;

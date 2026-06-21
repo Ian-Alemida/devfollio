@@ -1,16 +1,12 @@
 const mongoose = require("mongoose");
-const URI =
-  "mongodb+srv://devfollioDB:uaMmrchkml7QPs2e@cluster0.ogzyvdv.mongodb.net/devfollio?retryWrites=true&w=majority&appName=Cluster0";
+const URI = process.env.MONGODB_URI;
 
 async function connectDB() {
-  mongoose
-    .connect(URI, {})
-    .then(() => {
-      console.log("Conectado ao MongoDB Atlas!");
-    })
-    .catch((error) => {
-      console.error("Erro ao conectar ao MongoDB Atlas:", error);
-    });
+  if (mongoose.connection.readyState >= 1) {
+    return;
+  }
+
+  await mongoose.connect(URI);
 }
 
 module.exports = {

@@ -10,31 +10,68 @@
     text-decoration: none;
     margin-right: 33px;
 }
-.content-cardCourses-books:hover{
+
+.content-cardCourses-books:hover {
     border-color: var(--cor-principal);
 }
 
-.content-cardCourses-books h3{
+.content-cardCourses-books h3 {
     color: var(--branco);
     font-size: 1vw;
     height: 6.9vh;
 }
-.content-cardCourses-books hr{
+
+.content-cardCourses-books hr {
     margin: 0 0 9px;
     color: var(--cinza);
     border: .9px solid var(--cinza);
     border-radius: 50%;
 }
-.content-cardCourses-books:hover hr{
+
+.content-cardCourses-books:hover hr {
     color: var(--cor-principal);
     border-color: var(--cor-principal);
 }
-.content-cardCourses-books img{
+
+.content-cardCourses-books img {
     width: 100%;
     margin: auto;
     height: 30vh;
     box-shadow: .9px .9px 9px var(--cinza-medio)
 }
-.content-cardCourses-books:hover img{
+
+.content-cardCourses-books:hover img {
     scale: 1.041;
+}
+
+@media (max-width: 430px) {
+    .content-cardCourses-books {
+        width: 48.2%;
+        padding: 1.2vh 2.1vh;
+        margin: 0;
+    }
+
+    .content-cardCourses-books h3 {
+        font-size: .78rem;
+    }
+
+    .content-cardCourses-books img {
+        height: 21vh;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .content-cardCourses-books {
+        width: 48.2%;
+        padding: 1.2vh 2.1vh;
+        margin: 0;
+    }
+
+    .content-cardCourses-books h3 {
+        font-size: 1.29rem;
+    }
+
+    .content-cardCourses-books img {
+        height: 33vh;
+    }
 }

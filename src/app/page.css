@@ -6,14 +6,10 @@
 
 ::-webkit-scrollbar {
     background-image: linear-gradient(to bottom, #00001f, #000000);
-    width: 5px;
+    width: 6.6px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #2191ffaa;
     border-radius: 6px;
-}
-
-::-webkit-scrollbar:hover {
-    width: 10px;
 }

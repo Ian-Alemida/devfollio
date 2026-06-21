@@ -1,4 +1,4 @@
-.content-about{
+.content-about {
     width: 95vw;
     height: 88vh;
     display: flex;
@@ -9,24 +9,24 @@
     margin-bottom: 25vh;
 }
 
-.content-about-img{
+.content-about-img {
     width: 36%;
     height: 75%;
     display: flex;
     justify-content: center;
-    margin: auto ;
+    margin: auto;
     background-color: var(--cor-principal);
     border-radius: 50%;
     box-shadow: 0 0 500px var(--cor-principal-translucida)
 }
 
-.content-about-img img{
+.content-about-img img {
     border-radius: 50%;
     width: 100%;
     height: 100%;
 }
 
-.content-about-text{
+.content-about-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,18 +35,88 @@
     margin-right: 42px;
 }
 
-.content-about-text-h2{
+.content-about-text-h2 {
     font-size: 3.9vw;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
-.content-about-text-h3{
+.content-about-text-h3 {
     color: var(--cor-principal);
     font-size: .9vw;
+    margin-top: 0;
 }
 
-.content-about-text-p{
+.content-about-text-p {
     font-size: 1.3vw;
     font-weight: 400;
-    margin: 12px 0;
+    margin: 15px 0;
+}
+
+@media (max-width: 430px) {
+    .content-about {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 140vh;
+        margin-bottom: 16vh;
+    }
+
+    .content-about-img {
+        margin: 0 auto;
+        width: 94%;
+        height: 36%;
+    }
+
+    .content-about-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-about-text-h2 {
+        font-size: 3rem;
+    }
+
+    .content-about-text-h3 {
+        font-size: .69rem;
+    }
+
+    .content-about-text-p {
+        font-size: 1.05rem;
+        margin: 9px 0;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .content-about {
+        margin-bottom: 9vh;
+    }
+
+    .content-about-img {
+        margin: auto;
+        width: 80%;
+        height: 42%;
+    }
+
+    .content-about-text {
+        width: 60%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .content-about-text-h2 {
+        font-size: 3.3rem;
+    }
+
+    .content-about-text-h3 {
+        font-size: .9rem;
+    }
+
+    .content-about-text-p {
+        font-size: 1.2rem;
+        margin: 9px 0;
+    }
+
+    .content-button-about {
+        margin-right: 1.5rem;
+    }
 }

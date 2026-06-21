@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack: (config, { isServer }) => {
-    // Adiciona o loader para arquivos PDF
     config.module.rules.push({
       test: /\.(pdf)$/,
       use: [
@@ -18,6 +17,7 @@ const nextConfig = {
 
     return config;
   },
+  reactStrictMode: true,
 };
 
 export default nextConfig;
